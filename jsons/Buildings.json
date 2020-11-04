@@ -1,0 +1,145 @@
+[
+// Ancient Era
+	{
+		"name": "Synaptic Apex",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 3,
+		"food": 3,
+		"cost": 1,
+		"uniques": ["Indicates the capital city"]
+	},
+	{
+		"name": "Synaptic Node",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1
+	},
+	{
+		"name": "Storage Nest", 
+		"food": 2,
+		"resourceBonusStats": {"food": 1},
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredTech": "Storage Organisms"
+	},
+	{
+		"name": "Psionic Monolith", 
+		"happiness": 1,
+		"production": 1,
+		"requiredNearbyImprovedResources": ["Marble", "Stone"],
+		"resourceBonusStats": {"production": 1},
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Must not be on [Plains]"],
+		"requiredTech": "Chronostasis"
+	},
+	{
+		"name": "The Mindstone",
+		"culture": 10,
+		"isWonder": true,
+		"greatPersonPoints": {"production": 1},
+		"requiredTech": "Chronostasis",
+		"quote": "'The moment it came into being, the stone shined vibrantly, and the hive mind was bombarded with ideas.'"
+	},
+	{
+		"name": "Synaptic Node",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] Per [2] Population in this city"],
+		"requiredTech": "Synaptic Structures"
+	},
+	{
+		"name": "The Nexus",
+		"culture": 3,
+		"greatPersonPoints": {"science": 1},
+		"isWonder": true,
+		"providesFreeBuilding":  "Synaptic Node",
+		"requiredTech": "Synaptic Structures",
+		"uniques": ["Free Technology","[+1 Science] Per [1] Population in this city"],
+		"quote": "'Within every drone is a mind of its own, just waiting to be tapped into our collective.'"
+	},
+	{
+		"name": "Bio-Stock", 
+		"requiredNearbyImprovedResources": ["Ivory","Wildlife"],
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Counteradaptation"
+	},
+	/*
+	{
+		"name": "Flowage District",
+		"maintenance": 2,
+		"food": 2,
+		"production": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be on [River]"],
+		"requiredTech": "The Wheel"
+	},
+	*/
+	{
+		"name": "The Hivemaw",
+		"culture": 3,
+		"isWonder": true,
+		"cost": 185,
+		"greatPersonPoints": {"production": 1},
+		"uniques": ["+[10]% growth in all cities", "+[15]% Production when constructing [ranged units]"],
+		"requiredTech": "Bio-Weapons",
+		"quote": "'The hunger of the hive is manifested into physical form, spewing forth acids from which biomass is absorbed and new spitters are made.'"
+	},
+	{
+		"name": "Bio-Barrier",
+		"cityStrength": 0,
+		"cityHealth": 100,
+		"hurryCostModifier": 25,
+		"requiredTech": "Bio-Structures"
+	},
+	{
+		"name": "The Nest",
+		"culture": 3,
+		"greatPersonPoints": {"production": 1},
+		"isWonder": true,
+		"uniques": ["Worker construction increased 25%","Provides 2 free workers"],
+		"requiredTech": "Bio-Structures",
+		"quote": "'The structure acted as a hyper-efficient birthing device for menial drones, producing new workers at unparalleled rates.'"
+	},
+	{
+		"name": "Gestation Pod",
+		"xpForNewUnits": 15,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Mineral Adaptations"
+	},
+	/*
+	{
+		"name": "Colossus",
+		"culture": 3,
+		"gold": 5,
+		"greatPersonPoints": {"gold": 1},
+		"isWonder": true,
+		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles in this city"],
+		"requiredTech": "Iron Working",
+		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+	},
+	*/
+	{
+		"name": "The Eye",
+		"culture": 1,
+		"isWonder": true,
+		"uniques": ["+15% Combat Strength for all units when attacking Cities"],
+		"requiredTech": "Mineral Adaptations",
+		"quote": "'The beasts gazed into the orb, which reflected their instincts back upon them twofold, and suddenly they had become predators of nightmarish determination.'"
+	},
+	{
+		"name": "The Vault",
+		"culture": 3,
+		"greatPersonPoints": {"gold": 1},
+		"isWonder": true,
+		"uniques": ["Provides a sum of gold each time you spend a Great Person","[+2 Gold] from [Marble] tiles in this city", "[+2 Gold] from [Stone] tiles in this city"],
+		"requiredTech": "Bio-Structures",
+		"quote": "'Within its fleshing walls lay untold millions of valuables, stored safely for future use by the hive.'"
+	}
+]

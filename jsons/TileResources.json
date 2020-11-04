@@ -1,0 +1,310 @@
+[	
+	// Bonus resources
+	{
+		"name": "Slave-Beasts",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland"],
+		"food": 1,
+		"improvement": "Harvesting Grounds",
+		"improvementStats": {"production": 1},
+		"building": "Storage Nest"
+	},
+	{
+		"name": "Prey-Beasts",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Hill"],
+		"food": 1,
+		"improvement": "Harvesting Grounds",
+		"improvementStats": {"food": 1},
+		"building": "Storage Nest"
+	},
+	{
+		"name": "Hunt-Beasts",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Forest","Tundra"],
+		"food": 1,
+		"improvement": "Hunting Grounds",
+		"improvementStats": {"production": 1},
+		"building": "Storage Nest"
+	},
+	{
+		"name": "Fruit",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Jungle"],
+		"food": 1,
+		"improvement": "Growing District",
+		"improvementStats": {"food": 2,"production": -1},
+		"building": "Storage Nest"
+	},
+	{
+		"name": "Sprouting Vegetation",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"],
+		"food": 1,
+		"improvement": "Biomass District",
+		"improvementStats": {"food": 1},
+		"building": "Storage Nest"
+	},
+	{
+		"name": "Stone",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Snow"],
+		"production": 1,
+		"improvement": "Ingestion District",
+		"improvementStats": {"production": 1},
+		"building": "Psionic Monolith"
+	},
+	{
+		"name": "Fish",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"improvement": "Hunting Grounds (Ocean)",
+		"improvementStats": {"food": 1},
+		"building": "Storage Nest"
+	},
+	/*
+	{
+		"name": "Bison",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Grassland"],
+		"food": 1,
+		"improvement": "Hunting Grounds",
+		"improvementStats": {"food": 1},
+		"building": "Storage Nest"
+	},
+	*/
+	
+	// Strategic resources
+	{
+		"name": "Wildlife",
+		"resourceType": "Strategic",
+		"revealedBy": "Gene Harvesting",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill","Desert"],
+		"production": 1,
+		"improvement": "Harvesting Grounds",
+		"improvementStats": {"production": 1},
+		//"building": "Stable"
+	},
+	{
+		"name": "Iron",
+		"resourceType": "Strategic",
+		//"revealedBy": "Iron Working",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill"],
+		"production": 1,
+		"improvement": "Mineral District",
+		"improvementStats": {"production": 1},
+		"building": "Psionic Monolith"
+	},
+	{
+		"name": "Coal",
+		"resourceType": "Strategic",
+		//"revealedBy": "Industrialization",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill"],
+		"production": 1,
+		"improvement": "Mineral District",
+		"improvementStats": {"production": 2}
+	},
+	{
+		"name": "Oil",
+		"resourceType": "Strategic",
+		//"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"],
+		"production": 1,
+		"improvement": "Ingestion District",
+		"improvementStats": {"production": 3}
+	},
+	{
+		"name": "Aluminum",
+		"resourceType": "Strategic",
+		//"revealedBy": "Electricity",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Tundra","Hill"],
+		"production": 1,
+		"improvement": "Mineral District",
+		"improvementStats": {"production": 2}
+	},
+	{
+		"name": "Uranium",
+		"resourceType": "Strategic",
+		//"revealedBy": "Atomic Theory",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Tundra","Hill","Snow","Forest","Desert","Marsh","Grassland"],
+		"production": 1,
+		"improvement": "Mineral District",
+		"improvementStats": {"production": 2}
+	},
+	
+	// Luxury resources
+	{
+		"name": "Furs",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Tundra"],
+		"gold": 2,
+		"improvement": "Hunting Grounds",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Cotton",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Dyes",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Gems",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Grassland","Plains","Desert","Tundra","Hill"],
+		"gold": 3,
+		"improvement": "Mineral District",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Gold",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Hill"],
+		"gold": 2,
+		"improvement": "Mineral District",
+		"improvementStats": {"gold": 1},
+		//"building": "Mint"
+	},
+	{
+		"name": "Silver",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill"],
+		"gold": 2,
+		"improvement": "Mineral District",
+		"improvementStats": {"gold": 1},
+		//"building": "Mint"
+	},
+	{
+		"name": "Incense",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Desert"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1},
+		//"building": "Monastery"
+	},
+	{
+		"name": "Ivory",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains"],
+		"gold": 2,
+		"improvement": "Hunting Grounds",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Silk",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Spices",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Wine",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Plains"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1},
+		//"building": "Monastery"
+	},
+	{
+		"name": "Sugar",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Grassland","Marsh"],
+		"gold": 2,
+		"improvement": "Growing District",
+		"improvementStats": {"gold": 1}
+	},
+	{
+		"name": "Marble",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Plains","Tundra","Hill","Grassland"],
+		"gold": 2,
+		"improvement": "Ingestion District",
+		"improvementStats": {"gold": 1,"production": 1},
+		"unique": "+15% production towards Wonder construction",
+		"building": "Psionic Monolith"
+	},
+	{
+		"name": "Whales",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"gold": 1,
+		"improvement": "Hunting Grounds (Ocean)",
+		"improvementStats": {"food": 1}
+	},
+	{
+		"name": "Pearls",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"gold": 2,
+		"improvement": "Hunting Grounds (Ocean)",
+		"improvementStats": {"food": 1}
+	}
+	/*
+	{
+		"name": "Citrus",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Grassland"],
+		"food": 1,
+		"gold": 1,
+		"improvement": "Growing District",
+		"improvementStats": {"food": 1,"gold": 1},
+		"building": "Storage Nest"
+	},
+	{
+		"name": "Copper",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Desert","Tundra","Snow"],
+		"gold": 2,
+		"improvement": "Mineral District",
+		"improvementStats": {"gold": 2}
+	},
+	{
+		"name": "Cocoa",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle"],
+		"food": 1,
+		"gold": 1,
+		"improvement": "Growing District",
+		"improvementStats": {"food": 1,"gold": 1}
+	},
+	{
+		"name": "Crab",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"gold": 1,
+		"improvement": "Hunting Grounds (Ocean)",
+		"improvementStats": {"food": 1,"gold": 1},
+	},
+	{
+		"name": "Truffles",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Forest","Marsh","Jungle"],
+		"gold": 2,
+		"improvement": "Hunting Grounds",
+		"improvementStats": {"gold": 2}
+	},
+	*/
+]

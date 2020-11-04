@@ -1,0 +1,135 @@
+[
+	{
+		"name": "Rak'tar",
+		"leaderName": "The Swarmlord",
+		"adjective": ["Rak'tar"],
+		"startBias": ["Grassland"],
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "The Rak'tar Swarm was one of the first minds to emerge on the surface of Vartrex Prime, where it quickly proved its worth, wiping out lineages and devouring hives wherever they went. Their strength lies in their ability to produce massive swarms that are easily capable of outpowering less combat-oriented hives.",
+		"startIntroPart2": "Will you, great and mighty Swarmlord, epicentre of the Rak'tar hive, bring your hive to feast upon the weak? Will you build a hive that stands the test of time?",
+
+		"declaringWar": "Hunger growing... must feed...",
+		"attacked": "Prey fights... we fight back...",
+		"defeated": "Prey too strong for Rak'tar... our hunger cannot be satiated now...",
+		"introduction": "Prey speaks...? Is futile...",
+
+		"neutralHello": "Prey...",
+		"neutralLetsHearIt": ["..."],
+		"neutralNo": ["..."],
+		"neutralYes": ["Prey is weak... we will exploit..."],
+
+		"hateHello": "Prey...",
+		"hateLetsHearIt": ["..."],
+		"hateNo": ["Is futile...", "..."],
+		"hateYes": ["Grow strong... then feast..."],
+
+		"afterPeace": "Prey strong... we grow before next hunt...",
+		"tradeRequest": "Prey listens... does it accept?",
+
+		"outerColor": [0, 255, 0],
+		"innerColor": [32, 64, 32],
+		"uniqueName": "Will of the Swarm",
+		"uniques": ["New [military] units start with [30] Experience", "[+1 Happiness, -1 Culture] per [1] population in all cities", "Unhappiness from population decreased by [100]%"],
+		"cities": ["Rak'tar Swarm", "Swarm Hive 01", "Swarm Hive 02", "Swarm Hive 03", "Swarm Hive 04", "Swarm Hive 05"
+		]
+	},
+	{
+		"name": "Kezit",
+		"leaderName": "Overmind",
+		"adjective": ["Kezit"],
+		"startBias": ["Desert"],
+		"preferredVictoryType": "Scientific",
+
+		"startIntroPart1": "The Kezit Overmind was one of the first minds to emerge on the surface of Vartrex Prime. It evolved at an unprecendented rate, quickly mastering its environment before turning its gaze upon the stars. Their strength lies in their enhanced synaptic web, which allows the hive mind to flawlessly gather information from its drones. The only downside to this trait is that drones that are separated from the main hive quickly grow uneasy due to the sudden lack of guidance.",
+		"startIntroPart2": "Will you, as the Overmind of Kezit, bring your hive to the stars? Will you build a hive that stands the test of time?",
+
+		"declaringWar": "Your existence is an anathema.",
+		"attacked": "Our mind is strong. We will fight back.",
+		"defeated": "Our synapse grows weak...",
+		"introduction": "We are the Kezit. We are legion.",
+
+		"neutralHello": "Communicate your purpose.",
+		"neutralLetsHearIt": ["..."],
+		"neutralNo": ["What you seek we cannot provide."],
+		"neutralYes": ["This would be beneficial to the Overmind."],
+
+		"hateHello": "You are not wanted here.",
+		"hateLetsHearIt": ["..."],
+		"hateNo": ["What you seek we cannot provide."],
+		"hateYes": ["This would be beneficial to the Overmind."],
+
+		"afterPeace": "We cannot continue this clash any longer.",
+		"tradeRequest": "Does this seem fit to your mind?",
+
+		"outerColor": [0, 255, 0],
+		"innerColor": [0, 0, 0],
+		"uniqueName": "Enhanced Synaptic Web",
+		"uniques": ["[+3 Science, +1 Happiness] from every specialist", "[+1 Science] per [1] population in all cities", "Unhappiness from number of Cities doubled"],
+		"cities": ["Kezit Overmind", "Overmind Synaptic Node 01", "Rak'tar Swarm Node 02", "Rak'tar Swarm Node 03", "Rak'tar Swarm Node 04", "Rak'tar Swarm Node 05"
+		]
+	},
+	//City-States
+	{
+		"name": "Sekari",
+		"adjective": ["Sekari"],
+		"cityStateType": "Maritime",
+		"declaringWar": "Sea is home. Protect at all costs.",
+		"attacked": "Enemy seeks to kill Sekari. We will not fall.",
+		"defeated": "Sekari sees its end. Enemy truly is strong.",
+		"uniques": ["Embarked units can defend themselves"],
+		"outerColor": [0, 0, 255],
+		"innerColor": [0, 0, 0],
+		"cities": ["Sekarian Hive"]
+	},
+	{
+		"name": "Kator",
+		"adjective": ["Katorian"],
+		"cityStateType": "Militaristic",
+		"declaringWar": "We wait. We watch. Now, we feast.",
+		"attacked": "You are no predator to us. We are strong.",
+		"defeated": "Perhaps our foe is stronger than we imagined.",
+		"uniques": ["-25% land units maintenance"],
+		"outerColor": [255, 0, 0],
+		"innerColor": [0, 0, 0],
+		"cities": ["Katorian Swarm"]
+	},
+	{
+		"name": "Venix",
+		"adjective": ["Venixian"],
+		"cityStateType": "Cultured",
+		"declaringWar": "Your existence is a threat to our mind.",
+		//"declaringWar": "The barrier between us and the spirit world is frail, and we must ensure it does not weaken any further. For that, there must be sacrifice.",
+		"attacked": "You are not worthy.",
+		"defeated": "You've earned your feast, but at what cost?",
+		"uniques": ["Earn [100]% of [military] opponent's [Strength] as [Culture] for kills"],
+		"outerColor": [0, 255, 0],
+		"innerColor": [0, 0, 0],
+		"cities": ["Venixian Collective"]
+	},
+	{
+		"name": "Zyxia",
+		"adjective": ["Zyxian"],
+		"cityStateType": "Mercantile",
+		"declaringWar": "We can no longer coexist.",
+		"attacked": "I see. Coexistence is futile, then.",
+		"defeated": "We wished for simple coexistence. Your hunger is too great to allow for that.",
+		"uniques": ["[+2 Culture, +2 Happiness] from each Trade Route"],
+		"outerColor": [128, 128, 128],
+		"innerColor": [0, 0, 0],
+		"cities": ["Zyxian Mind"]
+	},
+	
+	//Barbarians
+	{
+		"name": "Barbarians",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 0, 0]
+	},
+	
+	//Spectator
+	{
+		"name": "Spectator",
+		"outerColor": [255, 255, 255]
+	}
+]

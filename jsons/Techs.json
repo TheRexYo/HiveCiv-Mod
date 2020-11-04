@@ -1,0 +1,101 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Ancient era",
+		"techCost": 20,
+		"buildingCost": 40,
+		"techs": [
+			{
+				"name": "Hive Mind",
+				"row": 5,
+				"quote": "'With minds united, they looked to the stars.'",
+				"uniques": ["Starting tech"]
+			}
+		]	
+	},
+	{
+		"columnNumber": 1,
+		"era": "Ancient era",
+		"techCost": 35, 
+		"buildingCost": 60,
+		"techs": [
+			{
+				"name": "Storage Organisms",
+				"row": 2,
+				"prerequisites": ["Hive Mind"],
+				"quote": "'Many strange organisms lined the walls of the nest, each holding a curious liquid.'"
+			},
+			{
+				"name": "Gene Harvesting",
+				"row": 5,
+				"prerequisites": ["Hive Mind"],
+				"quote": "'Through our own enemies we will grow strong.'"
+			},
+			{
+				"name": "Bio-Weapons",
+				"row": 7,
+				"prerequisites": ["Hive Mind"],
+				"quote": "'The acid coursed through the creatures mouth, and was then promptly let loose upon the enemy.'"
+			},
+			{
+				"name": "Mineral Ingestion",
+				"row": 9,
+				"prerequisites": ["Hive Mind"],
+				"quote": "'Even the earth itself is fuel to their hunger, its minerals serving a purpose yet unknown.'"
+			}
+			
+		]	
+	}
+	//,
+	{
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 55, 
+		"buildingCost": 75,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Aquatic Adaptations",
+				"row": 1,
+				"prerequisites": ["Gene Harvesting"],
+				"quote": "'He who commands the sea has command of everything.' - Themistocles"
+			},
+			{
+				"name": "Chronostasis",
+				"row": 2,
+				"prerequisites": ["Storage Organisms"],
+				"quote": "'Our mind has no need to fear time, for it has taken every measure to protect itself from deteriorating.'"
+			},
+			{
+				"name": "Synaptic Structures",
+				"row": 3,
+				"prerequisites": ["Storage Organisms"],
+				"quote": "'There were strange devices built into the hive's walls, which were thought to have boosted its mental capacity.'"
+			},
+			{
+				"name": "Counteradaptation",
+				"row": 5,
+				"prerequisites": ["Gene Harvesting"],
+				"quote": "'Using the genes they absorbed from previous kills, the creatures became perfectly adapted to hunt their prey.'"
+			},
+			{
+				"name": "Titanic Weaponry",
+				"row": 7,
+				"prerequisites": ["Gene Harvesting", "Bio-Weapons"],
+				"quote": "'As the hordes of smaller creatures pushed deep into the enemy territory, the larger beasts stayed behind to unleash hell upon their foes from a safe distance.'"
+			},
+			{
+				"name": "Bio-Structures",
+				"row": 9,
+				"prerequisites": ["Mineral Ingestion"],
+				"quote": "'The hive's lair was surrounded by rudimentary structures, a paradise of flesh and chitin that prevented any chance of invasion.'"
+			},
+			{
+				"name": "Mineral Adaptations",
+				"row": 10,
+				"prerequisites": ["Mineral Ingestion"],
+				"quote": "'The beasts' arms glimmered in the moonlight, revealing the metallic nature of its weaponry.'"
+			}			
+		]	
+	}
+]

@@ -1,0 +1,149 @@
+[
+	{
+		"name": "Biomass District",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Hive Mind",
+		"uniques": ["Can also be built on tiles adjacent to fresh water"]
+	},
+	/*
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Hive Mind",
+		"uniques": ["Can also be built on tiles adjacent to fresh water", "[+1 Food] on [fresh water] tiles once [Civil Service] is discovered", "[+1 Food] on [non-fresh water] tiles once [Fertilizer] is discovered"],
+	},
+	*/
+	{
+		"name": "Mineral District",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Mineral Ingestion"
+	},
+	{
+		"name": "Growing District",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Storage Organisms"
+	},
+	
+	// Resource-specific
+	{
+		"name": "Hunting Grounds",
+		"resourceTerrainAllow": ["Forest"],
+		"turnsToBuild": 7,
+		"techRequired": "Counteradaptation"
+	},
+	{
+		"name": "Harvesting Grounds",
+		"turnsToBuild": 8,
+		"techRequired": "Gene Harvesting"
+	},
+	{
+		"name": "Ingestion District",
+		"turnsToBuild": 8,
+		"techRequired": "Bio-Structures"
+	},
+	{
+		"name": "Hunting Grounds (Ocean)",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"food": 1,
+		"techRequired": "Aquatic Adaptations"
+	},
+
+	// Military improvement
+
+	// Transportation
+	{
+		"name": "Road",
+		"turnsToBuild": 4,
+		"techRequired": "Mineral Ingestion",
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "R"
+	},
+	{
+		"name": "Railroad",
+		"turnsToBuild": 4,
+		"techRequired": "Bio-Structures",
+		"uniques": ["Can be built outside your borders"]
+	},
+	
+	// Removals
+	{
+		"name": "Remove Forest",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Forest"],
+		"techRequired": "Mineral Ingestion",
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Jungle",
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Jungle"],
+		"techRequired": "Mineral Adaptations",
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Marsh",
+		"turnsToBuild": 6,
+		"terrainsCanBeBuiltOn": ["Marsh"],
+		"techRequired": "Mineral Adaptations",
+		"uniques": ["Can be built outside your borders"]
+	},
+
+	// These are unique and have unique in-game checks related to them
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Railroad",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Cancel improvement order",
+		"uniques": ["Can be built outside your borders"]
+	},
+	
+	// Great Person improvements
+	{
+		"name": "Science Nexus",
+		"science": 8,
+		"uniques": ["Great Improvement"]
+		// in Gods & Kings academy will also have "[+2 Science] once [Atomic Theory] is discovered"
+	},
+	{
+		"name": "Mind Nexus",
+		"culture": 8,
+		"uniques": ["Great Improvement"]
+	},
+	{
+		"name": "Production Nexus",
+		"production": 8,
+		"uniques": ["Great Improvement"]
+	},
+	{
+		"name": "Material Nexus",
+		"gold": 4,
+		"uniques": ["Great Improvement"]
+	},
+	{
+		"name": "Defensive Nexus",
+		"uniques": ["Gives a defensive bonus of [100]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]
+	},
+
+	//Civilization unique improvements
+	
+	//Misc
+	
+	{ "name": "Ancient ruins" },
+	{ "name": "City ruins" },
+	{ "name": "Barbarian encampment" }
+]
