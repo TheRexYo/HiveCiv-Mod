@@ -43,10 +43,8 @@
 				"prerequisites": ["Hive Mind"],
 				"quote": "'Even the earth itself is fuel to their hunger, its minerals serving a purpose yet unknown.'"
 			}
-			
 		]	
-	}
-	//,
+	},
 	{
 		"columnNumber": 2,
 		"era": "Ancient era",
