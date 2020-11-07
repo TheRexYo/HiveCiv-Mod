@@ -30,7 +30,7 @@
 		"outerColor": [0, 255, 0],
 		"innerColor": [32, 64, 32],
 		"uniqueName": "Will of the Swarm",
-		"uniques": ["New [military] units start with [30] Experience", "[+1 Happiness, -1 Culture] per [1] population in all cities", "Unhappiness from population decreased by [100]%"],
+		"uniques": ["[-1 Culture] per [1] population in all cities", "Unhappiness from population decreased by [100]%", "+[100]% Production when constructing [military units]"],
 		"cities": ["Rak'tar Swarm", "Swarm Hive 01", "Swarm Hive 02", "Swarm Hive 03", "Swarm Hive 04", "Swarm Hive 05"
 		]
 	},

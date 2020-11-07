@@ -121,10 +121,104 @@
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
+
 	// Nation Uniques
-	
+	{
+		"name": "Rak'tar Swarm Drone",
+		"uniqueTo": "Rak'tar",
+		"replaces": "Soldier Drone",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 8,
+		"cost": 10,
+		"hurryCostModifier": 20,
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Scythe Bioform",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Kezit Catalyst Drone",
+		"uniqueTo": "Kezit",
+		"replaces": "Synapse Drone",
+		"unitType": "Civilian",
+		"uniques": ["Can start an 8-turn golden age","Bonus for units in 2 tile radius 15%","Bonus for units in 2 tile radius 15%","Bonus for units in 2 tile radius 15%","Bonus for units in 2 tile radius 15%"],
+		"cost": 140,
+		"hurryCostModifier": 20,
+		"movement": 1
+	},
+
 	//City-State Uniques
-	
+	{
+		"name": "Sekari Shellwalker",
+		"uniqueTo": "Sekari",
+		"replaces": "Soldier Drone",
+		"unitType": "Melee",
+		"movement": 1,
+		"strength": 14,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		//"requiredTech": "",
+		//"requiredResource": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"uniques": [""],
+		"promotions": ["Reflective Carapace"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Katorian Tunneler",
+		"uniqueTo": "Kator",
+		"replaces": "Warbeast",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 9,
+		"cost": 55,
+		"hurryCostModifier": 20,
+		//"requiredTech": "",
+		//"requiredResource": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		"uniques": ["Invisible to others"],
+		"promotions": ["Bio-Static Spines"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Venixian Mind-Eater",
+		"uniqueTo": "Venix",
+		"replaces": "Impaler",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 11,
+		"cost": 55,
+		"requiredTech": "Mineral Adaptations",
+		//"requiredTech": "",
+		//"requiredResource": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		"uniques": ["Bonus vs Mounted 50%","Can move after attacking"],
+		"promotions": ["Feeding Tendrils"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Zyxian Shrieker",
+		"uniqueTo": "Zyxia",
+		"replaces": "Spitter Bioform",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 1,
+		"range": 1,
+		"rangedStrength": 12,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"requiredTech": "Bio-Weapons",
+		"uniques": ["+[100]% Strength when attacking"],
+		"promotions": ["Supersonic Vibrations"],
+		//"obsoleteTech": "Machinery",
+		//"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+
 	//Barbarian Uniques
 	{
 		"name": "Rogue Drone",

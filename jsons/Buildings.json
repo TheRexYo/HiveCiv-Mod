@@ -127,7 +127,7 @@
 	*/
 	{
 		"name": "The Eye",
-		"culture": 1,
+		"culture": 3,
 		"isWonder": true,
 		"uniques": ["+15% Combat Strength for all units when attacking Cities"],
 		"requiredTech": "Mineral Adaptations",

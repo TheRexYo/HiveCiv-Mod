@@ -51,7 +51,7 @@
 	},
 	{
 		"name": "Extended Range",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II", "Wolfpack II"],
+		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II", "Breach II"],
 		"effect": "+1 Range",
 		"unitTypes": ["Ranged","Siege","WaterRanged","WaterSubmarine"]
 	},
@@ -136,14 +136,14 @@
 		"unitTypes": ["Melee"]
 	},
 	{
-		"name": "Medic",
+		"name": "Medical Dronesal Drones",
 		"prerequisites": ["Shock I", "Drill I", "Scouting II"],
 		"effect": "This unit and all others in adjacent tiles heal 5 additional HP per turn",
 		"unitTypes": ["Melee","Mounted","Scout"]
 	},
 	{
-		"name": "Medic II",
-		"prerequisites": ["Medic"],
+		"name": "Medical Dronesal Drones II",
+		"prerequisites": ["Medical Drones"],
 		"effect": "This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory.",
 		"unitTypes": ["Melee","Mounted","Scout"]
 	},
@@ -170,19 +170,19 @@
 	
 	// Water melee
 	{
-		"name": "Boarding Party I",
+		"name": "Boarding Drones I",
 		"effect": "Bonus vs water units 15%",
 		"unitTypes": ["WaterMelee"]
 	},
 	{
-		"name": "Boarding Party II",
-		"prerequisites": ["Boarding Party I"],
+		"name": "Boarding Drones II",
+		"prerequisites": ["Boarding Drones I"],
 		"effect": "Bonus vs water units 15%",
 		"unitTypes": ["WaterMelee"]
 	},
 	{
-		"name": "Boarding Party III",
-		"prerequisites": ["Boarding Party II"],
+		"name": "Boarding Drones III",
+		"prerequisites": ["Boarding Drones II"],
 		"effect": "Bonus vs water units 15%",
 		"unitTypes": ["WaterMelee"]
 	},
@@ -207,19 +207,19 @@
 	
 	// Submarine
 	{
-		"name": "Wolfpack I",
+		"name": "Breach I",
 		"effect": "Bonus as Attacker [25]%",
 		"unitTypes": ["WaterSubmarine"]
 	},
 	{
-		"name": "Wolfpack II",
-		"prerequisites": ["Wolfpack I"],
+		"name": "Breach II",
+		"prerequisites": ["Breach I"],
 		"effect": "Bonus as Attacker [25]%",
 		"unitTypes": ["WaterSubmarine"]
 	},
 	{
-		"name": "Wolfpack III",
-		"prerequisites": ["Wolfpack II"],
+		"name": "Breach III",
+		"prerequisites": ["Breach II"],
 		"effect": "Bonus as Attacker [25]%",
 		"unitTypes": ["WaterSubmarine"]
 	},
@@ -243,19 +243,19 @@
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
-		"name": "Flight Deck I",
+		"name": "Capacity I",
 		"effect": "Can carry 1 extra air unit",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
-		"name": "Flight Deck II",
-		"prerequisites": ["Flight Deck I"],
+		"name": "Capacity II",
+		"prerequisites": ["Capacity I"],
 		"effect": "Can carry 1 extra air unit",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
-		"name": "Flight Deck III",
-		"prerequisites": ["Flight Deck II"],
+		"name": "Capacity III",
+		"prerequisites": ["Capacity II"],
 		"effect": "Can carry 1 extra air unit",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
@@ -324,20 +324,20 @@
 	*/
 	
 	{
-		"name": "Sortie",
+		"name": "Rebound",
 		"prerequisites": ["Interception II", "Dogfighting II"],
 		"effect": "1 extra Interception may be made per turn",
 		"unitTypes": ["Fighter"]
 	},
 	
 	{
-		"name": "Operational Range",
+		"name": "Strike Distance",
 		"prerequisites": ["Interception I", /*"Dogfighting I",*/ "Siege I", "Bombardment I"],
 		"effect": "+2 Range",
 		"unitTypes": ["Fighter","Bomber"]
 	},
 	{
-		"name": "Air Repair",
+		"name": "Repair Drones",
 		"prerequisites": ["Interception II", /*"Dogfighting II",*/ "Siege II", "Bombardment II"],
 		"effect": "Unit will heal every turn, even if it performs an action",
 		"unitTypes": ["Fighter","Bomber"]
@@ -357,41 +357,47 @@
 	},
 	
 	{
-		"name": "March",
+		"name": "Foraging Drones",
 		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
 		"effect": "Unit will heal every turn, even if it performs an action",
 		"unitTypes": ["Melee","Ranged","Siege","Mounted"]
 	},
 	{
-		"name": "Mobility",
+		"name": "Agility",
 		"prerequisites": ["Shock II","Drill II","Targeting I",
-			"Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],
+			"Bombardment I","Boarding Drones I", "Coastal Raider I", "Breach I"],
 		"effect": "+1 Movement",
 		"unitTypes": ["Mounted","WaterMelee","WaterRanged","Armor","WaterSubmarine"]
 	},
 	{
-		"name": "Sentry",
-		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
+		"name": "Sentry Drones",
+		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Bombardment I","Targeting I","Boarding Drones I","Coastal Raider I"],
 		"effect": "+1 Visibility Range",
 		"unitTypes": ["Melee","Mounted","WaterRanged","Armor","WaterMelee"]
 	},
 	{
-		"name": "Logistics",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
-			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III"],
+		"name": "Weapon Symbionts",
+		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Breach III",
+			"Bombardment III", "Coastal Raider III","Boarding Drones III","Siege III"],
 		"effect": "1 additional attack per turn",
 		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]
 	},
 	
 	{
 		"name": "Ambush I",
-		"effect": "Bonus vs Armor 25%",
+		"effect": "+[10]% Strength when attacking",
 		"unitTypes": ["Melee","Fighter","Bomber"]
 	},
 	{
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
-		"effect": "Bonus vs Armor 25%",
+		"effect": "+[20]% Strength when attacking",
+		"unitTypes": ["Melee","Fighter","Bomber"]
+	},
+	{
+		"name": "Ambush III",
+		"prerequisites": ["Ambush II"],
+		"effect": "+[30]% Strength when attacking",
 		"unitTypes": ["Melee","Fighter","Bomber"]
 	},
 	
@@ -441,32 +447,31 @@
 	},
 	
 	// Uniques
+	
+	// Sekari Shellwalker (unit and upgrades)
 	{
-		"name": "Haka War Dance", // only for Maori Warrior and subsequent upgrades
+		"name": "Reflective Carapace",
+		"effect": "Bonus vs Ranged 100%"
+	},
+	// Katorian Tunneler (unit and upgrades)
+	{
+		"name": "Bio-Static Spines",
 		"effect": "-10% combat strength for adjacent enemy units"
 	},
+	// Venixian Mind-Eater (unit and upgrades)
 	{
-		"name": "Keepers of the Empire", // only for Homewatcher and subsequent upgrades
-		"effect": "Can build improvements on tiles"
+		"name": "Feeding Tendrils",
+		"effect": "Heals [100] damage if it kills a unit"
 	},
+	// Zyxian Shrieker (unit and upgrades)
 	{
-		"name": "Defenders of the Empire", // only for Homewatcher and subsequent upgrades
-		"effect": "+25% Combat Bonus when defending"
+		"name": "Supersonic Vibrations",
+		"effect": "Bonus vs City 500%"
 	},
+	
+	//Special
 	{
 		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth
 		"effect": "All healing effects doubled"
-	},
-	{
-		"name": "Blessing Of The Sun", // only for units built in cities with "Spawn Pools of the Sun"
-		"effect": "All healing effects doubled"
-	},
-	{
-		"name": "Blessing Of The Jungle", // only for units built in cities with "Spawn Pools of the Jungle
-		"effect": "Double movement rate through Forest and Jungle"
-	},
-	{
-		"name": "Slinger Withdraw", // only for Slinger and subsequent upgrades
-		"effect": "May withdraw before melee ([133]%)"
 	}
 ]
