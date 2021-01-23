@@ -21,9 +21,15 @@
 		"techs": [
 			{
 				"name": "Storage Organisms",
-				"row": 2,
+				"row": 1,
 				"prerequisites": ["Hive Mind"],
 				"quote": "'Many strange organisms lined the walls of the nest, each holding a curious liquid.'"
+			},
+			{
+				"name": "Introspection",
+				"row": 3,
+				"prerequisites": ["Hive Mind"],
+				"quote": "'We think. Therefore, we are.'"
 			},
 			{
 				"name": "Gene Harvesting",
@@ -53,44 +59,56 @@
 		"wonderCost": 185,
 		"techs": [
 			{
-				"name": "Aquatic Adaptations",
+				"name": "Stockpiling Instincts",
 				"row": 1,
-				"prerequisites": ["Gene Harvesting"],
-				"quote": "'He who commands the sea has command of everything.' - Themistocles"
+				"prerequisites": ["Storage Organisms"],
+				"quote": "'By forcing itself to store excess materials instead of using them, the hive was able to prepare itself for otherwise lethal shortages.'"
 			},
 			{
 				"name": "Chronostasis",
 				"row": 2,
-				"prerequisites": ["Storage Organisms"],
+				"prerequisites": ["Storage Organisms","Introspection"],
 				"quote": "'Our mind has no need to fear time, for it has taken every measure to protect itself from deteriorating.'"
 			},
 			{
 				"name": "Synaptic Structures",
 				"row": 3,
-				"prerequisites": ["Storage Organisms"],
+				"prerequisites": ["Introspection"],
 				"quote": "'There were strange devices built into the hive's walls, which were thought to have boosted its mental capacity.'"
 			},
 			{
 				"name": "Counteradaptation",
+				"row": 4,
+				"prerequisites": ["Gene Harvesting","Introspection"],
+				"quote": "'Using the genes absorbed from previous kills, the mind made its drones into specialized killers that were perfectly adapted for hunting their prey.'"
+			},
+			{
+				"name": "Aquatic Adaptations",
 				"row": 5,
 				"prerequisites": ["Gene Harvesting"],
-				"quote": "'Using the genes they absorbed from previous kills, the creatures became perfectly adapted to hunt their prey.'"
+				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
 			{
 				"name": "Titanic Weaponry",
-				"row": 7,
-				"prerequisites": ["Gene Harvesting", "Bio-Weapons"],
+				"row": 6,
+				"prerequisites": ["Gene Harvesting","Bio-Weapons"],
 				"quote": "'As the hordes of smaller creatures pushed deep into the enemy territory, the larger beasts stayed behind to unleash hell upon their foes from a safe distance.'"
 			},
 			{
+				"name": "Symbiotic Weaponry",
+				"row": 7,
+				"prerequisites": ["Bio-Weapons"],
+				"quote": "'Gouts of acid bore down on the unsuspecting targets, hitting with unerring accuracy. The beast and its weapons were as one; a single living, breathing weapon.'"
+			}
+			{
 				"name": "Bio-Structures",
-				"row": 9,
-				"prerequisites": ["Mineral Ingestion"],
+				"row": 8,
+				"prerequisites": ["Mineral Ingestion","Bio-Weapons"],
 				"quote": "'The hive's lair was surrounded by rudimentary structures, a paradise of flesh and chitin that prevented any chance of invasion.'"
 			},
 			{
 				"name": "Mineral Adaptations",
-				"row": 10,
+				"row": 9,
 				"prerequisites": ["Mineral Ingestion"],
 				"quote": "'The beasts' arms glimmered in the moonlight, revealing the metallic nature of its weaponry.'"
 			}			

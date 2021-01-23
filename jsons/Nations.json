@@ -6,13 +6,13 @@
 		"startBias": ["Grassland"],
 		"preferredVictoryType": "Domination",
 
-		"startIntroPart1": "The Rak'tar Swarm was one of the first minds to emerge on the surface of Vartrex Prime, where it quickly proved its worth, wiping out lineages and devouring hives wherever they went. Their strength lies in their ability to produce massive swarms that are easily capable of outpowering less combat-oriented hives.",
+		"startIntroPart1": "The Rak'tar Swarm was one of the first minds to emerge on the surface of Vartrex Prime, where it quickly proved its worth, wiping out lineages and devouring hives wherever they went. Their strength lies in their ability to produce massive swarms that are easily capable of outpowering less combat-oriented hives, yet the basal nature of their mind makes it almost impossible for them to adopt new thought processes.",
 		"startIntroPart2": "Will you, great and mighty Swarmlord, epicentre of the Rak'tar hive, bring your hive to feast upon the weak? Will you build a hive that stands the test of time?",
 
 		"declaringWar": "Hunger growing... must feed...",
 		"attacked": "Prey fights... we fight back...",
 		"defeated": "Prey too strong for Rak'tar... our hunger cannot be satiated now...",
-		"introduction": "Prey speaks...? Is futile...",
+		"introduction": "Prey speaks...? Is futile... Rak'tar grow hungry...",
 
 		"neutralHello": "Prey...",
 		"neutralLetsHearIt": ["..."],
@@ -27,8 +27,8 @@
 		"afterPeace": "Prey strong... we grow before next hunt...",
 		"tradeRequest": "Prey listens... does it accept?",
 
-		"outerColor": [0, 255, 0],
-		"innerColor": [32, 64, 32],
+		"outerColor": [255, 0, 0],
+		"innerColor": [0, 0, 0],
 		"uniqueName": "Will of the Swarm",
 		"uniques": ["[-1 Culture] per [1] population in all cities", "Unhappiness from population decreased by [100]%", "+[100]% Production when constructing [military units]"],
 		"cities": ["Rak'tar Swarm", "Swarm Hive 01", "Swarm Hive 02", "Swarm Hive 03", "Swarm Hive 04", "Swarm Hive 05"
@@ -47,7 +47,7 @@
 		"declaringWar": "Your existence is an anathema.",
 		"attacked": "Our mind is strong. We will fight back.",
 		"defeated": "Our synapse grows weak...",
-		"introduction": "We are the Kezit. We are legion.",
+		"introduction": "We are Kezit. We are legion.",
 
 		"neutralHello": "Communicate your purpose.",
 		"neutralLetsHearIt": ["..."],
@@ -66,9 +66,45 @@
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Enhanced Synaptic Web",
 		"uniques": ["[+3 Science, +1 Happiness] from every specialist", "[+1 Science] per [1] population in all cities", "Unhappiness from number of Cities doubled"],
-		"cities": ["Kezit Overmind", "Overmind Synaptic Node 01", "Rak'tar Swarm Node 02", "Rak'tar Swarm Node 03", "Rak'tar Swarm Node 04", "Rak'tar Swarm Node 05"
+		"cities": ["Kezit Overmind", "Overmind Synaptic Node 01", "Overmind Synaptic Node 02", "Overmind Synaptic Node 03", "Overmind Synaptic Node 04", "Overmind Synaptic Node 05"
 		]
 	},
+	{
+		"name": "Int'uu",
+		"leaderName": "Unity",
+		"adjective": ["Int'uu"],
+		"startBias": ["Forest"],
+		"preferredVictoryType": "Cultural",
+
+		"startIntroPart1": "The Int'uu Unity was one of the first minds to emerge on the surface of Vartrex Prime. While its drones grew slower than the other minds of its time, its true strength laid in its highly introspective nature. Where other minds took to warfare and evolution to outpace each other, the Int'uu Unity kept to itself, growing powerful psionic capabilities and rapidly developing itself, often to the detriment of its drones. The Mind's primitive instincts of selfishness lead it to utilize a single 'Queen' as its focal point.",
+		"startIntroPart2": "Will you, as the Int'uu Unity, bring your mind to true perfection? Will you build a hive that stands the test of time?",
+
+		"declaringWar": "We cannot afford to leave you be any longer.",
+		"attacked": "We will never break.",
+		"defeated": "So close...",
+		"introduction": "We are Int'uu; the closest to perfection. How does it feel to be in our presence?",
+
+		"neutralHello": "Gaze upon perfection.",
+		"neutralLetsHearIt": ["Continue..."],
+		"neutralNo": ["This is pointless."],
+		"neutralYes": ["We accept."],
+
+		"hateHello": "Imperfection has again come to stain our hive.",
+		"hateLetsHearIt": ["Continue..."],
+		"neutralNo": ["This is pointless."],
+		"neutralYes": ["We accept."],
+
+		"afterPeace": "This fighting has grown stale.",
+		"tradeRequest": "Does this seem fit to your mind?",
+
+		"outerColor": [0, 0, 225],
+		"innerColor": [0, 0, 0],
+		"uniqueName": "Introspective Mind",
+		"uniques": ["Unhappiness from population decreased by [-100]%", "[+1 Culture] per [1] population in all cities", "[+5 Culture] in capital"],
+		"cities": ["Int'uu Unity", "Unity Hive 01", "Unity Hive 02", "Unity Hive 03", "Unity Hive 04", "Unity Hive 05"
+		]
+	},
+
 	//City-States
 	{
 		"name": "Sekari",
@@ -79,7 +115,7 @@
 		"defeated": "Sekari sees its end. Enemy truly is strong.",
 		"uniques": ["Embarked units can defend themselves"],
 		"outerColor": [0, 0, 255],
-		"innerColor": [0, 0, 0],
+		"innerColor": [0, 255, 0],
 		"cities": ["Sekarian Hive"]
 	},
 	{
@@ -91,7 +127,7 @@
 		"defeated": "Perhaps our foe is stronger than we imagined.",
 		"uniques": ["-25% land units maintenance"],
 		"outerColor": [255, 0, 0],
-		"innerColor": [0, 0, 0],
+		"innerColor": [0, 255, 0],
 		"cities": ["Katorian Swarm"]
 	},
 	{
@@ -103,7 +139,7 @@
 		"attacked": "You are not worthy.",
 		"defeated": "You've earned your feast, but at what cost?",
 		"uniques": ["Earn [100]% of [military] opponent's [Strength] as [Culture] for kills"],
-		"outerColor": [0, 255, 0],
+		"outerColor": [255, 0, 255],
 		"innerColor": [0, 0, 0],
 		"cities": ["Venixian Collective"]
 	},
@@ -116,13 +152,14 @@
 		"defeated": "We wished for simple coexistence. Your hunger is too great to allow for that.",
 		"uniques": ["[+2 Culture, +2 Happiness] from each Trade Route"],
 		"outerColor": [128, 128, 128],
-		"innerColor": [0, 0, 0],
+		"innerColor": [255, 255, 255],
 		"cities": ["Zyxian Mind"]
 	},
 	
 	//Barbarians
 	{
 		"name": "Barbarians",
+		"adjective": ["Rogue"],
 		"outerColor": [0, 0, 0],
 		"innerColor": [255, 0, 0]
 	},
