@@ -266,7 +266,7 @@
 	{
 		"name": "Zyxian Shrieker",
 		"uniqueTo": "Zyxia",
-		"replaces": "Spitter Bioform",
+		"replaces": "Spitter",
 		"unitType": "Ranged",
 		"movement": 2,
 		"strength": 1,
