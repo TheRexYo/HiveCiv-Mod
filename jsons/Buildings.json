@@ -12,11 +12,17 @@
 		"uniques": ["Indicates the capital city"]
 	},
 	{
-		"name": "Synaptic Node",
+		"name": "Psionic Node",
 		"culture": 2,
 		"cost": 40,
 		"hurryCostModifier": 40,
 		"maintenance": 1
+	},
+	{
+		"name": "Psionic Nexus",
+		"maintenance": 1,
+		"uniques": ["[+1 Culture] Per [2] Population in this city"],
+		"requiredTech": "Introspection"
 	},
 	{
 		"name": "Storage Nest", 
@@ -25,6 +31,14 @@
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"requiredTech": "Storage Organisms"
+	},
+	{
+		"name": "Biomass Pool", 
+		"food": 2,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Food] Per [2] Population in this city"],
+		"requiredTech": "Stockpiling Instincts"
 	},
 	{
 		"name": "Psionic Monolith", 
@@ -46,7 +60,7 @@
 		"quote": "'The moment it came into being, the stone shined vibrantly, and the hive mind was bombarded with ideas.'"
 	},
 	{
-		"name": "Synaptic Node",
+		"name": "Synaptic Nexus",
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"uniques": ["[+1 Science] Per [2] Population in this city"],

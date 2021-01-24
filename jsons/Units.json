@@ -13,7 +13,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 105,
-		"uniques": ["Founds a new city"],
+		"uniques": ["Founds a new city","Requires at least [2] population","Excess Food converted to Production when under construction"],
 		"hurryCostModifier": 20
 	},
 	{
@@ -22,6 +22,16 @@
 		"uniques": ["Can start an 8-turn golden age","Cannot be purchased"],
 		"cost": 280,
 		"hurryCostModifier": 20,
+		"requiredTech": "Introspection",
+		"movement": 1
+	},
+	{
+		"name": "Storage Drone",
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a wonder","Cannot be purchased"],
+		"cost": 150,
+		"hurryCostModifier": 20,
+		"requiredTech": "Stockpiling Instincts",
 		"movement": 1
 	},
 	{
@@ -40,12 +50,24 @@
 		"strength": 8,
 		"cost": 40,
 		"hurryCostModifier": 20,
-		//"obsoleteTech": "Metal Casting",
-		//"upgradesTo": "Scythe Bioform",
+		"obsoleteTech": "Bio-Weapons",
+		"upgradesTo": "Slasher",
 		"attackSound": "nonmetalhit"
 	},
 	{
-		"name": "Spitter Bioform",
+		"name": "Slasher",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 12,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"requiredTech": "Bio-Weapons",
+		"obsoleteTech": "Symbiotic Weaponry",
+		"upgradesTo": "Slasher Symbiont",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Spitter",
 		"unitType": "Ranged",
 		"movement": 2,
 		"strength": 5,
@@ -53,8 +75,8 @@
 		"cost": 40,
 		"hurryCostModifier": 20,
 		"requiredTech": "Bio-Weapons",
-		//"obsoleteTech": "Machinery",
-		//"upgradesTo": "Crossbowman",
+		"obsoleteTech": "Symbiotic Weaponry",
+		"upgradesTo": "Spitter Symbiont",
 		"attackSound": "arrow"
 	},
 	{
@@ -83,8 +105,8 @@
 		"name": "Warbeast",
 		"unitType": "Mounted",
 		"movement": 3,
-		"strength": 9,
-		"cost": 55,
+		"strength": 18,
+		"cost": 75,
 		"requiredTech": "Gene Harvesting",
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
@@ -98,13 +120,13 @@
 		"unitType": "Ranged",
 		"movement": 3,
 		"strength": 6,
-		"rangedStrength": 12,
+		"rangedStrength": 15,
 		"cost": 75,
 		"requiredTech": "Titanic Weaponry",
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","Bonus vs Mounted 33%"],
+		"uniques": ["No defensive terrain bonus","Bonus vs Melee 33%","Penalty vs Ranged 33%"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -126,15 +148,42 @@
 		"name": "Impaler",
 		"unitType": "Melee",
 		"movement": 2,
-		"strength": 11,
+		"strength": 10,
 		"cost": 55,
 		"requiredTech": "Mineral Adaptations",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["Bonus vs Mounted 50%"],
+		"uniques": ["Bonus vs Mounted 100%","Penalty vs Melee 50%"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
+	{
+		"name": "Spitter Symbiont",
+		"unitType": "Ranged",
+		"movement": 2,
+		"range": 5,
+		"strength": 5,
+		"rangedStrength": 12,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"requiredTech": "Symbiotic Weaponry",
+		//"obsoleteTech": "Machinery",
+		//"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Slasher Symbiont",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 16,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"requiredTech": "Symbiotic Weaponry",
+		//"obsoleteTech": "Machinery",
+		//"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+
 
 	// Nation Uniques
 	{
@@ -143,7 +192,7 @@
 		"replaces": "Soldier Drone",
 		"unitType": "Melee",
 		"movement": 2,
-		"strength": 8,
+		"strength": 9,
 		"cost": 10,
 		"hurryCostModifier": 20,
 		//"obsoleteTech": "Metal Casting",
