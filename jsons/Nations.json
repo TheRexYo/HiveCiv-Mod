@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Rak'tar",
-		"leaderName": "The Swarmlord",
+		"leaderName": "Swarm",
 		"adjective": ["Rak'tar"],
 		"startBias": ["Grassland"],
 		"preferredVictoryType": "Domination",
@@ -71,18 +71,18 @@
 	},
 	{
 		"name": "Int'uu",
-		"leaderName": "Unity",
+		"leaderName": "Collective",
 		"adjective": ["Int'uu"],
 		"startBias": ["Forest"],
 		"preferredVictoryType": "Cultural",
 
-		"startIntroPart1": "The Int'uu Unity was one of the first minds to emerge on the surface of Vartrex Prime. While its drones grew slower than the other minds of its time, its true strength laid in its highly introspective nature. Where other minds took to warfare and evolution to outpace each other, the Int'uu Unity kept to itself, growing powerful psionic capabilities and rapidly developing itself, often to the detriment of its drones. The Mind's primitive instincts of selfishness lead it to utilize a single 'Queen' as its focal point.",
-		"startIntroPart2": "Will you, as the Int'uu Unity, bring your mind to true perfection? Will you build a hive that stands the test of time?",
+		"startIntroPart1": "The Int'uu Collective was one of the first minds to emerge on the surface of Vartrex Prime. While its drones grew slower than the other minds of its time, its true strength laid in its highly introspective nature. Where other minds took to warfare and evolution to outpace each other, the Int'uu Collective kept to itself, growing powerful psionic capabilities and cultivating its own synapses, often to the detriment of its drones. The Mind's primitive instincts of selfishness lead it to utilize a single 'Queen' as its focal point, which proved to be a fatal weakness...",
+		"startIntroPart2": "Will you, as the Int'uu Collective, bring your mind to true perfection? Will you build a hive that stands the test of time?",
 
 		"declaringWar": "We cannot afford to leave you be any longer.",
 		"attacked": "We will never break.",
 		"defeated": "So close...",
-		"introduction": "We are Int'uu; the closest to perfection. How does it feel to be in our presence?",
+		"introduction": "We are Int'uu; the closest to perfection. Can do your synapses register our presence?",
 
 		"neutralHello": "Gaze upon perfection.",
 		"neutralLetsHearIt": ["Continue..."],
@@ -97,11 +97,47 @@
 		"afterPeace": "This fighting has grown stale.",
 		"tradeRequest": "Does this seem fit to your mind?",
 
-		"outerColor": [0, 0, 225],
+		"outerColor": [0, 0, 255],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Introspective Mind",
 		"uniques": ["Unhappiness from population decreased by [-100]%", "[+1 Culture] per [1] population in all cities", "[+5 Culture] in capital"],
-		"cities": ["Int'uu Unity", "Unity Hive 01", "Unity Hive 02", "Unity Hive 03", "Unity Hive 04", "Unity Hive 05"
+		"cities": ["Int'uu Collective", "Collective Cyst 01", "Collective Cyst 02", "Collective Cyst 03", "Collective Cyst 04", "Collective Cyst 05"
+		]
+	},
+	{
+		"name": "Tsan'tai",
+		"leaderName": "Unity",
+		"adjective": ["Tsan'tai"],
+		"startBias": ["Coast"],
+		//"preferredVictoryType": "Diplomatic",
+		"preferredVictoryType": "Cultural",
+
+		"startIntroPart1": "The Tsan'tai Unity was one of the first minds to emerge on the surface of Vartrex Prime. It was distinctive and bold, making decisions that most hives rarely did. Its reckless nature was not it's most defining feature, however; it was its nuturing and friendly nature that made it unique among the early hives. Whenever it encountered another mind, it would attempt to form a symbiotic link with it, though this behavior rarely succeeded immediately. The Tsan'tai gained many allies in the form of smaller, less dominant hives, which it would nurture and grow in exchange for its continued support. This tactic made the Unity and its allies nigh untouchable by other hives, but it ultimately took up too much resources and eventually led the mind into its own extinction.",
+		"startIntroPart2": "Will you, as the Tsan'tai Unity, bring the world to purity and peace? Will you build a hive that stands the test of time?",
+
+		"declaringWar": "Your actions have left us with one option: assimilation. Prepare yourselves.",
+		"attacked": "Fighting is pointless; you will only lose resources for attacking us.",
+		"defeated": "We are defeated. Your mind is strong.",
+		"introduction": "We are Tsan'tai. Our mind is pure, and we seek only to improve this world. Do you go with the winds, or against them?",
+
+		"neutralHello": "Your presence is welcome.",
+		"neutralLetsHearIt": ["We shall listen; you shall be heard."],
+		"neutralNo": ["We do not wish to quarrel, but this will not suffice."],
+		"neutralYes": ["We have reached an agreement; your offer will suffice."],
+
+		"hateHello": "Your mind is impure. Perhaps we can redeem you yet...",
+		"hateLetsHearIt": ["Speak..."],
+		"neutralNo": ["Unacceptable."],
+		"neutralYes": ["Acceptable."],
+
+		"afterPeace": "We do not wish to fight any longer. Peace is the only option.",
+		"tradeRequest": "The winds blow in your direction. Are you with them, or against?",
+
+		"outerColor": [255, 255, 255],
+		"innerColor": [0, 0, 0],
+		"uniqueName": "United Will",
+		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment", "50% chance of capturing defeated Barbarian naval units and earning 25 Gold", "[+1 Happiness, +1 Gold] per [2] population in all cities", "[+2 Gold] from each Trade Route"],
+		"cities": ["Tsan'tai Unity", "Unity Hive 01", "Unity Hive 02", "Unity Hive 03", "Unity Hive 04", "Unity Hive 05"
 		]
 	},
 
