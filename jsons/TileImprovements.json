@@ -131,16 +131,29 @@
 	},
 	{
 		"name": "Material Nexus",
-		"gold": 4,
+		"gold": 8,
 		"uniques": ["Great Improvement"]
 	},
 	{
 		"name": "Defensive Nexus",
-		"uniques": ["Gives a defensive bonus of [100]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]
+		"uniques": ["Gives a defensive bonus of [400]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]
 	},
 
 	//Civilization unique improvements
-	
+	{
+		"name": "Pheromone Nexus",
+		"uniqueTo": "Int'uu",
+		"happiness": 8,
+		"uniques": ["Great Improvement"]
+	},
+	{
+		"name": "Pheromone Node",
+		"uniqueTo": "Int'uu",
+		"happiness": 1,
+		"turnsToBuild": 5,
+		"techRequired": "Introspection",
+		"shortcutKey": "U"
+	},
 	//Misc
 	
 	{ "name": "Ancient ruins" },

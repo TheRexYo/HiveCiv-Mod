@@ -1,5 +1,5 @@
 [
-// Ancient Era
+// Basal / Primal Era
 	{
 		"name": "Synaptic Apex",
 		"isNationalWonder": true,
@@ -53,7 +53,7 @@
 	},
 	{
 		"name": "The Mindstone",
-		"culture": 10,
+		"culture": 20,
 		"isWonder": true,
 		"greatPersonPoints": {"production": 1},
 		"requiredTech": "Chronostasis",
@@ -68,10 +68,10 @@
 	},
 	{
 		"name": "The Nexus",
-		"culture": 3,
+		"culture": 5,
 		"greatPersonPoints": {"science": 1},
 		"isWonder": true,
-		"providesFreeBuilding":  "Synaptic Node",
+		"providesFreeBuilding":  "Synaptic Nexus",
 		"requiredTech": "Synaptic Structures",
 		"uniques": ["Free Technology","[+1 Science] Per [1] Population in this city"],
 		"quote": "'Within every drone is a mind of its own, just waiting to be tapped into our collective.'"
@@ -96,11 +96,11 @@
 	*/
 	{
 		"name": "The Hivemaw",
-		"culture": 3,
+		"culture": 5,
 		"isWonder": true,
 		"cost": 185,
 		"greatPersonPoints": {"production": 1},
-		"uniques": ["+[10]% growth in all cities", "+[15]% Production when constructing [ranged units]"],
+		"uniques": ["+[10]% growth in all cities", "+[50]% Production when constructing [ranged units]"],
 		"requiredTech": "Bio-Weapons",
 		"quote": "'The hunger of the hive is manifested into physical form, spewing forth acids from which biomass is absorbed and new spitters are made.'"
 	},
@@ -113,10 +113,10 @@
 	},
 	{
 		"name": "The Nest",
-		"culture": 3,
+		"culture": 5,
 		"greatPersonPoints": {"production": 1},
 		"isWonder": true,
-		"uniques": ["Worker construction increased 25%","Provides 2 free workers"],
+		"uniques": ["Worker construction increased 25%", "[4] free [Worker] units appear"],
 		"requiredTech": "Bio-Structures",
 		"quote": "'The structure acted as a hyper-efficient birthing device for menial drones, producing new workers at unparalleled rates.'"
 	},
@@ -129,31 +129,46 @@
 	},
 	/*
 	{
-		"name": "Colossus",
-		"culture": 3,
+		"name": "Nexus of the Sea",
+		"culture": 5,
 		"gold": 5,
 		"greatPersonPoints": {"gold": 1},
 		"isWonder": true,
-		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles in this city"],
-		"requiredTech": "Iron Working",
+		"uniques": ["Must be next to [Coast]", "[+5 Gold] from [Water] tiles in this city"],
+		"requiredTech": "Aquatic Adaptations",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
 	*/
 	{
 		"name": "The Eye",
-		"culture": 3,
+		"culture": 5,
 		"isWonder": true,
-		"uniques": ["+15% Combat Strength for all units when attacking Cities"],
+		"uniques": ["+15% Combat Strength for all units when attacking Cities", "+[50]% Production when constructing [melee units]"],
 		"requiredTech": "Mineral Adaptations",
 		"quote": "'The beasts gazed into the orb, which reflected their instincts back upon them twofold, and suddenly they had become predators of nightmarish determination.'"
 	},
 	{
 		"name": "The Vault",
-		"culture": 3,
+		"culture": 5,
 		"greatPersonPoints": {"gold": 1},
 		"isWonder": true,
-		"uniques": ["Provides a sum of gold each time you spend a Great Person","[+2 Gold] from [Marble] tiles in this city", "[+2 Gold] from [Stone] tiles in this city"],
+		"uniques": ["Provides a sum of gold each time you spend a Great Person","[+5 Gold] from [Marble] tiles in this city", "[+5 Gold] from [Stone] tiles in this city"],
 		"requiredTech": "Bio-Structures",
 		"quote": "'Within its fleshing walls lay untold millions of valuables, stored safely for future use by the hive.'"
+	},
+	
+// Archaic Era
+	{
+		"name": "Psionic Pylon",
+		"maintenance": 1,
+		"percentStatBonus": {"culture": 25},
+		"requiredTech": "Psionic Accumulation"
+	},
+	{
+		"name": "Bio-Cannon",
+		"cityStrength": 20,
+		"cityHealth": 0,
+		"hurryCostModifier": 25,
+		"requiredTech": "Aggressive Structures"
 	}
 ]

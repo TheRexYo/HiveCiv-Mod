@@ -19,7 +19,7 @@
 	{
 		"name": "Synapse Drone",
 		"unitType": "Civilian",
-		"uniques": ["Can start an 8-turn golden age","Cannot be purchased"],
+		"uniques": ["Can start an [8]-turn golden age","Cannot be purchased"],
 		"cost": 280,
 		"hurryCostModifier": 20,
 		"requiredTech": "Introspection",
@@ -64,7 +64,7 @@
 		"requiredTech": "Bio-Weapons",
 		"obsoleteTech": "Symbiotic Weaponry",
 		"upgradesTo": "Slasher Symbiont",
-		"attackSound": "arrow"
+		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Spitter",
@@ -116,6 +116,18 @@
 		"attackSound": "horse"
 	},
 	{
+		"name": "Gene Cyst",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 30,
+		"range": 3,
+		"cost": 30,
+		"requiredTech": "Gene Harvesting",
+		//"requiredResource": "Wildlife",
+		"uniques": ["Excess Food converted to Production when under construction"]
+	},
+	{
 		"name": "Gunbeast",
 		"unitType": "Ranged",
 		"movement": 3,
@@ -132,9 +144,10 @@
 	},
 	{
 		"name": "Bio-titan",
-		"unitType": "Mounted",
+		"unitType": "Siege",
 		"movement": 2,
-		"strength": 27,
+		"strength": 25,
+		"rangedStrength": 30,
 		"cost": 175,
 		"requiredTech": "Titanic Weaponry",
 		//"requiredResource": "Wildlife",
@@ -149,13 +162,26 @@
 		"unitType": "Melee",
 		"movement": 2,
 		"strength": 14,
-		"cost": 55,
+		"cost": 50,
 		"requiredTech": "Mineral Adaptations",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
 		"uniques": ["Bonus vs Mounted 100%","Penalty vs Melee 50%"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
+	},
+	{
+		"name": "Armor Drone",
+		"unitType": "Armor",
+		"movement": 1,
+		"strength": 15,
+		"cost": 75,
+		"requiredTech": "Mineral Adaptations",
+		//"obsoleteTech": "Civil Service",
+		//"upgradesTo": "Pikeman",
+		"uniques": ["Bonus vs Ranged 100%", "+[100]% Strength when defending"]
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
 	},
 	{
 		"name": "Spitter Symbiont",
@@ -181,10 +207,55 @@
 		"requiredTech": "Symbiotic Weaponry",
 		//"obsoleteTech": "Machinery",
 		//"upgradesTo": "Crossbowman",
-		"attackSound": "arrow"
+		"attackSound": "nonmetalhit"
 	},
-
-
+	/* Archaic Era */
+	{
+		"name": "Shredder",
+		"unitType": "Melee",
+		"movement": 3,
+		"strength": 14,
+		"cost": 60,
+		"requiredTech": "Adaptive Weaponry",
+		//"obsoleteTech": "Civil Service",
+		//"upgradesTo": "Pikeman",
+		"uniques":["Bonus as Attacker [100]%", "Bonus vs Armor 100%"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	
+	// Unbuildables
+	{
+		"name": "Great Psyker",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [16]-turn golden age", "Can construct [Mind Nexus]", "Great Person - [Culture]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Catalyst",
+		"unitType": "Civilian",
+		"uniques": ["Can hurry technology research", "Can construct [Science Nexus]", "Great Person - [Science]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Scion",
+		"unitType": "Civilian",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [100] Influence","Can construct [Material Nexus]", "Great Person - [Gold]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Overseer",
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a wonder", "Can construct [Production Nexus]", "Great Person - [Production]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Warrior",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [8]-turn golden age", "Bonus for units in 2 tile radius 15%", "Can construct [Defensive Nexus]",
+			"Great Person - [War]", "Unbuildable"],
+		"movement": 2
+	},
 	// Nation Uniques
 	{
 		"name": "Rak'tar Swarm Drone",
@@ -204,12 +275,31 @@
 		"uniqueTo": "Kezit",
 		"replaces": "Synapse Drone",
 		"unitType": "Civilian",
-		"uniques": ["Can start an 8-turn golden age","Bonus for units in 2 tile radius 15%","Bonus for units in 2 tile radius 15%","Bonus for units in 2 tile radius 15%","Bonus for units in 2 tile radius 15%"],
-		"cost": 140,
+		"uniques": ["Can start an [8]-turn golden age","Can hurry technology research","Cannot be purchased"],
+		"cost": 240,
 		"hurryCostModifier": 20,
+		"requiredTech": "Introspection",
 		"movement": 1
 	},
-
+	{
+		"name": "Int'uu Queen",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [50]-turn golden age", "Can construct [Mind Nexus]", "Can construct [Pheromone Nexus]", "Great Person - [Culture]", "Unbuildable"],
+		"movement": 2,
+		"uniqueTo": "Int'uu",
+		"replaces": "Great Psyker"
+	},
+	{
+		"name": "Tsan'tai Seeker Drone",
+		"unitType": "Scout",
+		"uniques": ["Ignores terrain cost", "Can undertake a trade mission with City-State, giving a large sum of gold and [35] Influence","Cannot be purchased"],
+		"movement": 5,
+		"strength": 2,
+		"cost": 25,
+		"uniqueTo": "Tsan'tai",
+		"replaces": "Scouting Drone"
+	},
+	
 	//City-State Uniques
 	{
 		"name": "Sekari Shellwalker",
@@ -217,14 +307,14 @@
 		"replaces": "Soldier Drone",
 		"unitType": "Melee",
 		"movement": 1,
-		"strength": 14,
+		"strength": 10,
 		"cost": 40,
 		"hurryCostModifier": 20,
 		//"requiredTech": "",
 		//"requiredResource": "",
-		//"upgradesTo": "",
-		//"obsoleteTech": "",
-		//"uniques": [""],
+		"upgradesTo": "Slasher",
+		"obsoleteTech": "Bio-Weapons",
+		"uniques": ["+25% Defence against ranged attacks"],
 		"promotions": ["Reflective Carapace"],
 		"attackSound": "horse"
 	},
@@ -252,7 +342,7 @@
 		"unitType": "Melee",
 		"movement": 2,
 		"strength": 16,
-		"cost": 55,
+		"cost": 50,
 		"requiredTech": "Mineral Adaptations",
 		//"requiredTech": "",
 		//"requiredResource": "",
@@ -267,7 +357,7 @@
 		"name": "Zyxian Shrieker",
 		"uniqueTo": "Zyxia",
 		"replaces": "Spitter",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"movement": 2,
 		"strength": 1,
 		"range": 1,
@@ -277,11 +367,38 @@
 		"requiredTech": "Bio-Weapons",
 		"uniques": ["+[100]% Strength when attacking"],
 		"promotions": ["Supersonic Vibrations"],
-		//"obsoleteTech": "Machinery",
-		//"upgradesTo": "Crossbowman",
+		"obsoleteTech": "Symbiotic Weaponry",
+		"upgradesTo": "Spitter Symbiont",
 		"attackSound": "arrow"
 	},
-
+	//Wildlife
+	/*
+	{
+		"name": "Great Devourer",
+		"unitType": "Siege",
+		"uniqueTo": "Barbarians",
+		"replaces": "Bio-Titan",
+		"movement": 1,
+		"strength": 50,
+		"cost": 200,
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques": ["No defensive terrain bonus","Bonus vs Ranged 100%"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Predator",
+		"unitType": "Mounted",
+		"uniqueTo": "Barbarians",
+		"replaces": "Warbeast",
+		"movement": 3,
+		"strength": 20,
+		"cost": 140,
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"attackSound": "nonmetalhit"
+	},
+	*/
 	//Barbarian Uniques
 	{
 		"name": "Rogue Drone",

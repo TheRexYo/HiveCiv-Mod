@@ -1,12 +1,12 @@
 [
   {
     "name": "Route",
-    "description": "Build a road to connect your capital to our city.",
+    "description": "Build a road to connect your main hive to ours.",
     "influence": 50
   },
   {
-    "name": "Clear Barbarian Camp",
-    "description": "We feel threatened by a Barbarian Camp near our city. Please take care of it.",
+    "name": "Clear Rogue Nest",
+    "description": "We feel threatened by a Rogue Nest near our hive. Please take care of it.",
     "type": "Global",
     "influence": 50,
     "minimumCivs": 1
@@ -25,7 +25,7 @@
   },/*
   {
     "name": "Conquer City State",
-    "description": "You will be rewarded for conquering the city state of [cityState]!",
+    "description": "You will be rewarded for conquering the hive of [cityState]!",
     "influence": 80
   },*/
   {

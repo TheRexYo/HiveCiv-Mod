@@ -64,85 +64,85 @@
 	
 	// Melee, Mounted+Armor
 	{
-		"name": "Shock I",
+		"name": "Rush I",
 		"effect": "Bonus vs units in open terrain 15%",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 	{
-		"name": "Shock II",
-		"prerequisites": ["Shock I"],
+		"name": "Rush II",
+		"prerequisites": ["Rush I"],
 		"effect": "Bonus vs units in open terrain 15%",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 	{
-		"name": "Shock III",
-		"prerequisites": ["Shock II"],
+		"name": "Rush III",
+		"prerequisites": ["Rush II"],
 		"effect": "Bonus vs units in open terrain 15%",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 
 	{
-		"name": "Drill I",
+		"name": "Sweep I",
 		"effect": "Bonus vs units in rough terrain 15%",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 	{
-		"name": "Drill II",
-		"prerequisites": ["Drill I"],
+		"name": "Sweep II",
+		"prerequisites": ["Sweep I"],
 		"effect": "Bonus vs units in rough terrain 15%",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 	{
-		"name": "Drill III",
-		"prerequisites": ["Drill II"],
+		"name": "Sweep III",
+		"prerequisites": ["Sweep II"],
 		"effect": "Bonus vs units in rough terrain 15%",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 	{
 		"name": "Charge",
-		"prerequisites": ["Shock II","Drill II"],
+		"prerequisites": ["Rush II","Sweep II"],
 		"effect": "Bonus vs wounded units 33%",
 		"unitTypes": ["Mounted","Armor"]
 	},
 	{
 		"name": "Siege",
-		"prerequisites": ["Shock II","Drill II"],
+		"prerequisites": ["Rush II","Sweep II"],
 		"effect": "Bonus vs City 50%",
 		"unitTypes": ["Melee"]
 	},
 	{
-		"name": "Formation I",
-		"prerequisites": ["Shock II","Drill II"],
-		"effect": "Bonus vs Mounted 33%",
+		"name": "Swarm I",
+		"prerequisites": ["Rush II","Sweep II"],
+		"effect": "Bonus vs Mounted 35%",
 		"unitTypes": ["Melee","Mounted"]
 	},
 	{
-		"name": "Formation II",
-		"prerequisites": ["Formation I"],
-		"effect": "Bonus vs Mounted 33%",
+		"name": "Swarm II",
+		"prerequisites": ["Swarm I"],
+		"effect": "Bonus vs Mounted 65%",
 		"unitTypes": ["Melee","Mounted"]
 	},
 	
 	{
 		"name": "Blitz",
-		"prerequisites": ["Shock III","Drill III"],
+		"prerequisites": ["Rush III","Sweep III"],
 		"effect": "1 additional attack per turn",
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
 	{
-		"name": "Woodsman",
-		"prerequisites": ["Shock III","Drill III"],
+		"name": "Prowl",
+		"prerequisites": ["Rush I","Sweep I"],
 		"effect": "Double movement rate through Forest and Jungle",
 		"unitTypes": ["Melee"]
 	},
 	{
-		"name": "Medical Dronesal Drones",
-		"prerequisites": ["Shock I", "Drill I", "Scouting II"],
+		"name": "Medical Drones",
+		"prerequisites": ["Rush I", "Sweep I", "Scouting II"],
 		"effect": "This unit and all others in adjacent tiles heal 5 additional HP per turn",
 		"unitTypes": ["Melee","Mounted","Scout"]
 	},
 	{
-		"name": "Medical Dronesal Drones II",
+		"name": "Medical Drones II",
 		"prerequisites": ["Medical Drones"],
 		"effect": "This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory.",
 		"unitTypes": ["Melee","Mounted","Scout"]
@@ -188,19 +188,19 @@
 	},
 	
 	{
-		"name": "Coastal Raider I",
+		"name": "Landing Drones I",
 		"effect": "Bonus vs City 15%",
 		"unitTypes": ["WaterMelee"]
 	},
 	{
-		"name": "Coastal Raider II",
-		"prerequisites": ["Coastal Raider I"],
+		"name": "Landing Drones II",
+		"prerequisites": ["Landing Drones I"],
 		"effect": "Bonus vs City 15%",
 		"unitTypes": ["WaterMelee"]
 	},
 	{
-		"name": "Coastal Raider III",
-		"prerequisites": ["Coastal Raider II"],
+		"name": "Landing Drones III",
+		"prerequisites": ["Landing Drones II"],
 		"effect": "Bonus vs City 15%",
 		"unitTypes": ["WaterMelee"]
 	},
@@ -227,19 +227,19 @@
 	// Aircraft Carrier
 	{
 		"name": "Armor Plating I",
-		"effect": "+25% Combat Bonus when defending",
+		"effect": "+[25]% Combat Bonus when defending",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Armor Plating II",
 		"prerequisites": ["Armor Plating I"],
-		"effect": "+25% Combat Bonus when defending",
+		"effect": "+[25]% Combat Bonus when defending",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Armor Plating III",
 		"prerequisites": ["Armor Plating II"],
-		"effect": "+25% Combat Bonus when defending",
+		"effect": "+[25]% Combat Bonus when defending",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
@@ -358,27 +358,27 @@
 	
 	{
 		"name": "Foraging Drones",
-		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
+		"prerequisites": ["Accuracy II","Barrage II","Rush III","Sweep III"],
 		"effect": "Unit will heal every turn, even if it performs an action",
 		"unitTypes": ["Melee","Ranged","Siege","Mounted"]
 	},
 	{
 		"name": "Agility",
-		"prerequisites": ["Shock II","Drill II","Targeting I",
-			"Bombardment I","Boarding Drones I", "Coastal Raider I", "Breach I"],
+		"prerequisites": ["Rush II","Sweep II","Targeting I",
+			"Bombardment I","Boarding Drones I", "Landing Drones I", "Breach I"],
 		"effect": "+1 Movement",
 		"unitTypes": ["Mounted","WaterMelee","WaterRanged","Armor","WaterSubmarine"]
 	},
 	{
 		"name": "Sentry Drones",
-		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Bombardment I","Targeting I","Boarding Drones I","Coastal Raider I"],
+		"prerequisites": ["Accuracy I","Barrage I","Rush II","Sweep II","Bombardment I","Targeting I","Boarding Drones I","Landing Drones I"],
 		"effect": "+1 Visibility Range",
 		"unitTypes": ["Melee","Mounted","WaterRanged","Armor","WaterMelee"]
 	},
 	{
 		"name": "Weapon Symbionts",
 		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Breach III",
-			"Bombardment III", "Coastal Raider III","Boarding Drones III","Siege III"],
+			"Bombardment III", "Landing Drones III","Boarding Drones III","Siege III"],
 		"effect": "1 additional attack per turn",
 		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]
 	},

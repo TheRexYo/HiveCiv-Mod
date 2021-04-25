@@ -1,9 +1,10 @@
 [
 	{
 		"columnNumber": 0,
-		"era": "Ancient era",
-		"techCost": 20,
+		"era": "Basal era",
+		"techCost": 25,
 		"buildingCost": 40,
+		"wonderCost": 160,
 		"techs": [
 			{
 				"name": "Hive Mind",
@@ -15,9 +16,10 @@
 	},
 	{
 		"columnNumber": 1,
-		"era": "Ancient era",
-		"techCost": 35, 
+		"era": "Primal era",
+		"techCost": 50, 
 		"buildingCost": 60,
+		"wonderCost": 240,
 		"techs": [
 			{
 				"name": "Storage Organisms",
@@ -53,10 +55,10 @@
 	},
 	{
 		"columnNumber": 2,
-		"era": "Ancient era",
-		"techCost": 55, 
-		"buildingCost": 75,
-		"wonderCost": 185,
+		"era": "Primal era",
+		"techCost": 75, 
+		"buildingCost": 90,
+		"wonderCost": 360,
 		"techs": [
 			{
 				"name": "Stockpiling Instincts",
@@ -86,7 +88,7 @@
 				"name": "Aquatic Adaptations",
 				"row": 5,
 				"prerequisites": ["Gene Harvesting"],
-				"quote": "'He who commands the sea has command of everything.' - Themistocles"
+				"quote": "'All the world belongs to our mind. The sea is no exception."
 			},
 			{
 				"name": "Titanic Weaponry",
@@ -112,6 +114,33 @@
 				"prerequisites": ["Mineral Ingestion"],
 				"quote": "'The beasts' arms glimmered in the moonlight, revealing the metallic nature of its weaponry.'"
 			}			
+		]	
+	},
+	{
+		"columnNumber": 3,
+		"era": "Archaic era",
+		"techCost": 150, 
+		"buildingCost": 120,
+		"wonderCost": 480,
+		"techs": [
+			{
+				"name": "Psionic Accumulation",
+				"row": 2,
+				"prerequisites": ["Stockpiling Instincts", "Chronostasis", "Synaptic Structures"],
+				"quote": "'The mind grew strong, storing excess energy until it was needed for processing.'"
+			},
+			{
+				"name": "Adaptive Weaponry",
+				"row": 5,
+				"prerequisites": ["Counteradaptation", "Aquatic Adaptations", "Titanic Weaponry"],
+				"quote": "'The creatures' talons crashed against bone, shattering on first impact. But much to our horror, they grew back in a new shape, and the next blows struck true.'"
+			},
+			{
+				"name": "Aggressive Structures",
+				"row": 8,
+				"prerequisites": ["Symbiotic Weaponry", "Bio-Structures", "Mineral Adaptations"],
+				"quote": "'The walls of the hive shifted to reveal a mighty bio-cannon, which proceeded to melt the intruders with a gout of acid.'"
+			}
 		]	
 	}
 ]
