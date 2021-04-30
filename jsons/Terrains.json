@@ -161,7 +161,7 @@
  
 	// Natural Wonders
 	{
-		"name": "Great Barrier Reef",
+		"name": "Oceanic Rift",
 		"type": "NaturalWonder",
 		"food": 2,
 		"production": 1,
@@ -174,7 +174,7 @@
 		"weight": 10
 	},
 	{
-		"name": "Old Faithful",
+		"name": "Storm Peaks",
 		"type": "NaturalWonder",
 		"science": 2,
 		"happiness": 3,
@@ -185,7 +185,7 @@
 		"weight": 10
 	},
 	{
-		"name": "El Dorado",
+		"name": "Precursor Hive",
 		"type": "NaturalWonder",
 		"culture": 5,
 		"occursOn": ["Plains"],
@@ -196,7 +196,7 @@
 		"weight": 2
 	},
 	{ // This will count as "Fresh water" in civ 6
-		"name": "Fountain of Youth",
+		"name": "Genesis Pool",
 		"type": "NaturalWonder",
 		"happiness": 10,
 		"occursOn": ["Plains"],
@@ -207,7 +207,7 @@
 		"weight": 1
 	},
 	{
-		"name": "Grand Mesa",
+		"name": "Shimmering Plateau",
 		"type": "NaturalWonder",
 		"production": 2,
 		"gold": 3,
@@ -218,7 +218,7 @@
 		"weight": 10
 	},
 	{
-		"name": "Mount Fuji",
+		"name": "Great Spire",
 		"type": "NaturalWonder",
 		"gold": 1,
 		"culture": 5,
@@ -229,7 +229,7 @@
 		"weight": 10
 	},
 	{
-		"name": "Krakatoa",
+		"name": "Hypergas Volcano",
 		"type": "NaturalWonder",
 		"science": 5,
 		"occursOn": ["Ocean"],
@@ -239,9 +239,9 @@
 		"weight": 10
 	},
 	{
-		"name": "Rock of Gibraltar",
+		"name": "Megafloric Barrier",
 		"type": "NaturalWonder",
-		"food": 2,
+		"food": 5,
 		"gold": 5,
 		"occursOn": ["Grassland"],
 		"turnsInto": "Mountain",
@@ -250,7 +250,7 @@
 		"weight": 10
 	},
 	{
-		"name": "Cerro de Potosi",
+		"name": "Crystal Caverns",
 		"type": "NaturalWonder",
 		"gold": 10,
 		"occursOn": ["Plains","Mountain"],
@@ -260,10 +260,11 @@
 		"weight": 5
 	},
 	{
-		"name": "Barringer Crater",
+		"name": "Exobiotic Crater",
 		"type": "NaturalWonder",
+		"food": 3,
+		"science": 5,
 		"gold": 2,
-		"science": 3,
 		"occursOn": ["Desert","Tundra"],
 		"turnsInto": "Mountain",
 		"impassable": true,

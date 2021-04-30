@@ -1,9 +1,60 @@
 [
 	{
+		"name": "Survival",
+		"era": "Basal era",
+		"effect": "+1 Happiness, Science, Gold, and Culture in capital. +1 Production and +1 Food in all cities.",
+		"uniques": ["[+1 Happiness, +1 Science, +1 Gold, +1 Culture] in capital", "[+1 Production, +1 Food] [in all cities]"],
+		"policies": [
+			{
+				"name": "Unification",
+				"effect": "25% less unhappiness from population. Purchase cost in cities reduced by 25%.",
+				"uniques": ["Unhappiness from population decreased by [25]%", "Cost of purchasing items in cities reduced by [25]%"],
+				"row": 1,
+				"column": 1
+			},
+			{
+				"name": "Propogation",
+				"effect": "All cities have +25% growth, and the capital has an additional +25% growth.",
+				"uniques":["+[25]% growth [in all cities]","+[25]% growth [in capital]"],
+				"row": 1,
+				"column": 5
+			},
+			{
+				"name": "Optimization",
+				"effect": "Cities have +25% production when they are constructing Buildings.",
+				"uniques": ["+[25]% Production when constructing [Buildings]"],
+				"requires": ["Unification"],
+				"row": 2,
+				"column": 2
+			},
+			{
+				"name": "Adaptation",
+				"effect": "Production to science conversion rates increased by 33%. All cities give +1 science per 2 population they have.",
+				"uniques": ["Production to science conversion in cities increased by 33%", "[+1 Science] per [2] population in all cities"],
+				"requires": ["Propogation"],
+				"row": 2,
+				"column": 4
+			},
+			{
+				"name": "Actualization",
+				"effect": "+5 Culture in the capital and +10% Culture in all cities. Free social policy.",
+				"uniques": ["[+5 Culture] in capital", "+[10]% [Culture] [in all cities]", "Free Social Policy"],
+				"requires": ["Optimization","Adaptation"],
+				"row": 3,
+				"column": 3
+			},
+			{
+				"name": "Survival Complete",
+				"effect": "+2 of every stat (Happiness, Science, Food, Culture, Gold, Production, etc.) in all cities.",
+				"uniques": ["[+2 Happiness, +2 Science, +2 Gold, +2 Culture, +2 Production, +2 Food] [in all cities]"]
+			}
+		]
+	},
+	{
 		"name": "Growth",
 		"era": "Primal era",
-		"effect": "+3 food in capital and +1 food per 2 population in all cities",
-		"uniques": ["[+3 Food] in capital", "[+1 Food] per [2] population in all cities"],
+		"effect": "+15% growth in all cities. +1 food per 2 population in all cities",
+		"uniques": ["+[15]% growth [in all cities]", "[+1 Food] per [2] population in all cities"],
 		"policies": [
 			{
 				"name": "Collective Living",
@@ -21,8 +72,8 @@
 			},
 			{
 				"name": "Enforcement Instincts",
-				"effect": "Units in cities cost no Maintenance, garrisoned city +50% attacking strength",
-				"uniques": ["Units in cities cost no Maintenance", "+50% attacking strength for cities with garrisoned units"],
+				"effect": "Units in cities cost no Maintenance, garrisoned cities have +50% attacking strength and +3 Happiness.",
+				"uniques": ["Units in cities cost no Maintenance", "+50% attacking strength for cities with garrisoned units", "[+3 Happiness] [in all cities with a garrison]"],
 				"requires": ["Collective Living"],
 				"row": 2,
 				"column": 2
@@ -71,20 +122,20 @@
 				"column": 5
 			},
 			{
-				"name": "Environmental Mastery",
-				"effect": "+1 production from every strategic resource. Tile yields from Natural Wonders doubled.",
-				"uniques": ["[+1 Production] from every [Strategic Resource]", "Tile yields from Natural Wonders doubled"],
-				"requires": ["Habitat Manipulation"],
-				"row": 2,
-				"column": 4
-			},
-			{
 				"name": "Expanded Ephapse",
 				"effect": "Each city founded increases culture cost of policies 50% less than normal. Golden Age length increased by 25%.",
 				"uniques": ["Each city founded increases culture cost of policies [50]% less than normal", "Golden Age length increased by [25]%"],
 				"requires": ["Expansion Instincts"],
 				"row": 2,
 				"column": 2
+			},
+			{
+				"name": "Environmental Mastery",
+				"effect": "+1 production from every strategic resource. Tile yields from Natural Wonders doubled.",
+				"uniques": ["[+1 Production] from every [Strategic Resource]", "Tile yields from Natural Wonders doubled"],
+				"requires": ["Habitat Manipulation"],
+				"row": 2,
+				"column": 4
 			},
 			{
 				"name": "Subspace Consciousness",
@@ -213,7 +264,7 @@
 				"effect": "Gifts of Gold to City-States generate double Influence. Free Social Policy.",
 				"uniques":["Gifts of Gold to City-States generate [100]% more Influence", "Free Social Policy"],
 				"row": 1,
-				"column": 2
+				"column": 1
 			},
 			{
 				"name": "Bonded Minds",
@@ -232,8 +283,8 @@
 				"name": "Mutualism",
 				"uniques": ["Quantity of Resources gifted by City-States increased by [100]%", "[+2 Culture] from each Trade Route"],
 				"requires": ["Bonded Minds"],
-				"row": 3,
-				"column": 2
+				"row": 2,
+				"column": 4
 			},
 			{
 				"name": "United Strength",
@@ -241,7 +292,7 @@
 				"uniques": ["Food and Culture from Friendly City-States are increased by 50%", "Allied City-States provide Science equal to [25]% of what they produce for themselves", "+5% Production for every Trade Route with a City-State in the empire", "[+2 Gold] from each Trade Route"],
 				//"Militaristic City-States grant units twice as often when you are at war with a common foe"
 				"row": 3,
-				"column": 4
+				"column": 3
 			},
 			{
 				"name": "Symbiosis Complete"
