@@ -27,7 +27,15 @@
 	{
 		"name": "Storage Nest", 
 		"food": 2,
-		"resourceBonusStats": {"food": 1},
+		"uniques": ["[25]% of food is carried over after population increases"],
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredTech": "Storage Organisms"
+	},
+	{
+		"name": "Biomass Recycler", 
+		"food": 1,
+		"uniques": ["[+1 Food] Per [2] Population in this city"],
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"requiredTech": "Storage Organisms"
@@ -35,20 +43,29 @@
 	{
 		"name": "Biomass Pool", 
 		"food": 2,
+		"percentStatBonus": {"food": 25},
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Food] Per [2] Population in this city"],
+		"uniques": ["[+1 Food] from [Slave-Beasts] tiles in this city", "[+1 Food] from [Prey-Beasts] tiles in this city", "[+1 Food] from [Hunt-Beasts] tiles in this city"],
 		"requiredTech": "Stockpiling Instincts"
 	},
 	{
-		"name": "Psionic Monolith", 
+		"name": "Chronostatic Chamber", 
 		"happiness": 1,
 		"production": 1,
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
-		"resourceBonusStats": {"production": 1},
+		"resourceBonusStats": {"happiness": 3},
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"uniques": ["Must not be on [Plains]"],
+		"requiredTech": "Chronostasis"
+	},
+	{
+		"name": "Psionic Monolith", 
+		"culture": 3,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["+[10]% great person generation in all cities"],
 		"requiredTech": "Chronostasis"
 	},
 	{

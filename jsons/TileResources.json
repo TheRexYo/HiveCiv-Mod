@@ -24,7 +24,7 @@
 		"terrainsCanBeFoundOn": ["Forest","Tundra"],
 		"food": 1,
 		"improvement": "Hunting Grounds",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"happiness": 1},
 		"building": "Storage Nest"
 	},
 	{
