@@ -120,7 +120,7 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","Bonus vs Melee 33%"],
+		"uniques": ["No defensive terrain bonus","+[33]% Strength vs [Melee]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -134,7 +134,7 @@
 		"cost": 30,
 		"requiredTech": "Gene Harvesting",
 		//"requiredResource": "Wildlife",
-		"uniques": ["Excess Food converted to Production when under construction"]
+		"uniques": ["Excess Food converted to Production when under construction", "Self-destructs when attacking"]
 	},
 	{
 		"name": "Gunbeast",
@@ -147,7 +147,7 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","Bonus vs Melee 33%"],
+		"uniques": ["No defensive terrain bonus","+[33]% Strength vs [Melee]"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -162,7 +162,7 @@
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","Bonus vs City 200%","Penalty vs Ranged 33%"],
+		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [City]","Penalty vs Ranged 33%"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -190,7 +190,7 @@
 		"requiredTech": "Mineral Adaptations",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["Bonus vs Mounted 100%","Penalty vs Melee 50%"],
+		"uniques": ["+[200]% Strength vs [Mounted]","Penalty vs Melee 50%"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -198,12 +198,12 @@
 		"name": "Armor Drone",
 		"unitType": "Armor",
 		"movement": 1,
-		"strength": 15,
-		"cost": 75,
+		"strength": 10,
+		"cost": 60,
 		"requiredTech": "Mineral Adaptations",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["Bonus vs Ranged 100%", "+[100]% Strength when defending"]
+		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"]
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -242,7 +242,7 @@
 		"requiredTech": "Adaptive Weaponry",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques":["Bonus as Attacker [100]%", "Bonus vs Armor 100%"],
+		"uniques":["Bonus as Attacker [100]%", "+[200]% Strength vs [Armor]"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -329,7 +329,7 @@
 		"name": "Sekari Shellwalker",
 		"uniqueTo": "Sekari",
 		"replaces": "Soldier Drone",
-		"unitType": "Melee",
+		"unitType": "Armor",
 		"movement": 1,
 		"strength": 10,
 		"cost": 40,
@@ -338,7 +338,7 @@
 		//"requiredResource": "",
 		"upgradesTo": "Slasher",
 		"obsoleteTech": "Bio-Weapons",
-		"uniques": ["+25% Defence against ranged attacks"],
+		"uniques": ["+25% Defence against ranged attacks", "+[50]% Strength when defending"],
 		"promotions": ["Reflective Carapace"],
 		"attackSound": "horse"
 	},
@@ -370,7 +370,7 @@
 		"requiredTech": "Mineral Adaptations",
 		//"upgradesTo": "",
 		//"obsoleteTech": "",
-		"uniques": ["Bonus vs Mounted 25%","Bonus vs Melee 25%","Can move after attacking"],
+		"uniques": ["+[25]% Strength vs [Mounted]","+[25]% Strength vs [Melee]","Can move after attacking"],
 		"promotions": ["Feeding Tendrils"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
@@ -397,7 +397,7 @@
 	/*
 	{
 		"name": "Great Devourer",
-		"unitType": "Siege",
+		"unitType": "Mounted",
 		"uniqueTo": "Barbarians",
 		"replaces": "Bio-Titan",
 		"movement": 1,
@@ -405,7 +405,7 @@
 		"cost": 200,
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
-		"uniques": ["No defensive terrain bonus","Bonus vs Ranged 100%"],
+		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [Ranged]"],
 		"attackSound": "nonmetalhit"
 	},
 	{

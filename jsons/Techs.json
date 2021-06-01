@@ -56,7 +56,7 @@
 	{
 		"columnNumber": 2,
 		"era": "Primal era",
-		"techCost": 75, 
+		"techCost": 100,
 		"buildingCost": 90,
 		"wonderCost": 360,
 		"techs": [
@@ -119,7 +119,7 @@
 	{
 		"columnNumber": 3,
 		"era": "Archaic era",
-		"techCost": 150, 
+		"techCost": 200, 
 		"buildingCost": 120,
 		"wonderCost": 480,
 		"techs": [

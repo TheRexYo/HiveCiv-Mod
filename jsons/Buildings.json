@@ -21,7 +21,7 @@
 	{
 		"name": "Psionic Nexus",
 		"maintenance": 1,
-		"uniques": ["[+1 Culture] Per [2] Population in this city"],
+		"uniques": ["[+1 Culture] Per [2] Population [in this city]"],
 		"requiredTech": "Introspection"
 	},
 	{
@@ -35,7 +35,7 @@
 	{
 		"name": "Biomass Recycler", 
 		"food": 1,
-		"uniques": ["[+1 Food] Per [2] Population in this city"],
+		"uniques": ["[+1 Food] Per [2] Population [in this city]"],
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"requiredTech": "Storage Organisms"
@@ -46,7 +46,7 @@
 		"percentStatBonus": {"food": 25},
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Food] from [Slave-Beasts] tiles in this city", "[+1 Food] from [Prey-Beasts] tiles in this city", "[+1 Food] from [Hunt-Beasts] tiles in this city"],
+		"uniques": ["[+1 Food] from [Slave-Beasts] tiles [in this city]", "[+1 Food] from [Prey-Beasts] tiles [in this city]", "[+1 Food] from [Hunt-Beasts] tiles [in this city]"],
 		"requiredTech": "Stockpiling Instincts"
 	},
 	{
@@ -80,7 +80,7 @@
 		"name": "Synaptic Nexus",
 		"hurryCostModifier": 25,
 		"maintenance": 1,
-		"uniques": ["[+1 Science] Per [2] Population in this city"],
+		"uniques": ["[+1 Science] Per [2] Population [in this city]"],
 		"requiredTech": "Synaptic Structures"
 	},
 	{
@@ -90,7 +90,7 @@
 		"isWonder": true,
 		"providesFreeBuilding":  "Synaptic Nexus",
 		"requiredTech": "Synaptic Structures",
-		"uniques": ["Free Technology","[+1 Science] Per [1] Population in this city"],
+		"uniques": ["Free Technology","[+1 Science] Per [1] Population [in this city]"],
 		"quote": "'Within every drone is a mind of its own, just waiting to be tapped into our collective.'"
 	},
 	{
@@ -151,7 +151,7 @@
 		"gold": 5,
 		"greatPersonPoints": {"gold": 1},
 		"isWonder": true,
-		"uniques": ["Must be next to [Coast]", "[+5 Gold] from [Water] tiles in this city"],
+		"uniques": ["Must be next to [Coast]", "[+5 Gold] from [Water] tiles [in this city]"],
 		"requiredTech": "Aquatic Adaptations",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
@@ -169,7 +169,7 @@
 		"culture": 5,
 		"greatPersonPoints": {"gold": 1},
 		"isWonder": true,
-		"uniques": ["Provides a sum of gold each time you spend a Great Person","[+5 Gold] from [Marble] tiles in this city", "[+5 Gold] from [Stone] tiles in this city"],
+		"uniques": ["Provides a sum of gold each time you spend a Great Person","[+5 Gold] from [Marble] tiles [in this city]", "[+5 Gold] from [Stone] tiles [in this city]"],
 		"requiredTech": "Bio-Structures",
 		"quote": "'Within its fleshing walls lay untold millions of valuables, stored safely for future use by the hive.'"
 	},

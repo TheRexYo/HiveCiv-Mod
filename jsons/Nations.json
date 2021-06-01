@@ -30,7 +30,7 @@
 		"outerColor": [255, 0, 0],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Will of the Swarm",
-		"uniques": ["[-1 Culture] per [1] population in all cities", "Unhappiness from population decreased by [100]%", "+[100]% Production when constructing [military units]"],
+		"uniques": ["[-1 Culture] per [1] population [in all cities]", "Unhappiness from population decreased by [100]%", "+[100]% Production when constructing [military units]"],
 		"cities": ["Rak'tar Swarm", "Swarm Hive 01", "Swarm Hive 02", "Swarm Hive 03", "Swarm Hive 04", "Swarm Hive 05"
 		]
 	},
@@ -65,7 +65,7 @@
 		"outerColor": [0, 255, 0],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Enhanced Synaptic Web",
-		"uniques": ["[+3 Science, +1 Happiness] from every specialist", "[+1 Science] per [1] population in all cities", "Unhappiness from number of Cities doubled"],
+		"uniques": ["[+3 Science, +1 Happiness] from every specialist", "[+1 Science] per [1] population [in all cities]", "Unhappiness from number of Cities doubled"],
 		"cities": ["Kezit Overmind", "Overmind Synaptic Node 01", "Overmind Synaptic Node 02", "Overmind Synaptic Node 03", "Overmind Synaptic Node 04", "Overmind Synaptic Node 05"
 		]
 	},
@@ -100,7 +100,7 @@
 		"outerColor": [0, 0, 255],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Introspective Mind",
-		"uniques": ["Unhappiness from population decreased by [-100]%", "[+1 Culture] per [1] population in all cities", "[+5 Culture] in capital", "+[100]% Strength if within [5] tiles of a [Pheromone Nexus]", "+[20]% Strength if within [1] tiles of a [Pheromone Node]"],
+		"uniques": ["Unhappiness from population decreased by [-100]%", "[+1 Culture] per [1] population [in all cities]", "[+5 Culture] in capital", "+[100]% Strength if within [5] tiles of a [Pheromone Nexus]", "+[20]% Strength if within [1] tiles of a [Pheromone Node]"],
 		"cities": ["Int'uu Collective", "Collective Cyst 01", "Collective Cyst 02", "Collective Cyst 03", "Collective Cyst 04", "Collective Cyst 05"
 		]
 	},
@@ -136,7 +136,7 @@
 		"outerColor": [255, 255, 255],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "United Will",
-		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment", "50% chance of capturing defeated Barbarian naval units and earning 25 Gold", "[+1 Happiness, +1 Gold] per [2] population in all cities", "[+2 Gold] from each Trade Route"],
+		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment", "50% chance of capturing defeated Barbarian naval units and earning 25 Gold", "[+1 Happiness, +1 Gold] per [2] population [in all cities]", "[+2 Gold] from each Trade Route"],
 		"cities": ["Tsan'tai Unity", "Unity Hive 01", "Unity Hive 02", "Unity Hive 03", "Unity Hive 04", "Unity Hive 05"
 		]
 	},

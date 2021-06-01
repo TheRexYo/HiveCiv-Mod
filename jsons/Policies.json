@@ -30,7 +30,7 @@
 			{
 				"name": "Adaptation",
 				"effect": "Production to science conversion rates increased by 33%. All cities give +1 science per 2 population they have.",
-				"uniques": ["Production to science conversion in cities increased by 33%", "[+1 Science] per [2] population in all cities"],
+				"uniques": ["Production to science conversion in cities increased by 33%", "[+1 Science] per [2] population [in all cities]"],
 				"requires": ["Propogation"],
 				"row": 2,
 				"column": 4
@@ -54,12 +54,12 @@
 		"name": "Growth",
 		"era": "Primal era",
 		"effect": "+15% growth in all cities. +1 food per 2 population in all cities",
-		"uniques": ["+[15]% growth [in all cities]", "[+1 Food] per [2] population in all cities"],
+		"uniques": ["+[15]% growth [in all cities]", "[+1 Food] per [2] population [in all cities]"],
 		"policies": [
 			{
 				"name": "Collective Living",
 				"effect": "50% less unhappiness from population, +1 happiness for every 4 citizens in a city",
-				"uniques": ["Unhappiness from population decreased by [50]%", "[+1 Happiness] per [4] population in all cities"],
+				"uniques": ["Unhappiness from population decreased by [50]%", "[+1 Happiness] per [4] population [in all cities]"],
 				"row": 1,
 				"column": 1
 			},
@@ -73,7 +73,7 @@
 			{
 				"name": "Enforcement Instincts",
 				"effect": "Units in cities cost no Maintenance, garrisoned cities have +50% attacking strength and +3 Happiness.",
-				"uniques": ["Units in cities cost no Maintenance", "+50% attacking strength for cities with garrisoned units", "[+3 Happiness] [in all cities with a garrison]"],
+				"uniques": ["Units in cities cost no Maintenance", "+50% attacking strength for cities with garrisoned units", "[+3 Happiness] [[in all cities] with a garrison]"],
 				"requires": ["Collective Living"],
 				"row": 2,
 				"column": 2
@@ -97,7 +97,7 @@
 			{
 				"name": "Growth Complete",
 				"effect": "+15% growth and +2 food in all cities. Free Great Unit.",
-				"uniques": ["+[15]% growth in all cities","[+2 Food] in all cities", "Free Great Person"]
+				"uniques": ["+[15]% growth [in all cities]","[+2 Food] [in all cities]", "Free Great Person"]
 			}
 		]
 	},
@@ -148,7 +148,7 @@
 			{
 				"name": "Adaptability Complete",
 				"effect": "+2 Production in all cities. Golden Age length increased by 15%. Free workers and settlers appear near capital immediately (3 of each).",
-				"uniques": ["[3] free [Worker Drone] units appear","[3] free [Spawning Drone] units appear", "[+2 Production] in all cities", "+[15]% Production when constructing [Wonders]"]
+				"uniques": ["[3] free [Worker Drone] units appear","[3] free [Spawning Drone] units appear", "[+2 Production] [in all cities]", "+[15]% Production when constructing [Wonders]"]
 			}
 		]
 	},
@@ -199,7 +199,7 @@
 			{
 				"name": "Predation Complete",
 				"effect": "+2 Happiness in all cities. +15% production towards military units. +20% attack bonus to all Military Units for 30 turns",
-				"uniques": ["+20% attack bonus to all Military Units for 30 turns","[+2 Happiness] in all cities","+[15]% Production when constructing [Military] units"]
+				"uniques": ["+20% attack bonus to all Military Units for 30 turns","[+2 Happiness] [in all cities]","+[15]% Production when constructing [Military] units"]
 			}
 		]
 	},
@@ -219,7 +219,7 @@
 			{
 				"name": "Compliance Insticts",
 				"effect": "50% of excess happiness added to culture towards policies. Specialists produce half as much unhappiness. +3 Happiness in all cities.",
-				"uniques": ["50% of excess happiness added to culture towards policies", "Specialists produce half normal unhappiness", "[+3 Happiness] in all cities"],
+				"uniques": ["50% of excess happiness added to culture towards policies", "Specialists produce half normal unhappiness", "[+3 Happiness] [in all cities]"],
 				"row": 1,
 				"column": 5
 			},
@@ -250,7 +250,7 @@
 			{
 				"name": "Introspection Complete",
 				"effect": "+2 Culture in all cities. Gain a free policy. Culture cost of future policies reduced by 15%.",
-				"uniques": ["Free Social Policy","[+2 Culture] in all cities", "Culture cost of adopting new Policies reduced by [15]%"]
+				"uniques": ["Free Social Policy","[+2 Culture] [in all cities]", "Culture cost of adopting new Policies reduced by [15]%"]
 			}
 		]
 	},
@@ -452,7 +452,7 @@
 		"name": "Freedom",
 		"era": "Renaissance era",
 		"effect": "+25% great people rate",
-		"uniques": ["+[25]% great person generation in all cities"],
+		"uniques": ["+[25]% great person generation [in all cities]"],
 		"policies": [
 			{
 				"name": "Constitution",
@@ -464,7 +464,7 @@
 			{
 				"name": "Universal Suffrage",
 				"effect": "+1 production per 5 population",
-				"uniques": ["[+1 Production] per [5] population in all cities"],
+				"uniques": ["[+1 Production] per [5] population [in all cities]"],
 				"row": 1,
 				"column": 3
 			},
@@ -478,7 +478,7 @@
 			{
 				"name": "Free Speech",
 				"effect": "+1 culture for every 2 citizens",
-				"uniques": ["[+1 Culture] per [2] population in all cities"],
+				"uniques": ["[+1 Culture] per [2] population [in all cities]"],
 				"requires": ["Constitution"],
 				"row": 2,
 				"column": 1

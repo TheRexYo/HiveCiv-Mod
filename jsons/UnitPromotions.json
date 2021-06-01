@@ -9,44 +9,44 @@
 	// Ranged+Siege
 	{
 		"name": "Accuracy I",
-		"effect": "Bonus vs units in open terrain 15%",
+		"effect": "+[15]% Strength in [Open terrain]",
 		"unitTypes": ["Siege","Ranged"]
 	},
 	{
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
-		"effect": "Bonus vs units in open terrain 15%",
+		"effect": "+[30]% Strength in [Open terrain]",
 		"unitTypes": ["Siege","Ranged"]
 	},
 	{
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
-		"effect": "Bonus vs units in open terrain 15%",
+		"effect": "+[45]% Strength in [Open terrain]",
 		"unitTypes": ["Siege","Ranged"]
 	},
 
 	{
 		"name": "Barrage I",
-		"effect": "Bonus vs units in rough terrain 15%",
+		"effect": "+[15]% Strength in [Rough terrain]",
 		"unitTypes": ["Siege","Ranged"]
 	},
 	{
 		"name": "Barrage II",
 		"prerequisites": ["Barrage I"],
-		"effect": "Bonus vs units in rough terrain 15%",
+		"effect": "+[30]% Strength in [Rough terrain]",
 		"unitTypes": ["Siege","Ranged"]
 	},
 	{
 		"name": "Barrage III",
 		"prerequisites": ["Barrage II"],
-		"effect": "Bonus vs units in rough terrain 15%",
+		"effect": "+[45]% Strength in [Rough terrain]",
 		"unitTypes": ["Siege","Ranged"]
 	},
 
 	{
 		"name": "Volley",
 		"prerequisites": ["Accuracy I","Barrage I"],
-		"effect": "Bonus vs City 50%",
+		"effect": "+[100]% Strength vs [City]",
 		"unitTypes": ["Ranged","Siege"]
 	},
 	{
@@ -105,9 +105,9 @@
 		"unitTypes": ["Mounted","Armor"]
 	},
 	{
-		"name": "Siege",
+		"name": "Brute",
 		"prerequisites": ["Rush II","Sweep II"],
-		"effect": "Bonus vs City 50%",
+		"effect": "+[50]% Strength vs [City]",
 		"unitTypes": ["Melee"]
 	},
 	{
@@ -189,19 +189,19 @@
 	
 	{
 		"name": "Landing Drones I",
-		"effect": "Bonus vs City 15%",
+		"effect": "+[25]% Strength vs [City]",
 		"unitTypes": ["WaterMelee"]
 	},
 	{
 		"name": "Landing Drones II",
 		"prerequisites": ["Landing Drones I"],
-		"effect": "Bonus vs City 15%",
+		"effect": "+[50]% Strength vs [City]",
 		"unitTypes": ["WaterMelee"]
 	},
 	{
 		"name": "Landing Drones III",
 		"prerequisites": ["Landing Drones II"],
-		"effect": "Bonus vs City 15%",
+		"effect": "+[75]% Strength vs [City]",
 		"unitTypes": ["WaterMelee"]
 	},
 	
@@ -263,19 +263,19 @@
 	// Bomber
 	{
 		"name": "Siege I",
-		"effect": "Bonus vs City 33%",
+		"effect": "+[25]% Strength vs [City]",
 		"unitTypes": ["Bomber"]
 	},
 	{
 		"name": "Siege II",
 		"prerequisites": ["Siege I"],
-		"effect": "Bonus vs City 33%",
+		"effect": "+[50]% Strength vs [City]",
 		"unitTypes": ["Bomber"]
 	},
 	{
 		"name": "Siege III",
 		"prerequisites": ["Siege II"],
-		"effect": "Bonus vs City 34%",
+		"effect": "+[75]% Strength vs [City]",
 		"unitTypes": ["Bomber"]
 	},
 	{
@@ -424,25 +424,25 @@
 	// Targeting I has different requirements for air and waterranged units, this was the cleanest way to do so
 	{
 		"name": "Targeting I",
-		"effect": "Bonus vs water units 15%",
+		"effect": "+[25]% Strength vs [Water units]",
 		"unitTypes": ["WaterRanged"]
 	},
 	{
 		"name": "Targeting I (air)",
 		"prerequisites": ["Interception I","Dogfighting I", "Siege I","Bombardment I"]
-		"effect": "Bonus vs water units 15%",
+		"effect": "+[50]% Strength vs [Water units]",
 		"unitTypes": ["Fighter","Bomber"]
 	},
 	{
 		"name": "Targeting II",
 		"prerequisites": ["Targeting I","Targeting I (air)"],
-		"effect": "Bonus vs water units 15%",
+		"effect": "+[50]% Strength vs [Water units]",
 		"unitTypes": ["WaterRanged","Fighter","Bomber"]
 	},
 	{
 		"name": "Targeting III",
 		"prerequisites": ["Targeting II"],
-		"effect": "Bonus vs water units 15%",
+		"effect": "+[75]% Strength vs [Water units]",
 		"unitTypes": ["WaterRanged"]
 	},
 	
@@ -456,7 +456,7 @@
 	// Sekari Shellwalker (unit and upgrades)
 	{
 		"name": "Reflective Carapace",
-		"effect": "Bonus vs Ranged 100%"
+		"effect": "+[100]% Strength vs [Ranged]"
 	},
 	// Katorian Tunneler (unit and upgrades)
 	{
@@ -471,7 +471,7 @@
 	// Zyxian Shrieker (unit and upgrades)
 	{
 		"name": "Supersonic Vibrations",
-		"effect": "Bonus vs City 500%"
+		"effect": "+[500]% Strength vs [City]"
 	},
 	
 	//Special
