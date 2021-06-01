@@ -124,6 +124,8 @@
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
+	/*
+	// Will be added once Missile units are fixed.
 	{
 		"name": "Gene Cyst",
 		"unitType": "Missile",
@@ -136,6 +138,7 @@
 		//"requiredResource": "Wildlife",
 		"uniques": ["Excess Food converted to Production when under construction", "Self-destructs when attacking"]
 	},
+	*/
 	{
 		"name": "Gunbeast",
 		"unitType": "Ranged",
