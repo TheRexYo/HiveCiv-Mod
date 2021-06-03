@@ -19,8 +19,8 @@
 	{
 		"name": "Synapse Drone",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8]-turn golden age","Cannot be purchased"],
-		"cost": 280,
+		"uniques": ["Can start an [2]-turn golden age","Cannot be purchased"],
+		"cost": 250,
 		"hurryCostModifier": 20,
 		"requiredTech": "Introspection",
 		"movement": 1
@@ -29,7 +29,7 @@
 		"name": "Storage Drone",
 		"unitType": "Civilian",
 		"uniques": ["Can speed up construction of a wonder","Cannot be purchased"],
-		"cost": 150,
+		"cost": 300,
 		"hurryCostModifier": 20,
 		"requiredTech": "Stockpiling Instincts",
 		"movement": 1
@@ -38,7 +38,7 @@
 		"name": "Mnemonic Drone",
 		"unitType": "Civilian",
 		"uniques": ["Can hurry technology research","Cannot be purchased"],
-		"cost": 250,
+		"cost": 350,
 		"hurryCostModifier": 20,
 		"requiredTech": "Stockpiling Instincts",
 		"movement": 1
@@ -124,8 +124,6 @@
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
-	/*
-	// Will be added once Missile units are fixed.
 	{
 		"name": "Gene Cyst",
 		"unitType": "Missile",
@@ -138,7 +136,6 @@
 		//"requiredResource": "Wildlife",
 		"uniques": ["Excess Food converted to Production when under construction", "Self-destructs when attacking"]
 	},
-	*/
 	{
 		"name": "Gunbeast",
 		"unitType": "Ranged",
