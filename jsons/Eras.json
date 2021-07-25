@@ -1,0 +1,56 @@
+[
+    // Source: the fandom, so take these with a grain of salt
+    // I also did some testing in the official version, but by far not all
+    
+    {
+        "name": "Basal era",
+        "researchAgreementCost": 75,
+        "startingSettlerCount": 1, // These values should not include the values given in Difficulties.json
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 1,
+        "startingMilitaryUnit": "Soldier Drone",
+        "settlerPopulation": 1,
+        "iconRGB": [0, 0, 0]
+    },
+    {
+        "name": "Primal era",
+        "researchAgreementCost": 150,
+        "startingSettlerCount": 1,
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 1,
+        "startingMilitaryUnit": "Slasher",
+        "startingGold": 5,
+        "startingCulture": 25,
+        "settlerPopulation": 2,
+        "iconRGB": [255, 0, 0]
+    },
+    {
+        "name": "Archaic era",
+        "researchAgreementCost": 225,
+        "startingSettlerCount": 2,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 3,
+        "startingMilitaryUnit": "Shredder",
+        "startingGold": 25,
+        "startingCulture": 75,
+        "settlerPopulation": 3,
+        "settlerBuildings": ["Psionic Nexus","Psionic Node"],
+        "startingObsoleteWonders": ["The Mindstone", "The Nexus", "The Hivemaw", "The Nest", "The Eye", "The Vault"],
+        "iconRGB": [0, 0, 255]
+    },
+	// The final era. This will be modified as time goes on and the mod gets more eras.
+    {
+        "name": "Terminal era",
+        "researchAgreementCost": 250,
+        "startingSettlerCount": 2,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 3,
+        "startingMilitaryUnit": "Metallic Drone",
+        "startingGold": 25,
+        "startingCulture": 200,
+        "settlerPopulation": 1,
+        "settlerBuildings": ["Psionic Nexus","Psionic Node"],
+        "startingObsoleteWonders": ["The Mindstone", "The Nexus", "The Hivemaw", "The Nest", "The Eye", "The Vault"],
+        "iconRGB": [255, 255, 255]
+    }
+]

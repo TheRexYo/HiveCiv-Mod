@@ -59,7 +59,7 @@
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Coast"],
 		"food": 1,
-		"improvement": "Hunting Grounds (Ocean)",
+		"improvement": "Hunting Grounds (Coast)",
 		"improvementStats": {"food": 1},
 		"building": "Storage Nest"
 	},
@@ -247,10 +247,10 @@
 	{
 		"name": "Whales",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Coast"],
+		"terrainsCanBeFoundOn": ["Ocean"],
 		"food": 1,
 		"gold": 1,
-		"improvement": "Hunting Grounds (Ocean)",
+		"improvement": "Hunting Grounds (Coast)",
 		"improvementStats": {"food": 1}
 	},
 	{
@@ -258,7 +258,7 @@
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Coast"],
 		"gold": 2,
-		"improvement": "Hunting Grounds (Ocean)",
+		"improvement": "Hunting Grounds (Coast)",
 		"improvementStats": {"food": 1}
 	}
 	/*
@@ -295,7 +295,7 @@
 		"terrainsCanBeFoundOn": ["Coast"],
 		"food": 1,
 		"gold": 1,
-		"improvement": "Hunting Grounds (Ocean)",
+		"improvement": "Hunting Grounds (Coast)",
 		"improvementStats": {"food": 1,"gold": 1},
 	},
 	{

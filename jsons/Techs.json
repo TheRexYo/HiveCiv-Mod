@@ -88,7 +88,7 @@
 				"name": "Aquatic Adaptations",
 				"row": 5,
 				"prerequisites": ["Gene Harvesting"],
-				"quote": "'All the world belongs to our mind. The sea is no exception."
+				"quote": "'All the world's resources are ours; the sea shall not withold them from us any longer.'"
 			},
 			{
 				"name": "Titanic Weaponry",
@@ -140,6 +140,94 @@
 				"row": 8,
 				"prerequisites": ["Symbiotic Weaponry", "Bio-Structures", "Mineral Adaptations"],
 				"quote": "'The walls of the hive shifted to reveal a mighty bio-cannon, which proceeded to melt the intruders with a gout of acid.'"
+			}
+		]	
+	},
+	{
+		"columnNumber": 4,
+		"era": "Archaic era",
+		"techCost": 300, 
+		"buildingCost": 180,
+		"wonderCost": 660,
+		"techs": [
+			{
+				"name": "Psionic Manipulation",
+				"row": 1,
+				"prerequisites": ["Psionic Accumulation"],
+				"quote": "'The drones crackled with energy, and from them came a blast of psychic power, tearing their foes asunder.'"
+			},
+			{
+				"name": "Reflective Processes",
+				"row": 2,
+				"prerequisites": ["Psionic Accumulation"],
+				"uniques": ["Each city founded increases culture cost of policies [20]% less than normal"],
+				"quote": "'The mind learned to think upon even the smallest of its processes, improving its efficiency by a large margin.'"
+			},
+			{
+				"name": "Synaptic Specialization",
+				"row": 3,
+				"prerequisites": ["Psionic Accumulation","Adaptive Weaponry"],
+				"quote": "'By dividing our thoughts between us, we can learn faster, and grow stronger.'"
+			},
+			{
+				"name": "Amphibious Evolution",
+				"row": 5,
+				"prerequisites": ["Adaptive Weaponry"],
+				"uniques": ["Enables embarkation for land units"],
+				"quote": "'The waters shall no longer prove a barrier to our expansion; we may travel through them as we please.'"
+			},
+			{
+				"name": "Adaptive Structures",
+				"row": 7,
+				"prerequisites": ["Aggressive Structures","Adaptive Weaponry"],
+				"quote": "'The mind learned to adapt to the world it lived in, altering its structures to match its home.'"
+			},
+			{
+				"name": "Optimization Instincts",
+				"row": 8,
+				"prerequisites": ["Aggressive Structures"],
+				"uniques": ["+[10]% Production when constructing [Buildings]"],
+				"quote": "'When the opportunity for growth comes, we must use it, no matter what.'"
+			}
+			{
+				"name": "Abiotic Assimilation",
+				"row": 9,
+				"prerequisites": ["Aggressive Structures"],
+				"quote": "'... Now, the lands that once limited our growth shall only serve to feed our hunger.'"
+			},
+		]	
+	},
+	{
+		"columnNumber": 4,
+		"era": "Archaic era",
+		"techCost": 400, 
+		"buildingCost": 240,
+		"wonderCost": 840,
+		"techs": [
+			{
+				"name": "Divided Introspection",
+				"row": 2,
+				"prerequisites": ["Reflective Processes","Synaptic Specialization"],
+				"uniques": ["Culture cost of adopting new Policies reduced by [5]%"],
+				"quote": "'By delegating our thought processes to different divisions, we can reduce the number of resources we need to grow our mind.'"
+			},
+			{
+				"name": "Naval Bioforms",
+				"row": 4,
+				"prerequisites": ["Amphibious Evolution","Synaptic Specialization"],
+				"quote": "'The mind found that the sea provided its own challenges, and soon after, it learned to overcome them.'"
+			},
+			{
+				"name": "Oceanic Constructs",
+				"row": 6,
+				"prerequisites": ["Adaptive Structures","Amphibious Evolution"],
+				"quote": "'The sea, too, is part of our home. We shall learn to grow in its waters, just as we do on land.'"
+			},
+			{
+				"name": "Environmental Alteration",
+				"row": 8,
+				"prerequisites": ["Optimization Instincts","Adaptive Structures"],
+				"quote": "'No longer shall we be forced to adapt to the world around us; it will adapt to us instead.'"
 			}
 		]	
 	}

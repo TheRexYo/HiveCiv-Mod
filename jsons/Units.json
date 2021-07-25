@@ -5,7 +5,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build improvements on tiles"],
+		"uniques": ["Can build [Land] improvements on tiles"],
 		"cost": 70
 	},
 	{
@@ -20,7 +20,7 @@
 		"name": "Synapse Drone",
 		"unitType": "Civilian",
 		"uniques": ["Can start an [2]-turn golden age","Cannot be purchased"],
-		"cost": 250,
+		"cost": 300,
 		"hurryCostModifier": 20,
 		"requiredTech": "Introspection",
 		"movement": 1
@@ -29,16 +29,7 @@
 		"name": "Storage Drone",
 		"unitType": "Civilian",
 		"uniques": ["Can speed up construction of a wonder","Cannot be purchased"],
-		"cost": 300,
-		"hurryCostModifier": 20,
-		"requiredTech": "Stockpiling Instincts",
-		"movement": 1
-	},
-	{
-		"name": "Mnemonic Drone",
-		"unitType": "Civilian",
-		"uniques": ["Can hurry technology research","Cannot be purchased"],
-		"cost": 350,
+		"cost": 750,
 		"hurryCostModifier": 20,
 		"requiredTech": "Stockpiling Instincts",
 		"movement": 1
@@ -80,7 +71,7 @@
 		"unitType": "Ranged",
 		"movement": 2,
 		"strength": 5,
-		"rangedStrength": 7,
+		"rangedStrength": 12,
 		"cost": 40,
 		"hurryCostModifier": 20,
 		"requiredTech": "Bio-Weapons",
@@ -94,17 +85,19 @@
 		"movement": 4,
 		"cost": 30,
 		"requiredTech": "Aquatic Adaptations",
-		"uniques": ["Cannot enter ocean tiles until Astronomy", "May create improvements on water resources"],
+		"uniques": ["Cannot enter ocean tiles", "May create improvements on water resources", "Can build improvements on tiles"],
 		"hurryCostModifier": 20
 	},
 	{
-		"name": "Carrier Drone",
+		"name": "Carrier Vessel",
 		"unitType": "WaterMelee",
 		"movement": 4,
 		"strength": 10,
-		"cost": 45,
+		"cost": 40,
 		"requiredTech": "Aquatic Adaptations",
 		"uniques": ["Cannot enter ocean tiles"],
+		"obsoleteTech": "Naval Bioforms",
+		"upgradesTo": "Soldier Vessel",
 		//"upgradesTo": "Caravel",
 		//"obsoleteTech": "Astronomy",
 		"hurryCostModifier": 20,
@@ -167,21 +160,6 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Telekinetic Drone",
-		"unitType": "Ranged",
-		"movement": 2,
-		"range": 5,
-		"strength": 3,
-		"rangedStrength": 7,
-		"cost": 50,
-		"hurryCostModifier": 20,
-		"requiredTech": "Chronostasis",
-		//"obsoleteTech": "Machinery",
-		//"upgradesTo": "Crossbowman",
-		"uniques": ["Ignores terrain cost", "+[100]% Strength vs [Armor]", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
-		"attackSound": "arrow"
-	},
-	{
 		"name": "Impaler",
 		"unitType": "Melee",
 		"movement": 2,
@@ -201,8 +179,8 @@
 		"strength": 10,
 		"cost": 60,
 		"requiredTech": "Mineral Adaptations",
-		//"obsoleteTech": "Civil Service",
-		//"upgradesTo": "Pikeman",
+		"obsoleteTech": "Abiotic Assimilation",
+		"upgradesTo": "Metallic Drone",
 		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"]
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
@@ -211,8 +189,8 @@
 		"name": "Spitter Symbiont",
 		"unitType": "Ranged",
 		"movement": 2,
-		"strength": 5,
-		"rangedStrength": 12,
+		"strength": 8,
+		"rangedStrength": 16,
 		"cost": 50,
 		"hurryCostModifier": 20,
 		"requiredTech": "Symbiotic Weaponry",
@@ -246,12 +224,96 @@
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
+	{
+		"name": "Telekinetic Drone",
+		"unitType": "Ranged",
+		"movement": 2,
+		"range": 5,
+		"strength": 10,
+		"rangedStrength": 15,
+		"cost": 80,
+		"hurryCostModifier": 20,
+		"requiredTech": "Psionic Manipulation",
+		//"obsoleteTech": "Machinery",
+		//"upgradesTo": "Crossbowman",
+		"uniques": ["Ignores terrain cost", "+[100]% Strength vs [Armor]", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mnemonic Drone",
+		"unitType": "Civilian",
+		"uniques": ["Can hurry technology research","Cannot be purchased"],
+		"cost": 350,
+		"hurryCostModifier": 20,
+		"requiredTech": "Synaptic Specialization",
+		"movement": 1
+	},
+	{
+		"name": "Metallic Drone",
+		"unitType": "Armor",
+		"movement": 1,
+		"strength": 20,
+		"cost": 75,
+		"requiredTech": "Abiotic Assimilation",
+		//"obsoleteTech": "Civil Service",
+		//"upgradesTo": "Pikeman",
+		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"]
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Miasma Spitter",
+		"unitType": "Ranged",
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 24,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredTech": "Abiotic Assimilation",
+		//"obsoleteTech": "Machinery",
+		//"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Soldier Vessel",
+		"unitType": "WaterMelee",
+		"movement": 4,
+		"strength": 20,
+		"cost": 60,
+		"requiredTech": "Naval Bioforms",
+		//"uniques": ["Cannot enter ocean tiles"],
+		//"upgradesTo": "Caravel",
+		//"obsoleteTech": "Astronomy",
+		"hurryCostModifier": 20,
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Spitter Vessel",
+		"unitType": "WaterRanged",
+		"movement": 4,
+		"strength": 10,
+		"rangedStrength": 20,
+		"cost": 60,
+		"requiredTech": "Naval Bioforms",
+		//"uniques": ["Cannot enter ocean tiles"],
+		//"upgradesTo": "Caravel",
+		//"obsoleteTech": "Astronomy",
+		"hurryCostModifier": 20,
+		"attackSound": "arrow"
+	},
 	
 	// Unbuildables
 	{
-		"name": "Great Psyker",
+		"name": "Great Psion",
 		"unitType": "Civilian",
 		"uniques": ["Can start an [16]-turn golden age", "Can construct [Mind Nexus]", "Great Person - [Culture]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Psyker",
+		"unitType": "Civilian",
+		"uniques": ["Can construct [Psychic Nexus] if it hasn't spread religion yet", "Can spread religion [4] times",
+			"May found a religion", "Great Person - [Faith]", "Unbuildable"],
 		"movement": 2
 	},
 	{
@@ -286,10 +348,10 @@
 		"replaces": "Soldier Drone",
 		"unitType": "Melee",
 		"movement": 2,
-		"strength": 9,
+		"strength": 8,
 		"cost": 10,
 		"hurryCostModifier": 20,
-		"promotions": ["Call of the Swarm"],
+		"promotions": ["Call of the Swarm", "Genetic Apex"],
 		"obsoleteTech": "Bio-Weapons",
 		"upgradesTo": "Slasher",
 		"attackSound": "nonmetalhit"

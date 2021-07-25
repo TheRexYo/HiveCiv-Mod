@@ -1,0 +1,154 @@
+
+[
+	{
+		"name": "United Will",
+		"type": "Pantheon",
+		"uniques": ["[+5 Faith] from every [Psionic Node]"]
+	},
+	{
+		"name": "Cryostatic Memories",
+		"type": "Pantheon",
+		"uniques": ["[+2 Faith] from [Tundra] tiles without [Forest] [in this city]", "[+3 Faith] from every [Ice]"]
+	},
+	{
+		"name": "Desert Preference",
+		"type": "Pantheon",
+		"uniques": ["[+2 Faith] from every [Desert]"]
+	},
+	{
+		"name": "Psychic Healing",
+		"type": "Pantheon",
+		"uniques": ["[All] Units adjacent to this city heal [+50] HP per turn when healing"]
+		// This should be worded better
+	},
+	{
+		"name": "Strength from Adversity",
+		"type": "Pantheon",
+		"uniques": ["[Wounded] units deal +[100]% damage","[All] Units adjacent to this city heal [-25] HP per turn when healing"] 
+	},
+	{
+		"name": "Drone Overclocking",
+		"type": "Pantheon",
+		"uniques": ["[+3 Production] in cities with [3] or more population"]
+	},
+	{
+		"name": "Introspective Metabolism",
+		"type": "Pantheon",
+		"uniques": ["[+2 Culture] from every [Biomass District]"]
+	},
+	{
+		"name": "Bounty of the Sea",
+		"type": "Pantheon",
+		"uniques": ["[+2 Production] from every [Hunting Grounds (Coast)]", "[+3 Production] from every [Hunting Grounds (Ocean)]"]
+	},
+	{
+		"name": "Memory Harvesting",
+		"type": "Pantheon",
+		"uniques": ["Earn [100]% of [Military] unit's [Strength] as [Faith] when killed within 4 tiles of a city following this religion"]
+	},
+	// TODO: Once the luxury resources are overhauled, this should be replaced with the new ones.
+	{
+		"name": "Drone Care",
+		"type": "Pantheon",
+		"uniques": ["[+1 Culture, +3 Faith] from every [Wine]", "[+1 Culture, +3 Faith] from every [Incense]"]
+	},
+	{
+		"name": "Frenzied Spawning",
+		"type": "Pantheon",
+		"uniques": ["[+3 Happiness] in cities with [3] or more population"]
+	},
+	{
+		"name": "Hive Defence",
+		"type": "Pantheon",
+		"uniques": ["[+50]% attacking Strength for cities"]
+	},
+	{
+		"name": "The Eternal Hunt",
+		"type": "Pantheon",
+		"uniques": ["[+3 Food] from every [Hunting Grounds]"]
+	},
+	{
+		"name": "Psychic Network",
+		"type": "Pantheon",
+		"uniques": ["[+2 Science] from each Trade Route"]
+	},
+	{
+		"name": "Legacy of the Ancestors",
+		"type": "Pantheon",
+		"uniques": ["+[15]% Production when constructing [Wonders]"]
+		// Should only be ancient/classical era wonders, but implementing that is another can of worms
+		// For that we really should need an era.matchesFilter() AND support for multiple values in 
+		// construction.matchesFilter(), so we could write something like:
+		//"uniques": ["[+15]% Production when constructing [{Ancient Era} {Wonders}]",
+		// "[+15]% Production when constructing [{Classical Era} {Wonders}]"]
+		// For now this feels like overkill, but I'll leave this here for the future
+	},
+	{
+		"name": "Heightened Curiousity",
+		"type": "Pantheon",
+		"uniques": ["[+5 Faith, +5 Science] from every [Natural Wonder]"]
+	},
+	{
+		"name": "Lessons of Hunger",
+		"type": "Pantheon",
+		"uniques": ["[+2 Culture] from every [Growing District]"]
+	},
+	{
+		"name": "Glitter and Gold",
+		"type": "Pantheon",
+		"uniques": ["[+1 Culture, +3 Faith] from every [Gold]", "[+3 Culture, +1 Faith] from every [Silver]"]
+	},
+	{
+		"name": "Sprawling Hives",
+		"type": "Pantheon",
+		"uniques": ["[-25]% cost of natural border growth"]
+	},
+	{
+		"name": "Natural Affinity",
+		"type": "Pantheon",
+		"uniques": ["[+2 Culture] from every [Jungle]"]
+	},
+	{
+		"name": "River Nests",
+		"type": "Pantheon",
+		"uniques": ["[+4 Happiness] in cities on [River] tiles"]
+	},
+	{
+		"name": "Earthen Sanctuaries",
+		"type": "Pantheon",
+		"uniques": ["[+2 Faith, +2 Happiness] from every [Quarry]"]
+	},
+///////////////////////////////////////// Follower beliefs /////////////////////////////////////////
+
+	{
+		"name": "Archive Drones",
+		"type": "Follower",
+		"uniques": ["[+2 Faith] from every Wonder"]
+	},
+	// Todo: Once "religious" buildings (I say this with caution, as "religion" isn't really the right word for a hive mind) are added, use them for this instead.
+	{
+		"name": "Feeder Support",
+		"type": "Follower",
+		"uniques": ["[+2 Culture] from every [Storage Nest]", "[+2 Food] from every [Psionic Nexus]"]
+	},
+	{
+		"name": "Honored Presence",
+		"type": "Follower",
+		"uniques": ["[+3 Production] if this city has at least [1] specialists"]
+	},
+	{
+		"name": "Psionic Suppression",
+		"type": "Follower",
+		"uniques": ["[+2 Happiness] from every [Psionic Pylon]"]
+	},
+	{
+		"name": "Chronicles of Greatness",
+		"type": "Follower",
+		"uniques": ["[+8 Culture] from every [Psionic Monolith]"]
+	},
+	{
+		"name": "No Place For Sacrifice",
+		"type": "Follower",
+		"uniques": ["[+50]% growth [in this city] when not at war"]
+	}
+]
