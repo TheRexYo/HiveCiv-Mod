@@ -2,7 +2,7 @@
 	/* Ancient Era */
 	{
 		"name": "Worker Drone",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"movement": 2,
 		"hurryCostModifier": 20,
 		"uniques": ["Can build [Land] improvements on tiles"],
@@ -10,7 +10,7 @@
 	},
 	{
 		"name": "Spawning Drone",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"movement": 2,
 		"cost": 105,
 		"uniques": ["Founds a new city","Requires at least [2] population","Excess Food converted to Production when under construction"],
@@ -18,7 +18,7 @@
 	},
 	{
 		"name": "Synapse Drone",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can start an [2]-turn golden age","Cannot be purchased"],
 		"cost": 300,
 		"hurryCostModifier": 20,
@@ -27,7 +27,7 @@
 	},
 	{
 		"name": "Storage Drone",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can speed up construction of a wonder","Cannot be purchased"],
 		"cost": 750,
 		"hurryCostModifier": 20,
@@ -36,7 +36,7 @@
 	},
 	{
 		"name": "Scouting Drone",
-		"unitType": "Scout",
+		"unitType": "Recon",
 		"movement": 2,
 		"strength": 5,
 		"cost": 25,
@@ -45,7 +45,7 @@
 	},
 	{
 		"name": "Soldier Drone",
-		"unitType": "Melee",
+		"unitType": "Infantry",
 		"movement": 2,
 		"strength": 8,
 		"cost": 40,
@@ -55,8 +55,20 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
+		"name": "Guard Drone",
+		"unitType": "Guard",
+		"movement": 2,
+		"strength": 5,
+		"cost": 40,
+		"obsoleteTech": "Mineral Adaptations",
+		"upgradesTo": "Guard Drone",
+		"uniques": ["+[100]% Strength when defending"],
+		"hurryCostModifier": 20,
+		"attackSound": "nonmetalhit"
+	},
+	{
 		"name": "Slasher",
-		"unitType": "Melee",
+		"unitType": "Infantry",
 		"movement": 2,
 		"strength": 12,
 		"cost": 40,
@@ -68,7 +80,7 @@
 	},
 	{
 		"name": "Spitter",
-		"unitType": "Ranged",
+		"unitType": "Projectile (Ranged)",
 		"movement": 2,
 		"strength": 5,
 		"rangedStrength": 12,
@@ -81,7 +93,7 @@
 	},
 	{
 		"name": "Aquatic Drone",
-		"unitType": "WaterCivilian",
+		"unitType": "Service (Water)",
 		"movement": 4,
 		"cost": 30,
 		"requiredTech": "Aquatic Adaptations",
@@ -90,7 +102,7 @@
 	},
 	{
 		"name": "Carrier Vessel",
-		"unitType": "WaterMelee",
+		"unitType": "Infantry (Water)",
 		"movement": 4,
 		"strength": 10,
 		"cost": 40,
@@ -105,7 +117,7 @@
 	},
 	{
 		"name": "Warbeast",
-		"unitType": "Mounted",
+		"unitType": "Beast",
 		"movement": 3,
 		"strength": 18,
 		"cost": 75,
@@ -113,13 +125,13 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","+[33]% Strength vs [Melee]"],
+		"uniques": ["No defensive terrain bonus", "+[33]% Strength vs [Infantry]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
 	{
 		"name": "Gene Cyst",
-		"unitType": "Missile",
+		"unitType": "Bombardment",
 		"movement": 1,
 		"strength": 30,
 		"rangedStrength": 30,
@@ -131,7 +143,7 @@
 	},
 	{
 		"name": "Gunbeast",
-		"unitType": "Ranged",
+		"unitType": "Projectile (Ranged)",
 		"movement": 3,
 		"strength": 10,
 		"rangedStrength": 14,
@@ -140,13 +152,13 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","+[33]% Strength vs [Melee]"],
+		"uniques": ["No defensive terrain bonus", "+[33]% Strength vs [Infantry]"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Bio-titan",
-		"unitType": "Siege",
+		"unitType": "Titan",
 		"movement": 2,
 		"strength": 25,
 		"rangedStrength": 30,
@@ -155,39 +167,39 @@
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [City]","Penalty vs Ranged 33%"],
+		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [City]","-[33]% Strength vs [Projectile (Ranged)]"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Impaler",
-		"unitType": "Melee",
+		"unitType": "Infantry",
 		"movement": 2,
 		"strength": 14,
 		"cost": 50,
 		"requiredTech": "Mineral Adaptations",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["+[200]% Strength vs [Mounted]","Penalty vs Melee 50%"],
+		"uniques": ["+[200]% Strength vs [Beast]","-[50]% Strength vs [Infantry]"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Armor Drone",
-		"unitType": "Armor",
+		"unitType": "Guard",
 		"movement": 1,
-		"strength": 10,
+		"strength": 12,
 		"cost": 60,
 		"requiredTech": "Mineral Adaptations",
 		"obsoleteTech": "Abiotic Assimilation",
 		"upgradesTo": "Metallic Drone",
-		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"],
+		"uniques": ["+[25]% Strength vs [Projectile (Ranged)]", "+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
 	{
 		"name": "Spitter Symbiont",
-		"unitType": "Ranged",
+		"unitType": "Projectile (Ranged)",
 		"movement": 2,
 		"strength": 8,
 		"rangedStrength": 16,
@@ -200,7 +212,7 @@
 	},
 	{
 		"name": "Slasher Symbiont",
-		"unitType": "Melee",
+		"unitType": "Infantry",
 		"movement": 2,
 		"strength": 16,
 		"cost": 50,
@@ -213,20 +225,20 @@
 	/* Archaic Era */
 	{
 		"name": "Shredder",
-		"unitType": "Melee",
+		"unitType": "Swarm",
 		"movement": 3,
 		"strength": 14,
 		"cost": 60,
 		"requiredTech": "Adaptive Weaponry",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques":["Bonus as Attacker [100]%", "+[200]% Strength vs [Armor]"],
+		"uniques":["+[100]% Strength when attacking ", "+[200]% Strength vs [Guard]"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Telekinetic Drone",
-		"unitType": "Ranged",
+		"unitType": "Projectile (Ranged)",
 		"movement": 2,
 		"range": 5,
 		"strength": 10,
@@ -236,12 +248,12 @@
 		"requiredTech": "Psionic Manipulation",
 		//"obsoleteTech": "Machinery",
 		//"upgradesTo": "Crossbowman",
-		"uniques": ["Ignores terrain cost", "+[100]% Strength vs [Armor]", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
+		"uniques": ["Ignores terrain cost", "+[100]% Strength vs [Guard]", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Mnemonic Drone",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can hurry technology research","Cannot be purchased"],
 		"cost": 350,
 		"hurryCostModifier": 20,
@@ -250,20 +262,20 @@
 	},
 	{
 		"name": "Metallic Drone",
-		"unitType": "Armor",
+		"unitType": "Guard",
 		"movement": 1,
 		"strength": 20,
 		"cost": 75,
 		"requiredTech": "Abiotic Assimilation",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"],
+		"uniques": ["+[50]% Strength vs [Projectile (Ranged)]", "+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
 	{
 		"name": "Miasma Spitter",
-		"unitType": "Ranged",
+		"unitType": "Projectile (Ranged)",
 		"movement": 2,
 		"strength": 12,
 		"rangedStrength": 24,
@@ -276,7 +288,7 @@
 	},
 	{
 		"name": "Soldier Vessel",
-		"unitType": "WaterMelee",
+		"unitType": "Infantry (Water)",
 		"movement": 4,
 		"strength": 20,
 		"cost": 60,
@@ -289,7 +301,7 @@
 	},
 	{
 		"name": "Spitter Vessel",
-		"unitType": "WaterRanged",
+		"unitType": "Projectile (Water)",
 		"movement": 4,
 		"strength": 10,
 		"rangedStrength": 20,
@@ -305,38 +317,38 @@
 	// Unbuildables
 	{
 		"name": "Great Psion",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can start an [16]-turn golden age", "Can construct [Mind Nexus]", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Psyker",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can construct [Psychic Nexus] if it hasn't spread religion yet", "Can spread religion [4] times",
 			"May found a religion", "Great Person - [Faith]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Catalyst",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can hurry technology research", "Can construct [Science Nexus]", "Great Person - [Science]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Scion",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [100] Influence","Can construct [Material Nexus]", "Great Person - [Gold]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Overseer",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can speed up construction of a wonder", "Can construct [Production Nexus]", "Great Person - [Production]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Warrior",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can start an [8]-turn golden age", "Bonus for units in 2 tile radius 15%", "Can construct [Defensive Nexus]",
 			"Great Person - [War]", "Unbuildable"],
 		"movement": 2
@@ -346,7 +358,7 @@
 		"name": "Rak'tar Swarm Drone",
 		"uniqueTo": "Rak'tar",
 		"replaces": "Soldier Drone",
-		"unitType": "Melee",
+		"unitType": "Swarm",
 		"movement": 2,
 		"strength": 8,
 		"cost": 10,
@@ -360,7 +372,7 @@
 		"name": "Kezit Catalyst Drone",
 		"uniqueTo": "Kezit",
 		"replaces": "Synapse Drone",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can start an [8]-turn golden age","Can hurry technology research","Cannot be purchased"],
 		"cost": 240,
 		"hurryCostModifier": 20,
@@ -369,7 +381,7 @@
 	},
 	{
 		"name": "Int'uu Queen",
-		"unitType": "Civilian",
+		"unitType": "Service",
 		"uniques": ["Can start an [50]-turn golden age", "Can construct [Mind Nexus]", "Can construct [Pheromone Nexus]", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 2,
 		"uniqueTo": "Int'uu",
@@ -377,7 +389,7 @@
 	},
 	{
 		"name": "Tsan'tai Seeker Drone",
-		"unitType": "Scout",
+		"unitType": "Recon",
 		"uniques": ["Ignores terrain cost", "Can undertake a trade mission with City-State, giving a large sum of gold and [35] Influence","Cannot be purchased"],
 		"movement": 5,
 		"strength": 2,
@@ -390,17 +402,17 @@
 	{
 		"name": "Sekari Shellwalker",
 		"uniqueTo": "Sekari",
-		"replaces": "Soldier Drone",
-		"unitType": "Armor",
+		"replaces": "Guard Drone",
+		"unitType": "Guard",
 		"movement": 1,
 		"strength": 10,
 		"cost": 40,
 		"hurryCostModifier": 20,
 		//"requiredTech": "",
 		//"requiredResource": "",
-		"upgradesTo": "Slasher",
-		"obsoleteTech": "Bio-Weapons",
-		"uniques": ["+25% Defence against ranged attacks", "+[50]% Strength when defending"],
+		"upgradesTo": "Armor Drone",
+		"obsoleteTech": "Mineral Adaptations",
+		"uniques": ["+[50]% Strength vs [Projectile (Ranged)]", "+[100]% Strength when defending"],
 		"promotions": ["Reflective Carapace"],
 		"attackSound": "horse"
 	},
@@ -408,7 +420,7 @@
 		"name": "Katorian Tunneler",
 		"uniqueTo": "Kator",
 		"replaces": "Warbeast",
-		"unitType": "Mounted",
+		"unitType": "Beast",
 		"movement": 4,
 		"strength": 21,
 		"cost": 75,
@@ -425,14 +437,14 @@
 		"name": "Venixian Mind-Eater",
 		"uniqueTo": "Venix",
 		"replaces": "Impaler",
-		"unitType": "Melee",
+		"unitType": "Infantry",
 		"movement": 2,
 		"strength": 16,
 		"cost": 50,
 		"requiredTech": "Mineral Adaptations",
 		//"upgradesTo": "",
 		//"obsoleteTech": "",
-		"uniques": ["+[25]% Strength vs [Mounted]","+[25]% Strength vs [Melee]","Can move after attacking"],
+		"uniques": ["+[25]% Strength vs [Beast]","+[25]% Strength vs [Infantry]","May capture killed [Land] units","Can move after attacking"],
 		"promotions": ["Feeding Tendrils"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
@@ -441,7 +453,7 @@
 		"name": "Zyxian Shrieker",
 		"uniqueTo": "Zyxia",
 		"replaces": "Spitter",
-		"unitType": "Ranged",
+		"unitType": "Projectile (Ranged)",
 		"movement": 2,
 		"strength": 1,
 		"range": 1,
@@ -459,7 +471,7 @@
 	/*
 	{
 		"name": "Great Devourer",
-		"unitType": "Mounted",
+		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
 		"replaces": "Bio-Titan",
 		"movement": 1,
@@ -467,12 +479,12 @@
 		"cost": 200,
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
-		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [Ranged]"],
+		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [Projectile (Ranged)]"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Predator",
-		"unitType": "Mounted",
+		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
 		"replaces": "Warbeast",
 		"movement": 3,
@@ -486,7 +498,7 @@
 	//Barbarian Uniques
 	{
 		"name": "Rogue Drone",
-		"unitType": "Melee",
+		"unitType": "Infantry",
 		"uniqueTo": "Barbarians",
 		"replaces": "Soldier Drone",
 		"movement": 2,

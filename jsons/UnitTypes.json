@@ -8,6 +8,10 @@
         "movementType": "Land"
     },
     {
+        "name": "Guard",
+        "movementType": "Land"
+    },
+    {
         "name": "Projectile (Melee)",
         "movementType": "Land"
     },

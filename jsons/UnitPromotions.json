@@ -72,7 +72,7 @@
 	// Sekari Shellwalker (unit and upgrades)
 	{
 		"name": "Reflective Carapace",
-		"uniques": ["+[100]% Strength vs [Ranged]"]
+		"uniques": ["[+200]% Strength when defending vs [Ranged] units"]
 	},
 	// Katorian Tunneler (unit and upgrades)
 	{
