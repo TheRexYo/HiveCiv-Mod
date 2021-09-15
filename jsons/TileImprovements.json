@@ -84,7 +84,7 @@
 		"name": "Road",
 		"turnsToBuild": 4,
 		"techRequired": "Mineral Ingestion",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"]
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
 		"uniques": ["Can be built outside your borders", "Costs [1] gold per turn when in your territory"],
 		"shortcutKey": "R"
 	},
@@ -92,7 +92,7 @@
 		"name": "Railroad",
 		"turnsToBuild": 4,
 		"techRequired": "Bio-Structures",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"]
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
 		"uniques": ["Can be built outside your borders", "Costs [1] gold per turn when in your territory"]
 	},
 	

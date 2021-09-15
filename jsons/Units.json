@@ -181,7 +181,7 @@
 		"requiredTech": "Mineral Adaptations",
 		"obsoleteTech": "Abiotic Assimilation",
 		"upgradesTo": "Metallic Drone",
-		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"]
+		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -257,7 +257,7 @@
 		"requiredTech": "Abiotic Assimilation",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"]
+		"uniques": ["+[50]% Strength vs [Ranged]", "+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},

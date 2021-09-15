@@ -1,449 +1,61 @@
 [
-
 	{
 		"name": "Heal Instantly",
-		"effect": "Heal this Unit by 50 HP; Doing so will consume this opportunity to choose a Promotion",
-		"unitTypes": ["Melee","Mounted","Scout","Siege","Ranged","Armor","WaterMelee","WaterRanged","WaterSubmarine"]
+		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"]
 	},
 	
-	// Ranged+Siege
+	// --[[ Standard Promotions]]--
+	// Generic
 	{
-		"name": "Accuracy I",
-		"effect": "+[15]% Strength in [Open terrain]",
-		"unitTypes": ["Siege","Ranged"]
+		"name": "Strength I",
+		"uniques": ["+[5]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
 	{
-		"name": "Accuracy II",
-		"prerequisites": ["Accuracy I"],
-		"effect": "+[30]% Strength in [Open terrain]",
-		"unitTypes": ["Siege","Ranged"]
+		"name": "Strength II",
+		"uniques": ["+[10]% Combat Strength"],
+		"prerequisites": ["Strength I"],
+		"unitTypes": ["Infantry"]
 	},
 	{
-		"name": "Accuracy III",
-		"prerequisites": ["Accuracy II"],
-		"effect": "+[45]% Strength in [Open terrain]",
-		"unitTypes": ["Siege","Ranged"]
-	},
-
-	{
-		"name": "Barrage I",
-		"effect": "+[15]% Strength in [Rough terrain]",
-		"unitTypes": ["Siege","Ranged"]
-	},
-	{
-		"name": "Barrage II",
-		"prerequisites": ["Barrage I"],
-		"effect": "+[30]% Strength in [Rough terrain]",
-		"unitTypes": ["Siege","Ranged"]
-	},
-	{
-		"name": "Barrage III",
-		"prerequisites": ["Barrage II"],
-		"effect": "+[45]% Strength in [Rough terrain]",
-		"unitTypes": ["Siege","Ranged"]
-	},
-
-	{
-		"name": "Volley",
-		"prerequisites": ["Accuracy I","Barrage I"],
-		"effect": "+[100]% Strength vs [City]",
-		"unitTypes": ["Ranged","Siege"]
-	},
-	{
-		"name": "Extended Range",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II", "Breach II"],
-		"effect": "+1 Range",
-		"unitTypes": ["Ranged","Siege","WaterRanged","WaterSubmarine"]
-	},
-	{
-		"name": "Indirect Fire",
-		"prerequisites": ["Accuracy III","Barrage III"],
-		"effect": "Ranged attacks may be performed over obstacles",
-		"unitTypes": ["Ranged","Siege"]
+		"name": "Strength III",
+		"prerequisites": ["Strength II"],
+		"uniques": ["+[15]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
 	
-	// Melee, Mounted+Armor
+	// --[[ Standard Promotions]]--
+	// Generic
 	{
-		"name": "Rush I",
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
+		"name": "Strength I",
+		"uniques": ["+[5]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
 	{
-		"name": "Rush II",
-		"prerequisites": ["Rush I"],
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
+		"name": "Strength II",
+		"uniques": ["+[10]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
 	{
-		"name": "Rush III",
-		"prerequisites": ["Rush II"],
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
+		"name": "Strength III",
+		"uniques": ["+[15]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
-
-	{
-		"name": "Sweep I",
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Sweep II",
-		"prerequisites": ["Sweep I"],
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Sweep III",
-		"prerequisites": ["Sweep II"],
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Charge",
-		"prerequisites": ["Rush II","Sweep II"],
-		"effect": "Bonus vs wounded units 33%",
-		"unitTypes": ["Mounted","Armor"]
-	},
-	{
-		"name": "Brute",
-		"prerequisites": ["Rush II","Sweep II"],
-		"effect": "+[50]% Strength vs [City]",
-		"unitTypes": ["Melee"]
-	},
+	
+	// Infantry
 	{
 		"name": "Swarm I",
-		"prerequisites": ["Rush II","Sweep II"],
-		"effect": "Bonus vs Mounted 35%",
-		"unitTypes": ["Melee","Mounted"]
-	},
-	{
-		"name": "Swarm II",
-		"prerequisites": ["Swarm I"],
-		"effect": "Bonus vs Mounted 65%",
-		"unitTypes": ["Melee","Mounted"]
+		"uniques": ["+[15]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
 	
+	// --[[ Mutations ]]--
+	// Infantry
 	{
-		"name": "Blitz",
-		"prerequisites": ["Rush III","Sweep III"],
-		"effect": "1 additional attack per turn",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Prowl",
-		"prerequisites": ["Rush I","Sweep I"],
-		"effect": "Double movement rate through Forest and Jungle",
-		"unitTypes": ["Melee"]
-	},
-	{
-		"name": "Medical Drones",
-		"prerequisites": ["Rush I", "Sweep I", "Scouting II"],
-		"effect": "This unit and all others in adjacent tiles heal 5 additional HP per turn",
-		"unitTypes": ["Melee","Mounted","Scout"]
-	},
-	{
-		"name": "Medical Drones II",
-		"prerequisites": ["Medical Drones"],
-		"effect": "This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory.",
-		"unitTypes": ["Melee","Mounted","Scout"]
-	},
-	
-	// Scout
-	{
-		"name": "Scouting I",
-		"effect": "+1 Visibility Range",
-		"unitTypes": ["Scout"]
-	},
-	{
-		"name": "Scouting II",
-		"prerequisites": ["Scouting I"],
-		"effect": "+1 Movement",
-		"unitTypes": ["Scout"]
-	},
-	{
-		"name": "Scouting III",
-		"prerequisites": ["Scouting II"],
-		"effect": "+1 Visibility Range",
-		"unitTypes": ["Scout"]
-	},
-	
-	
-	// Water melee
-	{
-		"name": "Boarding Drones I",
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Boarding Drones II",
-		"prerequisites": ["Boarding Drones I"],
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Boarding Drones III",
-		"prerequisites": ["Boarding Drones II"],
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	
-	{
-		"name": "Landing Drones I",
-		"effect": "+[25]% Strength vs [City]",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Landing Drones II",
-		"prerequisites": ["Landing Drones I"],
-		"effect": "+[50]% Strength vs [City]",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Landing Drones III",
-		"prerequisites": ["Landing Drones II"],
-		"effect": "+[75]% Strength vs [City]",
-		"unitTypes": ["WaterMelee"]
-	},
-	
-	// Submarine
-	{
-		"name": "Breach I",
-		"effect": "Bonus as Attacker [25]%",
-		"unitTypes": ["WaterSubmarine"]
-	},
-	{
-		"name": "Breach II",
-		"prerequisites": ["Breach I"],
-		"effect": "Bonus as Attacker [25]%",
-		"unitTypes": ["WaterSubmarine"]
-	},
-	{
-		"name": "Breach III",
-		"prerequisites": ["Breach II"],
-		"effect": "Bonus as Attacker [25]%",
-		"unitTypes": ["WaterSubmarine"]
-	},
-	
-	// Aircraft Carrier
-	{
-		"name": "Armor Plating I",
-		"effect": "+[25]% Combat Bonus when defending",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Armor Plating II",
-		"prerequisites": ["Armor Plating I"],
-		"effect": "+[25]% Combat Bonus when defending",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Armor Plating III",
-		"prerequisites": ["Armor Plating II"],
-		"effect": "+[25]% Combat Bonus when defending",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Capacity I",
-		"effect": "Can carry 1 extra air unit",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Capacity II",
-		"prerequisites": ["Capacity I"],
-		"effect": "Can carry 1 extra air unit",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Capacity III",
-		"prerequisites": ["Capacity II"],
-		"effect": "Can carry 1 extra air unit",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-
-	// Bomber
-	{
-		"name": "Siege I",
-		"effect": "+[25]% Strength vs [City]",
-		"unitTypes": ["Bomber"]
-	},
-	{
-		"name": "Siege II",
-		"prerequisites": ["Siege I"],
-		"effect": "+[50]% Strength vs [City]",
-		"unitTypes": ["Bomber"]
-	},
-	{
-		"name": "Siege III",
-		"prerequisites": ["Siege II"],
-		"effect": "+[75]% Strength vs [City]",
-		"unitTypes": ["Bomber"]
-	},
-	{
-		"name": "Evasion",
-		"prerequisites": ["Siege II", "Bombardment II"],
-		"effect": "Reduces damage taken from interception by 50%",
-		"unitTypes": ["Bomber"]
-	},
-	
-	// Fighter
-	{
-		"name": "Interception I",
-		"effect": "Bonus when intercepting [33]%",
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Interception II",
-		"prerequisites": ["Interception I"],
-		"effect": "Bonus when intercepting [33]%",
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Interception III",
-		"prerequisites": ["Interception II"],
-		"effect": "Bonus when intercepting [34]%",
-		"unitTypes": ["Fighter"]
-	},
-	/*
-	{
-		"name": "Dogfighting I",
-		"effect": "Bonus when performing air sweep [33]%", // todo
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Dogfighting II",
-		"prerequisites": ["Dogfighting I"],
-		"effect": "Bonus when performing air sweep [33]%",
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Dogfighting III",
-		"prerequisites": ["Dogfighting II"],
-		"effect": "Bonus when performing air sweep [34]%",
-		"unitTypes": ["Fighter"]
-	}
-	*/
-	
-	{
-		"name": "Rebound",
-		"prerequisites": ["Interception II", "Dogfighting II"],
-		"effect": "1 extra Interception may be made per turn",
-		"unitTypes": ["Fighter"]
-	},
-	
-	{
-		"name": "Strike Distance",
-		"prerequisites": ["Interception I", /*"Dogfighting I",*/ "Siege I", "Bombardment I"],
-		"effect": "+2 Range",
-		"unitTypes": ["Fighter","Bomber"]
-	},
-	{
-		"name": "Repair Drones",
-		"prerequisites": ["Interception II", /*"Dogfighting II",*/ "Siege II", "Bombardment II"],
-		"effect": "Unit will heal every turn, even if it performs an action",
-		"unitTypes": ["Fighter","Bomber"]
-	},
-	
-	// Mixed
-	{
-		"name": "Cover I",
-		"effect": "+25% Defence against ranged attacks",
-		"unitTypes": ["Melee","Ranged","Siege"]
-	},
-	{
-		"name": "Cover II",
-		"prerequisites": ["Cover I"],
-		"effect": "+25% Defence against ranged attacks",
-		"unitTypes": ["Melee","Ranged","Siege"]
-	},
-	
-	{
-		"name": "Foraging Drones",
-		"prerequisites": ["Accuracy II","Barrage II","Rush III","Sweep III"],
-		"effect": "Unit will heal every turn, even if it performs an action",
-		"unitTypes": ["Melee","Ranged","Siege","Mounted"]
-	},
-	{
-		"name": "Agility",
-		"prerequisites": ["Rush II","Sweep II","Targeting I",
-			"Bombardment I","Boarding Drones I", "Landing Drones I", "Breach I"],
-		"effect": "+1 Movement",
-		"unitTypes": ["Mounted","WaterMelee","WaterRanged","Armor","WaterSubmarine"]
-	},
-	{
-		"name": "Sentry Drones",
-		"prerequisites": ["Accuracy I","Barrage I","Rush II","Sweep II","Bombardment I","Targeting I","Boarding Drones I","Landing Drones I"],
-		"effect": "+1 Visibility Range",
-		"unitTypes": ["Melee","Mounted","WaterRanged","Armor","WaterMelee"]
-	},
-	{
-		"name": "Weapon Symbionts",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Breach III",
-			"Bombardment III", "Landing Drones III","Boarding Drones III","Siege III"],
-		"effect": "1 additional attack per turn",
-		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]
-	},
-	
-	{
-		"name": "Ambush I",
-		"effect": "+[10]% Strength when attacking",
-		"unitTypes": ["Melee","Fighter","Bomber"]
-	},
-	{
-		"name": "Ambush II",
-		"prerequisites": ["Ambush I"],
-		"effect": "+[20]% Strength when attacking",
-		"unitTypes": ["Melee","Fighter","Bomber"]
-	},
-	{
-		"name": "Ambush III",
-		"prerequisites": ["Ambush II"],
-		"effect": "+[30]% Strength when attacking",
-		"unitTypes": ["Melee","Fighter","Bomber"]
-	},
-	
-	
-	// Water ranged and air units
-	{
-		"name": "Bombardment I",
-		"effect": "Bonus vs land units 33%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	{
-		"name": "Bombardment II",
-		"prerequisites": ["Bombardment I"],
-		"effect": "Bonus vs land units 33%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	{
-		"name": "Bombardment III",
-		"prerequisites": ["Bombardment II"],
-		"effect": "Bonus vs land units 34%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	
-	// Targeting I has different requirements for air and waterranged units, this was the cleanest way to do so
-	{
-		"name": "Targeting I",
-		"effect": "+[25]% Strength vs [Water units]",
-		"unitTypes": ["WaterRanged"]
-	},
-	{
-		"name": "Targeting I (air)",
-		"prerequisites": ["Interception I","Dogfighting I", "Siege I","Bombardment I"]
-		"effect": "+[50]% Strength vs [Water units]",
-		"unitTypes": ["Fighter","Bomber"]
-	},
-	{
-		"name": "Targeting II",
-		"prerequisites": ["Targeting I","Targeting I (air)"],
-		"effect": "+[50]% Strength vs [Water units]",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	{
-		"name": "Targeting III",
-		"prerequisites": ["Targeting II"],
-		"effect": "+[75]% Strength vs [Water units]",
-		"unitTypes": ["WaterRanged"]
+		"name": "Strength I",
+		"uniques": ["+[15]% Combat Strength"],
+		"unitTypes": ["Infantry"]
 	},
 	
 	// Uniques
@@ -451,36 +63,36 @@
 	// Rak'tar Swarm Drone (unit and upgrades)
 	{
 		"name": "Call of the Swarm",
-		"effect": "Bonus for units in 2 tile radius 15%"
+		"uniques": ["Bonus for units in 2 tile radius 15%"]
 	},
 	{
 		"name": "Genetic Apex",
-		"effect": "+[50]% Combat Strength"
+		"uniques": ["+[50]% Combat Strength"]
 	},
 	// Sekari Shellwalker (unit and upgrades)
 	{
 		"name": "Reflective Carapace",
-		"effect": "+[100]% Strength vs [Ranged]"
+		"uniques": ["+[100]% Strength vs [Ranged]"]
 	},
 	// Katorian Tunneler (unit and upgrades)
 	{
 		"name": "Bio-Static Spines",
-		"effect": "[-33]% Strength for enemy [Military] units in adjacent [All] tiles"
+		"uniques": ["[-33]% Strength for enemy [Military] units in adjacent [All] tiles"]
 	},
 	// Venixian Mind-Eater (unit and upgrades)
 	{
 		"name": "Feeding Tendrils",
-		"effect": "Heals [100] damage if it kills a unit"
+		"uniques": ["Heals [100] damage if it kills a unit"]
 	},
 	// Zyxian Shrieker (unit and upgrades)
 	{
 		"name": "Supersonic Vibrations",
-		"effect": "+[500]% Strength vs [City]"
+		"uniques": ["+[500]% Strength vs [City]"]
 	},
 	
 	//Special
 	{
 		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth
-		"effect": "All healing effects doubled"
+		"uniques": ["All healing effects doubled"]
 	}
 ]

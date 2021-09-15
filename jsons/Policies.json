@@ -183,7 +183,7 @@
 			{
 				"name": "Survival Of The Fittest",
 				"effect": "+30% Strength when fighting City-State units and cities. Receive triple Gold from Barbarian encampments and pillaging Cities. Upon capturing a city, gain a huge amount of culture (relative to it's culture production) instantly.",
-				"uniques": ["+30% Strength when fighting City-State units and cities","Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately""],
+				"uniques": ["+30% Strength when fighting City-State units and cities","Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately"],
 				"requires": ["Swarming Instincts"],
 				"row": 2,
 				"column": 4
@@ -401,7 +401,7 @@
 				"column": 3
 			},
 			{
-				"name": "Symbiosis Complete"
+				"name": "Symbiosis Complete",
 				"effect": "+2 Gold, Science, Culture, and Happiness from each Trade Route. Two free Great Scion units appear. City-State Influence degrades 15% slower.",
 				"uniques": ["[2] free [Great Scion] units appear","[+2 Gold, +2 Science, +2 Culture, +2 Happiness] from each Trade Route", "City-State Influence degrades [15]% slower"]
 			}

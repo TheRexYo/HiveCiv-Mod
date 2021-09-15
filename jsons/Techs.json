@@ -101,7 +101,7 @@
 				"row": 7,
 				"prerequisites": ["Bio-Weapons"],
 				"quote": "'Gouts of acid bore down on the unsuspecting targets, hitting with unerring accuracy. The beast and its weapons were as one; a single living, breathing weapon.'"
-			}
+			},
 			{
 				"name": "Bio-Structures",
 				"row": 8,
@@ -188,7 +188,7 @@
 				"prerequisites": ["Aggressive Structures"],
 				"uniques": ["+[10]% Production when constructing [Buildings]"],
 				"quote": "'When the opportunity for growth comes, we must use it, no matter what.'"
-			}
+			},
 			{
 				"name": "Abiotic Assimilation",
 				"row": 9,
