@@ -61,7 +61,7 @@
 		"strength": 5,
 		"cost": 40,
 		"obsoleteTech": "Mineral Adaptations",
-		"upgradesTo": "Guard Drone",
+		"upgradesTo": "Armor Drone",
 		"uniques": ["+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "nonmetalhit"
