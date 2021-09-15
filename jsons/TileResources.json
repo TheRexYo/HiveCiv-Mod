@@ -83,7 +83,7 @@
 		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill","Desert"],
 		"production": 1,
 		"improvement": "Harvesting Grounds",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"production": 1}
 		//"building": "Stable"
 	},
 	{
@@ -172,7 +172,7 @@
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Hill"],
 		"gold": 2,
 		"improvement": "Mineral District",
-		"improvementStats": {"gold": 1},
+		"improvementStats": {"gold": 1}
 		//"building": "Mint"
 	},
 	{
@@ -181,7 +181,7 @@
 		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill"],
 		"gold": 2,
 		"improvement": "Mineral District",
-		"improvementStats": {"gold": 1},
+		"improvementStats": {"gold": 1}
 		//"building": "Mint"
 	},
 	{
@@ -190,7 +190,7 @@
 		"terrainsCanBeFoundOn": ["Plains","Desert"],
 		"gold": 2,
 		"improvement": "Growing District",
-		"improvementStats": {"gold": 1},
+		"improvementStats": {"gold": 1}
 		//"building": "Monastery"
 	},
 	{
@@ -223,7 +223,7 @@
 		"terrainsCanBeFoundOn": ["Grassland","Plains"],
 		"gold": 2,
 		"improvement": "Growing District",
-		"improvementStats": {"gold": 1},
+		"improvementStats": {"gold": 1}
 		//"building": "Monastery"
 	},
 	{

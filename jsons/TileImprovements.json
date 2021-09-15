@@ -22,7 +22,7 @@
 		"terrainsCanBeBuiltOn": ["Ocean"],
 		"gold": 3,
 		"turnsToBuild": 7,
-		"techRequired": "Hive Mind",
+		"techRequired": "Hive Mind"
 	},
 	{
 		"name": "Mineral District",
