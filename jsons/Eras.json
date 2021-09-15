@@ -10,6 +10,22 @@
         "startingMilitaryUnitCount": 1,
         "startingMilitaryUnit": "Soldier Drone",
         "settlerPopulation": 1,
+        "baseUnitBuyCost": 200,
+        "startPercent": 0,
+        "friendBonus": {
+            "Cultured": ["Provides [3] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]"],
+            "Mercantile": ["Provides [2] Happiness"],
+            "Religious": ["Provides [3] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[25] turns"]
+        },
+        "allyBonus": {
+            "Cultured": ["Provides [6] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
+            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [6] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[20] turns"]
+        },
         "iconRGB": [0, 0, 0]
     },
     {
@@ -22,6 +38,22 @@
         "startingGold": 5,
         "startingCulture": 25,
         "settlerPopulation": 2,
+        "baseUnitBuyCost": 200,
+        "startPercent": 0,
+        "friendBonus": {
+            "Cultured": ["Provides [3] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]"],
+            "Mercantile": ["Provides [2] Happiness"],
+            "Religious": ["Provides [3] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[25] turns"]
+        },
+        "allyBonus": {
+            "Cultured": ["Provides [6] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
+            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [6] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[15] turns"]
+        },
         "iconRGB": [255, 0, 0]
     },
     {
@@ -36,6 +68,22 @@
         "settlerPopulation": 3,
         "settlerBuildings": ["Psionic Nexus","Psionic Node"],
         "startingObsoleteWonders": ["The Mindstone", "The Nexus", "The Hivemaw", "The Nest", "The Eye", "The Vault"],
+        "baseUnitBuyCost": 200,
+        "startPercent": 0,
+        "friendBonus": {
+            "Cultured": ["Provides [3] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]"],
+            "Mercantile": ["Provides [2] Happiness"],
+            "Religious": ["Provides [3] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[25] turns"]
+        },
+        "allyBonus": {
+            "Cultured": ["Provides [6] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
+            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [6] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[10] turns"]
+        },
         "iconRGB": [0, 0, 255]
     },
 	// The final era. This will be modified as time goes on and the mod gets more eras.
@@ -51,6 +99,22 @@
         "settlerPopulation": 1,
         "settlerBuildings": ["Psionic Nexus","Psionic Node"],
         "startingObsoleteWonders": ["The Mindstone", "The Nexus", "The Hivemaw", "The Nest", "The Eye", "The Vault"],
+        "baseUnitBuyCost": 200,
+        "startPercent": 0,
+        "friendBonus": {
+            "Cultured": ["Provides [3] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]"],
+            "Mercantile": ["Provides [2] Happiness"],
+            "Religious": ["Provides [3] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[25] turns"]
+        },
+        "allyBonus": {
+            "Cultured": ["Provides [6] [Culture] per turn"],
+            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
+            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [6] [Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[5] turns"]
+        },
         "iconRGB": [255, 255, 255]
     }
 ]
