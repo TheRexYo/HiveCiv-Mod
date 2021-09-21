@@ -91,8 +91,8 @@
 
 		"hateHello": "Imperfection has again come to stain our hive.",
 		"hateLetsHearIt": ["Continue..."],
-		"neutralNo": ["This is pointless."],
-		"neutralYes": ["We accept."],
+		"hateNo": ["This is pointless."],
+		"hateYes": ["We accept."],
 
 		"afterPeace": "This fighting has grown stale.",
 		"tradeRequest": "Does this seem fit to your mind?",
@@ -122,8 +122,8 @@
 
 		"neutralHello": "Your presence is welcome.",
 		"neutralLetsHearIt": ["We shall listen; you shall be heard."],
-		"neutralNo": ["We do not wish to quarrel, but this will not suffice."],
-		"neutralYes": ["We have reached an agreement; your offer will suffice."],
+		"hateNo": ["We do not wish to quarrel, but this will not suffice."],
+		"hateYes": ["We have reached an agreement; your offer will suffice."],
 
 		"hateHello": "Your mind is impure. Perhaps we can redeem you yet...",
 		"hateLetsHearIt": ["Speak..."],
