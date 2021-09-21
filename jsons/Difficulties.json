@@ -22,7 +22,9 @@
 		"aiUnhappinessModifier": 1,
 		"aisExchangeTechs": false,
 		"turnBarbariansCanEnterPlayerTiles": 10000,
-		"clearBarbarianCampReward": 50
+		"clearBarbarianCampReward": 50,
+		"unitSupplyBase": 25,
+		"unitSupplyPerCity": 5
 	},
 	{
 		"name": "Soldier",
@@ -47,7 +49,9 @@
 		"aiUnhappinessModifier": 1,
 		"aisExchangeTechs": false,
 		"turnBarbariansCanEnterPlayerTiles": 60,
-		"clearBarbarianCampReward": 40
+		"clearBarbarianCampReward": 40,
+		"unitSupplyBase": 22,
+		"unitSupplyPerCity": 4
 	},
 	{
 		"name": "Catalyst",
@@ -72,7 +76,9 @@
 		"aiUnhappinessModifier": 1,
 		"aisExchangeTechs": false,
 		"turnBarbariansCanEnterPlayerTiles": 20,
-		"clearBarbarianCampReward": 30
+		"clearBarbarianCampReward": 30,
+		"unitSupplyBase": 20,
+		"unitSupplyPerCity": 4
 	},
 	{
 		"name": "Titan",
@@ -97,7 +103,9 @@
 		"aiUnhappinessModifier": 1,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
-		"clearBarbarianCampReward": 25
+		"clearBarbarianCampReward": 25,
+		"unitSupplyBase": 18,
+		"unitSupplyPerCity": 3
 	},
 	{
 		"name": "Queen",
@@ -122,7 +130,9 @@
 		"aiUnhappinessModifier": 0.9,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
-		"clearBarbarianCampReward": 25
+		"clearBarbarianCampReward": 25,
+		"unitSupplyBase": 16,
+		"unitSupplyPerCity": 3
 	},
 	{
 		"name": "Apex",
@@ -147,7 +157,9 @@
 		"aiUnhappinessModifier": 0.85,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
-		"clearBarbarianCampReward": 25
+		"clearBarbarianCampReward": 25,
+		"unitSupplyBase": 14,
+		"unitSupplyPerCity": 2
 	},
 	{
 		"name": "Collective",
@@ -172,7 +184,9 @@
 		"aiUnhappinessModifier": 0.75,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
-		"clearBarbarianCampReward": 25
+		"clearBarbarianCampReward": 25,
+		"unitSupplyBase": 12,
+		"unitSupplyPerCity": 2
 	},
 	{
 		"name": "Overmind",
@@ -197,6 +211,8 @@
 		"aiUnhappinessModifier": 0.6,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
-		"clearBarbarianCampReward": 25
+		"clearBarbarianCampReward": 25,
+		"unitSupplyBase": 10,
+		"unitSupplyPerCity": 1
 	}
 ]
