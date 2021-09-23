@@ -179,8 +179,26 @@
 	},
 	
 	//Misc
-	{ "name": "Ancient ruins", "uniques": ["Unpillagable"] },
-	{ "name": "City ruins", "uniques": ["Unpillagable"] },
-	{ "name": "City center", "uniques": ["Unpillagable"] },
-	{ "name": "Barbarian encampment", "uniques": ["Unpillagable"] }
+	{ 
+		"name": "Ancient ruins", 
+		"uniques": ["Unpillagable", "Provides a random bonus when entered"]
+	},
+	{ 
+		"name": "City ruins", 
+		"uniques": ["Unpillagable"],
+        "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
+	},
+	{ 
+		"name": "City center", 
+		"uniques": ["Unpillagable", "Indestructible"],
+        "civilopediaText": [
+			{"text":"Marks the center of a city"},
+			{"text":"Appearance changes with the technological era of the owning civilization"}
+		]
+	},
+	{ 
+		"name": "Barbarian encampment", 
+		"uniques": ["Unpillagable"],
+        "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
+	}
 ]

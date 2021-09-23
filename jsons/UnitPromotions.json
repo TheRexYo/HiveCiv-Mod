@@ -1,64 +1,103 @@
-[
-	{
-		"name": "Heal Instantly",
-		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Recon","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine"]
-	},
-	
-	// --[[ Standard Promotions]]--
+[	
+	// --[[ Standard Promotions ]]--
 	// Generic
 	{
 		"name": "Strength I",
 		"uniques": ["+[5]% Combat Strength"],
-		"unitTypes": ["Infantry"]
+		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Titan","Projectile (Ranged)","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	},
 	{
 		"name": "Strength II",
 		"uniques": ["+[10]% Combat Strength"],
 		"prerequisites": ["Strength I"],
-		"unitTypes": ["Infantry"]
+		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Titan","Projectile (Ranged)","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	},
 	{
 		"name": "Strength III",
 		"prerequisites": ["Strength II"],
 		"uniques": ["+[15]% Combat Strength"],
-		"unitTypes": ["Infantry"]
+		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Titan","Projectile (Ranged)","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	},
-	
-	// --[[ Standard Promotions]]--
-	// Generic
-	{
-		"name": "Strength I",
-		"uniques": ["+[5]% Combat Strength"],
-		"unitTypes": ["Infantry"]
-	},
-	{
-		"name": "Strength II",
-		"uniques": ["+[10]% Combat Strength"],
-		"unitTypes": ["Infantry"]
-	},
-	{
-		"name": "Strength III",
-		"uniques": ["+[15]% Combat Strength"],
-		"unitTypes": ["Infantry"]
-	},
-	
 	// Infantry
 	{
-		"name": "Swarm I",
-		"uniques": ["+[15]% Combat Strength"],
+		"name": "Steady I",
+		"uniques": ["+[15]% Strength vs [Beast]"],
 		"unitTypes": ["Infantry"]
 	},
-	
-	// --[[ Mutations ]]--
-	// Infantry
 	{
-		"name": "Strength I",
-		"uniques": ["+[15]% Combat Strength"],
+		"name": "Steady II",
+		"uniques": ["+[30]% Strength vs [Beast]"],
+		"prerequisites": ["Steady I"],
 		"unitTypes": ["Infantry"]
 	},
+	{
+		"name": "Steady III",
+		"uniques": ["+[45]% Strength vs [Beast]"],
+		"prerequisites": ["Steady II"],
+		"unitTypes": ["Infantry"]
+	},
+	{
+		"name": "Aggressive I",
+		"uniques": ["+[10]% Strength when attacking"],
+		"unitTypes": ["Infantry"]
+	},
+	{
+		"name": "Aggressive II",
+		"uniques": ["+[20]% Strength when attacking"],
+		"prerequisites": ["Aggressive I"],
+		"unitTypes": ["Infantry"]
+	},
+	{
+		"name": "Aggressive III",
+		"uniques": ["+[30]% Strength when attacking"],
+		"prerequisites": ["Aggressive II"],
+		"unitTypes": ["Infantry"]
+	},
+
+	// Swarm
+	{
+		"name": "Overrun I",
+		"uniques": ["+[15]% Strength vs [Guard]"],
+		"unitTypes": ["Swarm"]
+	},
+	{
+		"name": "Overrun II",
+		"uniques": ["+[30]% Strength vs [Guard]"],
+		"prerequisites": ["Overrun I"],
+		"unitTypes": ["Swarm"]
+	},
+	{
+		"name": "Overrun III",
+		"uniques": ["+[45]% Strength vs [Guard]"],
+		"prerequisites": ["Overrun II"],
+		"unitTypes": ["Swarm"]
+	},
+	{
+		"name": "Rush I",
+		"uniques": ["+[15]% Strength vs [Projectile (Ranged)]"],
+		"unitTypes": ["Swarm"]
+	},
+	{
+		"name": "Rush II",
+		"uniques": ["+[30]% Strength vs [Projectile (Ranged)]"],
+		"prerequisites": ["Rush I"],
+		"unitTypes": ["Swarm"]
+	},
+	{
+		"name": "Rush III",
+		"uniques": ["+[45]% Strength vs [Projectile (Ranged)]"],
+		"prerequisites": ["Rush II"],
+		"unitTypes": ["Swarm"]
+	},
 	
-	// Uniques
+	// --[[ Event Promotions ]]--
+	// Granted by Genesis Pool
+	{
+		"name": "Rejuvenation",
+		"uniques": ["All healing effects doubled"]
+	},
+	
+	// --[[ Unique Promotions ]]--
 	
 	// Rak'tar Swarm Drone (unit and upgrades)
 	{
@@ -90,9 +129,10 @@
 		"uniques": ["+[500]% Strength vs [City]"]
 	},
 	
-	//Special
+	// --[[ Other Promotions ]]--
 	{
-		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth
-		"uniques": ["All healing effects doubled"]
+		"name": "Heal Instantly",
+		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Recon","Titan","Projectile (Ranged)","Structure","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	}
 ]
