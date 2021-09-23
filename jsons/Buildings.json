@@ -88,9 +88,9 @@
 		"culture": 5,
 		"greatPersonPoints": {"Great Catalyst": 1},
 		"isWonder": true,
-		"providesFreeBuilding":  "Synaptic Nexus",
+		//"providesFreeBuilding":  "Synaptic Nexus",
 		"requiredTech": "Synaptic Structures",
-		"uniques": ["Free Technology","[+1 Science] Per [1] Population [in this city]"],
+		"uniques": ["Provides a free [Synaptic Nexus] [in this city]", "Free Technology","[+1 Science] Per [1] Population [in this city]"],
 		"quote": "'Within every drone is a mind of its own, just waiting to be tapped into our collective.'"
 	},
 	{
