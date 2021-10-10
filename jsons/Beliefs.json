@@ -150,5 +150,108 @@
 		"name": "No Place For Sacrifice",
 		"type": "Follower",
 		"uniques": ["[+50]% growth [in this city] when not at war"]
+	},
+///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
+		
+	{
+		"name": "Ceremonial Burial",
+		"type": "Founder",
+		"uniques": ["[+1 Happiness] for each global city following this religion"]
+	},
+	{
+		"name": "Church Property",
+		"type": "Founder",
+		"uniques": ["[+2 Gold] for each global city following this religion"]
+	},
+	{
+		"name": "Initiation Rites",
+		"type": "Founder",
+		"uniques": ["[+100 Gold] when a city adopts this religion for the first time (modified by game speed)"]
+	},
+	{
+		"name": "Interfaith Dialogue",
+		"type": "Founder",
+		"uniques": ["When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]"]
+	},
+	{
+		"name": "Papal Primacy",
+		"type": "Founder",
+		"uniques": ["Resting point for influence with City-States following this religion [+15]"]
+	},
+	{
+		"name": "Peace Loving",
+		"type": "Founder",
+		"uniques": ["[+1 Happiness] for every [5] global followers [in non-enemy foreign cities]"]
+	},
+	{
+		"name": "Pilgrimage",
+		"type": "Founder",
+		"uniques": ["[+2 Faith] for each global city following this religion"]
+	},
+	{
+		"name": "Tithe",
+		"type": "Founder",
+		"uniques": ["[+1 Gold] for every [4] global followers [in all cities]"]
+	},
+	{
+		"name": "World Church",
+		"type": "Founder",
+		"uniques": ["[+1 Culture] for every [5] global followers [in foreign cities]"]
+	},
+
+	////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
+
+	{
+		"name": "Defender of the Faith",
+		"type": "Enhancer",
+		"uniques": ["[+20]% Strength for [All] units in [Friendly Land]"]
+		// ToDo: Should only be friendly territory of cities that follow this religion
+	},
+	/*
+	{
+		"name": "Holy Order",
+		"type": "Enhancer",
+		"uniques": ["[Faith] cost of purchasing [Missionary] units [-30]%", "[Faith] cost of purchasing [Inquisitor] units [-30]%"]
+	},
+	*/
+	{
+		"name": "Itinerant Preachers",
+		"type": "Enhancer",
+		"uniques": ["Religion naturally spreads to cities [+3] tiles away"]
+	},
+	{
+		"name": "Just War",
+		"type": "Enhancer",
+		"uniques": ["[+20]% Strength for [Non-City] units in [Enemy Land]"]
+		// ToDo: Should only be enemy territory of cities that follow this religion
+	},
+	{
+		"name": "Messiah",
+		"type": "Enhancer",
+		"uniques": ["[+25]% Spread Religion Strength for [Great Psyker] units", "[-25]% Faith cost of generating Great Prophet equivalents"]
+	},
+	/*
+	{
+		"name": "Missionary Zeal",
+		"type": "Enhancer",
+		"uniques": ["[+25]% Spread Religion Strength for [Missionary] units"]
+	},
+	*/
+	/*
+	{
+		"name": "Religious Texts",
+		"type": "Enhancer",
+		"uniques": ["[+34]% Natural religion spread [in all cities]", "[+34]% Natural religion spread [in all cities] with [Printing Press]"]
+	},
+	*/
+	{
+		"name": "Religious Unity",
+		"type": "Enhancer",
+		"uniques": ["[+100]% Natural religion spread to [in City-State cities]"]
+	},
+	{
+		"name": "Reliquary",
+		"type": "Enhancer",
+		"uniques": ["[+50 Faith] whenever a Great Person is expended"]
 	}
 ]

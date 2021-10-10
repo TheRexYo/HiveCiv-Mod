@@ -12,10 +12,40 @@
 				"quote": "'With minds united, they looked to the stars.'",
 				"uniques": ["Starting tech"]
 			}
-		]	
+		]
 	},
 	{
 		"columnNumber": 1,
+		"era": "Basal era",
+		"techCost": 25,
+		"buildingCost": 40,
+		"wonderCost": 160,
+		"techs": [
+			{
+				"name": "Collective Survival",
+				"row": 2,
+				"quote": "'With minds united, they looked to the stars.'",
+				"prerequisites": ["Hive Mind"],
+				"uniques": ["Unhappiness from population decreased by [5]%"]
+			},
+			{
+				"name": "Genetic Manipulation",
+				"row": 5,
+				"quote": "'With minds united, they looked to the stars.'",
+				"prerequisites": ["Hive Mind"],
+				"uniques": ["[+5]% growth [in all cities]"]
+			},
+			{
+				"name": "Hive Ingenuity",
+				"row": 8,
+				"quote": "'With minds united, they looked to the stars.'",
+				"prerequisites": ["Hive Mind"],
+				"uniques": ["[-5]% maintenance costs for [All] units"]
+			}
+		]	
+	},
+	{
+		"columnNumber": 2,
 		"era": "Primal era",
 		"techCost": 50, 
 		"buildingCost": 60,
@@ -24,37 +54,37 @@
 			{
 				"name": "Storage Organisms",
 				"row": 1,
-				"prerequisites": ["Hive Mind"],
+				"prerequisites": ["Collective Survival"],
 				"quote": "'Many strange organisms lined the walls of the nest, each holding a curious liquid.'"
 			},
 			{
 				"name": "Introspection",
 				"row": 3,
-				"prerequisites": ["Hive Mind"],
+				"prerequisites": ["Collective Survival","Genetic Manipulation"],
 				"quote": "'We think. Therefore, we are.'"
 			},
 			{
 				"name": "Gene Harvesting",
 				"row": 5,
-				"prerequisites": ["Hive Mind"],
+				"prerequisites": ["Genetic Manipulation"],
 				"quote": "'Through our own enemies we will grow strong.'"
 			},
 			{
 				"name": "Bio-Weapons",
 				"row": 7,
-				"prerequisites": ["Hive Mind"],
+				"prerequisites": ["Genetic Manipulation","Hive Ingenuity"],
 				"quote": "'The acid coursed through the creatures mouth, and was then promptly let loose upon the enemy.'"
 			},
 			{
 				"name": "Mineral Ingestion",
 				"row": 9,
-				"prerequisites": ["Hive Mind"],
+				"prerequisites": ["Hive Ingenuity"],
 				"quote": "'Even the earth itself is fuel to the hive's hunger, its minerals serving a purpose yet unknown.'"
 			}
 		]	
 	},
 	{
-		"columnNumber": 2,
+		"columnNumber": 3,
 		"era": "Primal era",
 		"techCost": 100,
 		"buildingCost": 90,
@@ -117,7 +147,7 @@
 		]	
 	},
 	{
-		"columnNumber": 3,
+		"columnNumber": 4,
 		"era": "Archaic era",
 		"techCost": 200, 
 		"buildingCost": 120,
@@ -144,7 +174,7 @@
 		]	
 	},
 	{
-		"columnNumber": 4,
+		"columnNumber": 5,
 		"era": "Archaic era",
 		"techCost": 300, 
 		"buildingCost": 180,
@@ -198,7 +228,7 @@
 		]	
 	},
 	{
-		"columnNumber": 4,
+		"columnNumber": 6,
 		"era": "Archaic era",
 		"techCost": 400, 
 		"buildingCost": 240,
@@ -228,6 +258,29 @@
 				"row": 8,
 				"prerequisites": ["Optimization Instincts","Adaptive Structures"],
 				"quote": "'No longer shall we be forced to adapt to the world around us; it will adapt to us instead.'"
+			}
+		]	
+	},
+	{
+		"columnNumber": 6,
+		"era": "Terminal era",
+		"techCost": 1000, 
+		"buildingCost": 500,
+		"wonderCost": 1000,
+		"techs": [
+			{
+				"name": "Hive Advancement",
+				"row": 4,
+				"prerequisites": ["Divided Introspection","Naval Bioforms","Oceanic Constructs","Environmental Alteration"],
+				"uniques": ["Who knows what the future holds?", "Can be continually researched"],
+				"quote": "'Adapt... Grow... Prosper...'"
+			},
+			{
+				"name": "Ascendance",
+				"row": 6,
+				"prerequisites": ["Divided Introspection","Naval Bioforms","Oceanic Constructs","Environmental Alteration"],
+				"uniques": ["Hidden when [Scientific] Victory is disabled","Triggers victory"],
+				"quote": "'We were one. We are all.'"
 			}
 		]	
 	}

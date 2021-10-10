@@ -347,7 +347,7 @@
 				"name": "Hive Beneficence",
 				"effect": "Up to 10 owned units cost no maintenance. Half maintenance cost for buildings (in all cities).",
 				"uniques": ["[10] units cost no maintenance", "-[50]% maintenance cost for buildings [in all cities]"],
-				"requires": ["Trade Drones","Communal Labor"],
+				"requires": ["Entrepreneurship","Patronage"],
 				"row": 3,
 				"column": 3
 			},
@@ -468,7 +468,7 @@
 			{
 				"name": "Utopia Complete",
 				"effect": "Triggers victory.",
-				"uniques": ["Triggers victory"]
+				"uniques": ["Triggers victory","Hidden when [Cultural] Victory is disabled"]
 			}
 		]
 	}

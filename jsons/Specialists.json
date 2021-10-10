@@ -1,26 +1,26 @@
 [
 	{
-		"name":"Scion",
+		"name":"Catalyst",
 		"science":3,
-		"greatPersonPoints": {"science":3},
+		"greatPersonPoints": {"Great Catalyst":3},
 		"color": [0,0,255]
 	},
 	{
-		"name":"Harvester",
+		"name":"Scion",
 		"gold":3,
-		"greatPersonPoints": {"gold":3},
+		"greatPersonPoints": {"Great Scion":3},
 		"color": [255,215,0]
 	},
 	{
 		"name":"Psion",
 		"culture":2,
-		"greatPersonPoints": {"culture":3},
+		"greatPersonPoints": {"Great Psion":3},
 		"color": [160,32,240]
 	},
 	{
 		"name":"Overseer",
 		"production":2,
-		"greatPersonPoints": {"production":3},
+		"greatPersonPoints": {"Great Overseer":3},
 		"color": [139,69,19]
 	}
 ]

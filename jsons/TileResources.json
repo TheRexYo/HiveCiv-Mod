@@ -6,8 +6,8 @@
 		"terrainsCanBeFoundOn": ["Grassland"],
 		"food": 1,
 		"improvement": "Harvesting Grounds",
-		"improvementStats": {"production": 1},
-		"building": "Storage Nest"
+		"improvementStats": {"production": 1}
+		//"building": "Storage Nest"
 	},
 	{
 		"name": "Prey-Beasts",
@@ -15,8 +15,8 @@
 		"terrainsCanBeFoundOn": ["Plains","Hill"],
 		"food": 1,
 		"improvement": "Harvesting Grounds",
-		"improvementStats": {"food": 1},
-		"building": "Storage Nest"
+		"improvementStats": {"food": 1}
+		//"building": "Storage Nest"
 	},
 	{
 		"name": "Hunt-Beasts",
@@ -24,8 +24,8 @@
 		"terrainsCanBeFoundOn": ["Forest","Tundra"],
 		"food": 1,
 		"improvement": "Hunting Grounds",
-		"improvementStats": {"happiness": 1},
-		"building": "Storage Nest"
+		"improvementStats": {"happiness": 1}
+		//"building": "Storage Nest"
 	},
 	{
 		"name": "Fruit",
@@ -33,8 +33,8 @@
 		"terrainsCanBeFoundOn": ["Jungle"],
 		"food": 1,
 		"improvement": "Growing District",
-		"improvementStats": {"food": 2,"production": -1},
-		"building": "Storage Nest"
+		"improvementStats": {"food": 2,"production": -1}
+		//"building": "Storage Nest"
 	},
 	{
 		"name": "Sprouting Vegetation",
@@ -42,8 +42,8 @@
 		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"],
 		"food": 1,
 		"improvement": "Biomass District",
-		"improvementStats": {"food": 1},
-		"building": "Storage Nest"
+		"improvementStats": {"food": 1}
+		//"building": "Storage Nest"
 	},
 	{
 		"name": "Stone",
@@ -51,8 +51,8 @@
 		"terrainsCanBeFoundOn": ["Plains","Desert","Snow"],
 		"production": 1,
 		"improvement": "Ingestion District",
-		"improvementStats": {"production": 1},
-		"building": "Psionic Monolith"
+		"improvementStats": {"production": 1}
+		//"building": "Psionic Monolith"
 	},
 	{
 		"name": "Fish",
@@ -60,8 +60,8 @@
 		"terrainsCanBeFoundOn": ["Coast"],
 		"food": 1,
 		"improvement": "Hunting Grounds (Coast)",
-		"improvementStats": {"food": 1},
-		"building": "Storage Nest"
+		"improvementStats": {"food": 1}
+		//"building": "Storage Nest"
 	},
 	/*
 	{
@@ -71,7 +71,7 @@
 		"food": 1,
 		"improvement": "Hunting Grounds",
 		"improvementStats": {"food": 1},
-		"building": "Storage Nest"
+		//"building": "Storage Nest"
 	},
 	*/
 	
@@ -84,7 +84,7 @@
 		"production": 1,
 		"improvement": "Harvesting Grounds",
 		"improvementStats": {"production": 1}
-		//"building": "Stable"
+		////"building": "Stable"
 	},
 	{
 		"name": "Iron",
@@ -93,8 +93,8 @@
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill"],
 		"production": 1,
 		"improvement": "Mineral District",
-		"improvementStats": {"production": 1},
-		"building": "Psionic Monolith"
+		"improvementStats": {"production": 1}
+		//"building": "Psionic Monolith"
 	},
 	{
 		"name": "Coal",
@@ -173,7 +173,7 @@
 		"gold": 2,
 		"improvement": "Mineral District",
 		"improvementStats": {"gold": 1}
-		//"building": "Mint"
+		////"building": "Mint"
 	},
 	{
 		"name": "Silver",
@@ -182,7 +182,7 @@
 		"gold": 2,
 		"improvement": "Mineral District",
 		"improvementStats": {"gold": 1}
-		//"building": "Mint"
+		////"building": "Mint"
 	},
 	{
 		"name": "Incense",
@@ -191,7 +191,7 @@
 		"gold": 2,
 		"improvement": "Growing District",
 		"improvementStats": {"gold": 1}
-		//"building": "Monastery"
+		////"building": "Monastery"
 	},
 	{
 		"name": "Ivory",
@@ -224,7 +224,7 @@
 		"gold": 2,
 		"improvement": "Growing District",
 		"improvementStats": {"gold": 1}
-		//"building": "Monastery"
+		////"building": "Monastery"
 	},
 	{
 		"name": "Sugar",
@@ -241,8 +241,8 @@
 		"gold": 2,
 		"improvement": "Ingestion District",
 		"improvementStats": {"gold": 1,"production": 1},
-		"unique": "+15% production towards Wonder construction",
-		"building": "Psionic Monolith"
+		"uniques": ["+15% production towards Wonder construction"]
+		//"building": "Psionic Monolith"
 	},
 	{
 		"name": "Whales",
@@ -270,7 +270,7 @@
 		"gold": 1,
 		"improvement": "Growing District",
 		"improvementStats": {"food": 1,"gold": 1},
-		"building": "Storage Nest"
+		//"building": "Storage Nest"
 	},
 	{
 		"name": "Copper",

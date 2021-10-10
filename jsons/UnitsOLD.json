@@ -62,7 +62,7 @@
 		"cost": 40,
 		"obsoleteTech": "Mineral Adaptations",
 		"upgradesTo": "Armor Drone",
-		"uniques": ["[+100]% Strength when defending"],
+		"uniques": ["+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "nonmetalhit"
 	},
@@ -125,7 +125,7 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus", "[+33]% Strength <<vs [Infantry] units> units>"],
+		"uniques": ["No defensive terrain bonus", "+[33]% Strength vs [Infantry]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -152,7 +152,7 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus", "[+33]% Strength <vs [Infantry] units>"],
+		"uniques": ["No defensive terrain bonus", "+[33]% Strength vs [Infantry]"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -167,7 +167,7 @@
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","[+200]% Strength vs [City]","[-33]% Strength <vs [Projectile (Ranged)] units>"],
+		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [City]","-[33]% Strength vs [Projectile (Ranged)]"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -180,7 +180,7 @@
 		"requiredTech": "Mineral Adaptations",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["[+200]% Strength vs [Beast]","[-50]% Strength <vs [Infantry] units>"],
+		"uniques": ["+[200]% Strength vs [Beast]","-[50]% Strength vs [Infantry]"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -193,7 +193,7 @@
 		"requiredTech": "Mineral Adaptations",
 		"obsoleteTech": "Abiotic Assimilation",
 		"upgradesTo": "Metallic Drone",
-		"uniques": ["[+25]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength when defending"],
+		"uniques": ["+[25]% Strength vs [Projectile (Ranged)]", "+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -232,7 +232,7 @@
 		"requiredTech": "Adaptive Weaponry",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques":["[+100]% Strength when attacking ", "[+200]% Strength <vs [Guard] units>"],
+		"uniques":["+[100]% Strength when attacking ", "+[200]% Strength vs [Guard]"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -248,7 +248,7 @@
 		"requiredTech": "Psionic Manipulation",
 		//"obsoleteTech": "Machinery",
 		//"upgradesTo": "Crossbowman",
-		"uniques": ["Ignores terrain cost", "[+100]% Strength <vs [Guard] units>", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
+		"uniques": ["Ignores terrain cost", "+[100]% Strength vs [Guard]", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
 		"attackSound": "arrow"
 	},
 	{
@@ -269,7 +269,7 @@
 		"requiredTech": "Abiotic Assimilation",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["[+50]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength when defending"],
+		"uniques": ["+[50]% Strength vs [Projectile (Ranged)]", "+[100]% Strength when defending"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -412,7 +412,7 @@
 		//"requiredResource": "",
 		"upgradesTo": "Armor Drone",
 		"obsoleteTech": "Mineral Adaptations",
-		"uniques": ["[+50]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength when defending"],
+		"uniques": ["+[50]% Strength vs [Projectile (Ranged)]", "+[100]% Strength when defending"],
 		"promotions": ["Reflective Carapace"],
 		"attackSound": "horse"
 	},
@@ -444,7 +444,7 @@
 		"requiredTech": "Mineral Adaptations",
 		//"upgradesTo": "",
 		//"obsoleteTech": "",
-		"uniques": ["[+25]% Strength vs [Beast]","[+25]% Strength <vs [Infantry] units>","May capture killed [Land] units","Can move after attacking"],
+		"uniques": ["+[25]% Strength vs [Beast]","+[25]% Strength vs [Infantry]","May capture killed [Land] units","Can move after attacking"],
 		"promotions": ["Feeding Tendrils"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
@@ -461,7 +461,7 @@
 		"cost": 40,
 		"hurryCostModifier": 20,
 		"requiredTech": "Bio-Weapons",
-		"uniques": ["[+100]% Strength when attacking"],
+		"uniques": ["+[100]% Strength when attacking"],
 		"promotions": ["Supersonic Vibrations"],
 		"obsoleteTech": "Symbiotic Weaponry",
 		"upgradesTo": "Spitter Symbiont",
@@ -479,7 +479,7 @@
 		"cost": 200,
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
-		"uniques": ["No defensive terrain bonus","[+200]% Strength <vs [Projectile (Ranged)] units>"],
+		"uniques": ["No defensive terrain bonus","+[200]% Strength vs [Projectile (Ranged)]"],
 		"attackSound": "nonmetalhit"
 	},
 	{
