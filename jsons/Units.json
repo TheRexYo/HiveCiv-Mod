@@ -125,7 +125,7 @@
 		"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus", "[+33]% Strength <<vs [Infantry] units> units>"],
+		"uniques": ["No defensive terrain bonus", "[+33]% Strength <vs [Infantry] units>"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -193,7 +193,7 @@
 		"requiredTech": "Mineral Adaptations",
 		"obsoleteTech": "Abiotic Assimilation",
 		"upgradesTo": "Metallic Drone",
-		"uniques": ["[+25]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength when defending"],
+		"uniques": ["[+25]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength <when defending>"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -232,7 +232,7 @@
 		"requiredTech": "Adaptive Weaponry",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques":["[+100]% Strength when attacking ", "[+200]% Strength <vs [Guard] units>"],
+		"uniques":["[+100]% Strength <when attacking>", "[+200]% Strength <vs [Guard] units>"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -461,7 +461,7 @@
 		"cost": 40,
 		"hurryCostModifier": 20,
 		"requiredTech": "Bio-Weapons",
-		"uniques": ["[+100]% Strength when attacking"],
+		"uniques": ["[+100]% Strength <when attacking>"],
 		"promotions": ["Supersonic Vibrations"],
 		"obsoleteTech": "Symbiotic Weaponry",
 		"upgradesTo": "Spitter Symbiont",
