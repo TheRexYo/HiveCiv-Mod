@@ -1,70 +1,72 @@
 [
     {
-        "name": "discover cultural artifacts",
-        "notification": "We have discovered cultural artifacts in the ruins! (+20 culture)",
+        "name": "discover destroyed hive",
+        "notification": "We have discovered the remnants of a precursor hive mind's nest! (+20 culture)",
         "uniques": ["Gain [20] [Culture]"],
         "color": "#cf8ff7"
     },
     {
-        "name": "squatters willing to work for you",
+        "name": "worker drones assimilated",
         "notification": "A [Worker Drone] has joined us!",
         "uniques": ["Free [Worker Drone] found in the ruins"],
         "excludedDifficulties": ["Titan", "Queen", "Apex", "Collective", "Overmind"]
     },
     {
-        "name": "squatters wishing to settle under your rule",
+        "name": "spawning drones assimilated",
         "notification": "A [Spawning Drone] has joined us!",
         "uniques": ["Free [Spawning Drone] found in the ruins"],
         "excludedDifficulties": ["Queen", "Apex", "Collective", "Overmind"]
     },
     {
-        "name": "your exploring unit receives training",
-        "notification": "An ancient tribe trained us in their ways of combat!",
-        "uniques": ["This Unit gains [10] XP"]
+        "name": "your exploring unit is mutated",
+        "notification": "Conditions within the ruins have mutated our unit! It gained XP!",
+        "uniques": ["This Unit gains [30] XP"]
     },
     {
-        "name": "survivors (adds population to a city)",
-        "notification": "We have found survivors in the ruins! Population added to [cityName].",
+        "name": "sister hive assimilated",
+        "notification": "We have found a sister hive of our species within the ruins, and successfully assimilated it! Population added to [cityName].",
         "uniques": ["[+1] population in a random city"], // This can't be easily added to cityFilter, as it is non-deterministic
 		"color": "#81c784"
     },
     {
-        "name": "a stash of gold",
-        "notification": "We have found a stash of [goldAmount] Gold in the ruins!",
+        "name": "a stash of materials",
+        "notification": "We have found a stash of materials in the ruins! [goldAmount] Gold was obtained.",
         "uniques": ["Gain [50]-[100] [Gold]"],
         "color": "#ffeb7f"
     },
     {
-        "name": "discover a lost technology",
-        "notification": "We have discovered the lost technology of [techName] in the ruins!",
+        "name": "precursor nexus absorbed",
+        "notification": "We have discovered a precursor nexus within the ruins. It contained the secrets of [techName]!",
         "uniques": ["[1] free random researchable Tech(s) from the [Primal era]"],
 		"color": "#7f7fff"
     },
     {
-        "name": "advanced weaponry for your explorer",
-        "notification": "Our unit finds advanced weaponry hidden in the ruins!",
+        "name": "evolution",
+        "notification": "Conditions within the ruins have mutated our unit! It has upgraded for free!",
         "uniques": ["This Unit upgrades for free including special upgrades"]
     },
     {
-        "name": "reveal nearby Barbarian camps",
-        "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed!",
+        "name": "captured rogue survivors",
+        "notification": "You find evidence of Rogue Drone activiity. Nearby Barbarian camps are revealed!",
         "uniques": ["Reveal up to [All] [Barbarian encampment] within a [10] tile radius"]
     },
     {
-        "name": "find a crudely-drawn map",
-        "notification": "We have found a crudely-drawn map in the ruins!",
-        "uniques": ["From a randomly chosen tile [4] tiles away, reveal tiles up to [4] tiles away with [80]% chance"]
+        "name": "found a map within a nexus",
+        "notification": "We have found a nexus within the ruins! It contained a map of some form.",
+        "uniques": ["From a randomly chosen tile [4] tiles away, reveal tiles up to [10] tiles away with [50]% chance"]
     },
-    {
-        "name": "discover holy symbols",
-        "notification": "We have found holy symbols in the ruins, giving us a deeper understanding of religion! (+[faithAmount] Faith)",
-        "uniques": ["Hidden when religion is disabled", "Gain enough Faith for a Pantheon"],
-		"color": "#CDDDF4"
-    },
+    /*
     {
         "name": "an ancient prophecy",
         "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
         "uniques": ["Hidden when religion is disabled", "Gain enough Faith for [33]% of a Great Prophet", "Hidden after generating a Great Prophet"],
+		"color": "#CDDDF4"
+    },
+    */
+    {
+        "name": "discovered lost thoughts within a nexus",
+        "notification": "We have found a nexus within the ruins! It contained fragments of thought from its previous owner(s), giving us a deeper understanding of our own mind! (+[faithAmount] Faith)",
+        "uniques": ["Hidden when religion is disabled", "Gain enough Faith for a Pantheon"],
 		"color": "#CDDDF4"
     }
 ]

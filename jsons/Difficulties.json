@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Settler",
+		"name": "Worker",
 		"baseHappiness": 15,
 		"extraHappinessPerLuxury": 1,
 		"researchCostModifier": 0.9,
@@ -28,7 +28,7 @@
 		"clearBarbarianCampReward": 50
 	},
 	{
-		"name": "Chieftain",
+		"name": "Soldier",
 		"baseHappiness": 12,
 		"extraHappinessPerLuxury": 1,
 		"researchCostModifier": 0.95,
@@ -56,7 +56,7 @@
 		"clearBarbarianCampReward": 40
 	},
 	{
-		"name": "Warlord",
+		"name": "Catalyst",
 		"baseHappiness": 12,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
@@ -84,7 +84,7 @@
 		"clearBarbarianCampReward": 30
 	},
 	{
-		"name": "Prince",
+		"name": "Titan",
 		"baseHappiness": 9,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
@@ -112,7 +112,7 @@
 		"clearBarbarianCampReward": 25
 	},
 	{
-		"name": "King",
+		"name": "Queen",
 		"baseHappiness": 9,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
@@ -140,7 +140,7 @@
 		"clearBarbarianCampReward": 25
 	},
 	{
-		"name": "Emperor",
+		"name": "Apex",
 		"baseHappiness": 9,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
@@ -168,7 +168,7 @@
 		"clearBarbarianCampReward": 25
 	},
 	{
-		"name": "Immortal",
+		"name": "Collective",
 		"baseHappiness": 9,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
@@ -196,7 +196,7 @@
 		"clearBarbarianCampReward": 25
 	},
 	{
-		"name": "Deity",
+		"name": "Overmind",
 		"baseHappiness": 9,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
