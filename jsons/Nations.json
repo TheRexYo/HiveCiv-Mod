@@ -1,11 +1,18 @@
 [
+	//Spectator
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255]
+//		"innerColor": [255,255,255]
+	},
 	{
 		"name": "Rak'tar",
 		"leaderName": "Swarm",
 		"adjective": ["Rak'tar"],
-		"startBias": ["Grassland"],
+		//"startBias": ["Grassland"],
 		"preferredVictoryType": "Domination",
-
+		"favoredReligion": "Path of the Swarm", //Temporary
+		
 		"startIntroPart1": "The Rak'tar Swarm was one of the first minds to emerge on the surface of Vartrex Prime, where it quickly proved its worth, wiping out lineages and devouring hives wherever they went. Their strength lies in their ability to produce massive swarms that are easily capable of outpowering less combat-oriented hives, yet the basal nature of their mind makes it almost impossible for them to adopt new thought processes.",
 		"startIntroPart2": "Will you, great and mighty Swarmlord, epicentre of the Rak'tar hive, bring your hive to feast upon the weak? Will you build a hive that stands the test of time?",
 
@@ -29,8 +36,9 @@
 
 		"outerColor": [255, 0, 0],
 		"innerColor": [0, 0, 0],
+
 		"uniqueName": "Will of the Swarm",
-		"uniques": ["[-1 Culture] per [1] population [in all cities]", "Unhappiness from population decreased by [100]%", "+[100]% Production when constructing [Military] units [in all cities]"],
+		"uniques": ["[-1 Culture] per [1] population [in all cities]", "[-100]% Unhappiness from [Population] [in all cities]", "[+100]% Production when constructing [Military] units [in all cities]"],
 		"cities": ["Rak'tar Swarm", "Swarm Hive 01", "Swarm Hive 02", "Swarm Hive 03", "Swarm Hive 04", "Swarm Hive 05"
 		]
 	},
@@ -38,8 +46,9 @@
 		"name": "Kezit",
 		"leaderName": "Overmind",
 		"adjective": ["Kezit"],
-		"startBias": ["Desert"],
+		//"startBias": ["Desert"],
 		"preferredVictoryType": "Scientific",
+		"favoredReligion": "Path of the Hive", //Temporary
 
 		"startIntroPart1": "The Kezit Overmind was one of the first minds to emerge on the surface of Vartrex Prime. It evolved at an unprecendented rate, quickly mastering its environment before turning its gaze upon the stars. Their strength lies in their enhanced synaptic web, which allows the hive mind to flawlessly gather information from its drones. The only downside to this trait is that drones that are separated from the main hive quickly grow uneasy due to the sudden lack of guidance.",
 		"startIntroPart2": "Will you, as the Overmind of Kezit, bring your hive to the stars? Will you build a hive that stands the test of time?",
@@ -65,7 +74,7 @@
 		"outerColor": [0, 255, 0],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Enhanced Synaptic Web",
-		"uniques": ["[+3 Science, +1 Happiness] from every specialist", "[+1 Science] per [1] population [in all cities]", "Unhappiness from number of Cities doubled"],
+		"uniques": ["[+3 Science, +1 Happiness] from every specialist [in all cities]", "[+1 Science] per [1] population [in all cities]", "Unhappiness from number of Cities doubled"],
 		"cities": ["Kezit Overmind", "Overmind Synaptic Node 01", "Overmind Synaptic Node 02", "Overmind Synaptic Node 03", "Overmind Synaptic Node 04", "Overmind Synaptic Node 05"
 		]
 	},
@@ -73,8 +82,9 @@
 		"name": "Int'uu",
 		"leaderName": "Collective",
 		"adjective": ["Int'uu"],
-		"startBias": ["Forest"],
+		//"startBias": ["Forest"],
 		"preferredVictoryType": "Cultural",
+		"favoredReligion": "Path of Eternity", //Temporary
 
 		"startIntroPart1": "The Int'uu Collective was one of the first minds to emerge on the surface of Vartrex Prime. While its drones grew slower than the other minds of its time, its true strength laid in its highly introspective nature. Where other minds took to warfare and evolution to outpace each other, the Int'uu Collective kept to itself, growing powerful psionic capabilities and cultivating its own synapses, often to the detriment of its drones. The Mind's primitive instincts of selfishness lead it to utilize a single 'Queen' as its focal point, which proved to be a fatal weakness...",
 		"startIntroPart2": "Will you, as the Int'uu Collective, bring your mind to true perfection? Will you build a hive that stands the test of time?",
@@ -100,7 +110,7 @@
 		"outerColor": [0, 0, 255],
 		"innerColor": [0, 0, 0],
 		"uniqueName": "Introspective Mind",
-		"uniques": ["Unhappiness from population decreased by [-100]%", "[+1 Culture] per [1] population [in all cities]", "[+5 Culture] in capital", "+[100]% Strength if within [5] tiles of a [Pheromone Nexus]", "+[20]% Strength if within [1] tiles of a [Pheromone Node]"],
+		"uniques": ["[-100]% Unhappiness from [Population] [in all cities]", "[+1 Culture] per [1] population [in all cities]", "[+5 Culture] in capital", "[+100]% Strength <within [5] tiles of a [Pheromone Nexus]>", "[+20]% Strength <within [1] tiles of a [Pheromone Node]>"],
 		"cities": ["Int'uu Collective", "Collective Cyst 01", "Collective Cyst 02", "Collective Cyst 03", "Collective Cyst 04", "Collective Cyst 05"
 		]
 	},
@@ -108,9 +118,10 @@
 		"name": "Tsan'tai",
 		"leaderName": "Unity",
 		"adjective": ["Tsan'tai"],
-		"startBias": ["Coast"],
+		//"startBias": ["Coast"],
 		//"preferredVictoryType": "Diplomatic",
 		"preferredVictoryType": "Cultural",
+		"favoredReligion": "Path of Unity", //Temporary
 
 		"startIntroPart1": "The Tsan'tai Unity was one of the first minds to emerge on the surface of Vartrex Prime. It was distinctive and bold, making decisions that most hives rarely did. Its reckless nature was not it's most defining feature, however; it was its nuturing and friendly nature that made it unique among the early hives. Whenever it encountered another mind, it would attempt to form a symbiotic link with it, though this behavior rarely succeeded immediately. The Tsan'tai gained many allies in the form of smaller, less dominant hives, which it would nurture and grow in exchange for its continued support. This tactic made the Unity and its allies nigh untouchable by other hives, but it ultimately took up too much resources and eventually led the mind into its own extinction.",
 		"startIntroPart2": "Will you, as the Tsan'tai Unity, bring the world to purity and peace? Will you build a hive that stands the test of time?",
@@ -149,7 +160,7 @@
 		"declaringWar": "Sea is home. Protect at all costs.",
 		"attacked": "Enemy seeks to kill Sekari. Sekari will not fall.",
 		"defeated": "Sekari sees its end. Enemy truly is strong.",
-		"uniques": ["Embarked units can defend themselves","+[5] Sight for all [Embarked] units"],
+		"uniques": ["Defense bonus when embarked <for [All] units>","Normal vision when embarked <for [All] units>","[+5] Sight <for [Embarked] units>"],
 		"outerColor": [0, 0, 255],
 		"innerColor": [0, 255, 0],
 		"cities": ["Sekarian Hive"]
@@ -161,7 +172,7 @@
 		"declaringWar": "We wait. We watch. Now, we feast.",
 		"attacked": "You are no predator to us. We are strong.",
 		"defeated": "Perhaps our foe is stronger than we imagined.",
-		"uniques": ["[-33]% maintenance costs for [Land] units"],
+		"uniques": ["[-33]% maintenance costs <for [Land] units>"],
 		"outerColor": [255, 0, 0],
 		"innerColor": [0, 255, 0],
 		"cities": ["Katorian Swarm"]

@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Biomass District",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains","Coast"],
 		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Hive Mind",
@@ -21,52 +21,53 @@
 		"name": "Sea District",
 		"terrainsCanBeBuiltOn": ["Ocean"],
 		"gold": 3,
-		"turnsToBuild": 7,
-		"techRequired": "Hive Mind"
+		"turnsToBuild": 8,
+		"techRequired": "Oceanic Constructs"
 	},
 	{
 		"name": "Mineral District",
 		"terrainsCanBeBuiltOn": ["Hill"],
 		"production": 1,
-		"turnsToBuild": 7,
+		"turnsToBuild": 6,
 		"techRequired": "Mineral Ingestion"
 	},
-	{
-		"name": "Growing District",
-		"terrainsCanBeBuiltOn": ["Hill"],
-		"food": 1,
-		"turnsToBuild": 7,
-		"techRequired": "Storage Organisms"
-	},
-	
+
 	// Resource-specific
 	{
+		"name": "Feeding Grounds",
+		"uniques": ["Can only be built to improve a resource"],
+		"turnsToBuild": 4,
+		"techRequired": "Stockpiling Instincts"
+	},
+	{
 		"name": "Hunting Grounds",
-		"resourceTerrainAllow": ["Forest"],
-		"turnsToBuild": 7,
+		"uniques": ["Can only be built to improve a resource"],
+		"turnsToBuild": 5,
 		"techRequired": "Counteradaptation"
 	},
 	{
 		"name": "Harvesting Grounds",
+		"uniques": ["Can only be built to improve a resource"],
 		"turnsToBuild": 8,
 		"techRequired": "Gene Harvesting"
 	},
 	{
 		"name": "Ingestion District",
-		"turnsToBuild": 8,
+		"uniques": ["Can only be built to improve a resource"],
+		"turnsToBuild": 10,
+		"techRequired": "Mineral Ingestion"
+	},
+	{
+		"name": "Carving District",
+		"uniques": ["Can only be built to improve a resource"],
+		"turnsToBuild": 10,
 		"techRequired": "Bio-Structures"
 	},
 	{
-		"name": "Hunting Grounds (Coast)",
-		"terrainsCanBeBuiltOn": ["Coast"],
-		"food": 1,
-		"techRequired": "Aquatic Adaptations"
-	},
-	{
-		"name": "Hunting Grounds (Ocean)",
-		"terrainsCanBeBuiltOn": ["Ocean"],
-		"food": 2,
-		"techRequired": "Oceanic Constructs"
+		"name": "Growing District",
+		"uniques": ["Can only be built to improve a resource"],
+		"turnsToBuild": 5,
+		"techRequired": "Storage Organisms"
 	},
 
 	// Military improvement
@@ -78,45 +79,63 @@
 		"uniques": ["Gives a defensive bonus of [50]%", "Can be built outside your borders"],
 		"shortcutKey": "O"
 	},
-	
+
 	// Transportation
 	{
 		"name": "Road",
+		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 4,
 		"techRequired": "Mineral Ingestion",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		// "Costs [1] gold per turn when in your territory" does nothing and is only to inform the user
 		"uniques": ["Can be built outside your borders", "Costs [1] gold per turn when in your territory"],
-		"shortcutKey": "R"
+		"shortcutKey": "R",
+        "civilopediaText": [
+            {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
+            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
+            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
+        ]
 	},
 	{
 		"name": "Railroad",
+		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 4,
 		"techRequired": "Bio-Structures",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
-		"uniques": ["Can be built outside your borders", "Costs [1] gold per turn when in your territory"]
+		"uniques": ["Can be built outside your borders", "Costs [2] gold per turn when in your territory"],
+		"shortcutKey": "R",
+        "civilopediaText": [{"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"}]
 	},
 	
 	// Removals
+	// Any improvement that starts with 'Remove ' is automatically changed into 
+	// the improvement that removes the terrainfeature after it.
 	{
 		"name": "Remove Forest",
 		"turnsToBuild": 4,
-		"terrainsCanBeBuiltOn": ["Forest"],
 		"techRequired": "Environmental Alteration",
-		"uniques": ["Can be built outside your borders"]
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X",
+        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
 	},
 	{
 		"name": "Remove Jungle",
 		"turnsToBuild": 7,
-		"terrainsCanBeBuiltOn": ["Jungle"],
 		"techRequired": "Environmental Alteration",
-		"uniques": ["Can be built outside your borders"]
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
+	},
+	{
+		"name": "Remove Fallout",
+		"turnsToBuild": 2,
+		// Has no tech requirements as it can always be built
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
 	},
 	{
 		"name": "Remove Marsh",
 		"turnsToBuild": 6,
-		"terrainsCanBeBuiltOn": ["Marsh"],
 		"techRequired": "Environmental Alteration",
-		"uniques": ["Can be built outside your borders"]
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
 	},
 
 	// These are unique and have unique in-game checks related to them
@@ -132,34 +151,35 @@
 	},
 	{
 		"name": "Cancel improvement order",
-		"uniques": ["Can be built outside your borders"]
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "."
 	},
 	
 	// Great Person improvements
 	{
 		"name": "Science Nexus",
 		"science": 8,
-		"uniques": ["Great Improvement"]
+		"uniques": ["Great Improvement","Unbuildable"]
 		// in Gods & Kings academy will also have "[+2 Science] once [Atomic Theory] is discovered"
 	},
 	{
 		"name": "Mind Nexus",
 		"culture": 8,
-		"uniques": ["Great Improvement"]
+		"uniques": ["Great Improvement","Unbuildable"]
 	},
 	{
 		"name": "Production Nexus",
 		"production": 8,
-		"uniques": ["Great Improvement"]
+		"uniques": ["Great Improvement","Unbuildable"]
 	},
 	{
 		"name": "Material Nexus",
 		"gold": 8,
-		"uniques": ["Great Improvement"]
+		"uniques": ["Great Improvement","Unbuildable"]
 	},
 	{
 		"name": "Defensive Nexus",
-		"uniques": ["Gives a defensive bonus of [400]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]
+		"uniques": ["Gives a defensive bonus of [400]%", "Adjacent enemy units ending their turn take [30] damage", "Great Improvement","Unbuildable"]
 	},
 
 	//Civilization unique improvements
@@ -167,10 +187,11 @@
 		"name": "Pheromone Nexus",
 		"uniqueTo": "Int'uu",
 		"happiness": 8,
-		"uniques": ["Great Improvement"]
+		"uniques": ["Great Improvement","Unbuildable"]
 	},
 	{
 		"name": "Pheromone Node",
+		"terrainsCanBeBuiltOn": ["Land","Water"],
 		"uniqueTo": "Int'uu",
 		"happiness": 1,
 		"turnsToBuild": 5,
@@ -180,25 +201,29 @@
 	
 	//Misc
 	{ 
-		"name": "Ancient ruins", 
-		"uniques": ["Unpillagable", "Provides a random bonus when entered"]
+		"name": "Ancient ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable"]
 	},
 	{ 
-		"name": "City ruins", 
-		"uniques": ["Unpillagable"],
+		"name": "City ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Unbuildable"],
         "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
 	},
 	{ 
-		"name": "City center", 
-		"uniques": ["Unpillagable", "Indestructible"],
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Irremovable", "Unbuildable"],
         "civilopediaText": [
 			{"text":"Marks the center of a city"},
 			{"text":"Appearance changes with the technological era of the owning civilization"}
 		]
 	},
 	{ 
-		"name": "Barbarian encampment", 
-		"uniques": ["Unpillagable"],
+		"name": "Barbarian encampment",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Unbuildable"],
         "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
 	}
 ]

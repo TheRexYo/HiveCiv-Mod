@@ -3,53 +3,53 @@
 	// Generic
 	{
 		"name": "Strength I",
-		"uniques": ["+[5]% Combat Strength"],
+		"uniques": ["[+5]% Strength"],
 		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Titan","Projectile (Ranged)","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	},
 	{
 		"name": "Strength II",
-		"uniques": ["+[10]% Combat Strength"],
+		"uniques": ["[+10]% Strength"],
 		"prerequisites": ["Strength I"],
 		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Titan","Projectile (Ranged)","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	},
 	{
 		"name": "Strength III",
 		"prerequisites": ["Strength II"],
-		"uniques": ["+[15]% Combat Strength"],
+		"uniques": ["[+15]% Strength"],
 		"unitTypes": ["Infantry","Projectile (Melee)","Beast","Titan","Projectile (Ranged)","Guard","Infantry (Water)","Projectile (Water)","Aquatic"]
 	},
 	// Infantry
 	{
 		"name": "Steady I",
-		"uniques": ["+[15]% Strength vs [Beast]"],
+		"uniques": ["[+15]% Strength <vs [Beast] units>", "[+15]% Strength <vs cities>"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Steady II",
-		"uniques": ["+[30]% Strength vs [Beast]"],
+		"uniques": ["[+30]% Strength <vs [Beast] units>", "[+30]% Strength <vs cities>"],
 		"prerequisites": ["Steady I"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Steady III",
-		"uniques": ["+[45]% Strength vs [Beast]"],
+		"uniques": ["[+45]% Strength <vs [Beast] units>", "[+45]% Strength <vs cities>"],
 		"prerequisites": ["Steady II"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Aggressive I",
-		"uniques": ["+[10]% Strength when attacking"],
+		"uniques": ["[+10]% Strength <when attacking>"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Aggressive II",
-		"uniques": ["+[20]% Strength when attacking"],
+		"uniques": ["[+20]% Strength <when attacking>"],
 		"prerequisites": ["Aggressive I"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Aggressive III",
-		"uniques": ["+[30]% Strength when attacking"],
+		"uniques": ["[+30]% Strength <when attacking>"],
 		"prerequisites": ["Aggressive II"],
 		"unitTypes": ["Infantry"]
 	},
@@ -57,35 +57,35 @@
 	// Swarm
 	{
 		"name": "Overrun I",
-		"uniques": ["+[15]% Strength vs [Guard]"],
+		"uniques": ["[+15]% Strength <vs [Guard] units>", "[+15]% Strength <vs cities>"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Overrun II",
-		"uniques": ["+[30]% Strength vs [Guard]"],
+		"uniques": ["[+30]% Strength <vs [Guard] units>", "[+30]% Strength <vs cities>"],
 		"prerequisites": ["Overrun I"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Overrun III",
-		"uniques": ["+[45]% Strength vs [Guard]"],
+		"uniques": ["[+45]% Strength <vs [Guard] units>", "[+45]% Strength <vs cities>"],
 		"prerequisites": ["Overrun II"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Rush I",
-		"uniques": ["+[15]% Strength vs [Projectile (Ranged)]"],
+		"uniques": ["[+15]% Strength <vs [Projectile (Ranged)] units>", "[+15]% Strength <vs cities>"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Rush II",
-		"uniques": ["+[30]% Strength vs [Projectile (Ranged)]"],
+		"uniques": ["[+30]% Strength <vs [Projectile (Ranged)] units>", "[+30]% Strength <vs cities>"],
 		"prerequisites": ["Rush I"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Rush III",
-		"uniques": ["+[45]% Strength vs [Projectile (Ranged)]"],
+		"uniques": ["[+45]% Strength <vs [Projectile (Ranged)] units>", "[+45]% Strength <vs cities>"],
 		"prerequisites": ["Rush II"],
 		"unitTypes": ["Swarm"]
 	},
@@ -102,16 +102,16 @@
 	// Rak'tar Swarm Drone (unit and upgrades)
 	{
 		"name": "Call of the Swarm",
-		"uniques": ["Bonus for units in 2 tile radius 15%"]
+		"uniques": ["[+15]% Strength bonus for [Military] units within [2] tiles"]
 	},
 	{
 		"name": "Genetic Apex",
-		"uniques": ["+[50]% Combat Strength"]
+		"uniques": ["[+50]% Strength"]
 	},
 	// Sekari Shellwalker (unit and upgrades)
 	{
 		"name": "Reflective Carapace",
-		"uniques": ["[+200]% Strength when defending vs [Ranged] units"]
+		"uniques": ["[200]% Strength <when defending> <vs [Ranged] units>"]
 	},
 	// Katorian Tunneler (unit and upgrades)
 	{
@@ -126,7 +126,7 @@
 	// Zyxian Shrieker (unit and upgrades)
 	{
 		"name": "Supersonic Vibrations",
-		"uniques": ["+[500]% Strength vs [City]"]
+		"uniques": ["[+500]% Strength <vs [City] units>", "[+500]% Strength <vs cities>"]
 	},
 	
 	// --[[ Other Promotions ]]--

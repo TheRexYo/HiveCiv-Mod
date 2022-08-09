@@ -8,21 +8,21 @@
 			{
 				"name": "Unification",
 				"effect": "25% less unhappiness from population. Purchase cost in cities reduced by 25%.",
-				"uniques": ["Unhappiness from population decreased by [25]%", "Cost of purchasing items in cities reduced by [25]%"],
+				"uniques": ["[25]% Unhappiness from [Population] [in all cities]", "Cost of purchasing items in cities reduced by [25]%"],
 				"row": 1,
 				"column": 1
 			},
 			{
 				"name": "Propogation",
 				"effect": "All cities have +25% growth, and the capital has an additional +25% growth.",
-				"uniques":["+[25]% growth [in all cities]","+[25]% growth [in capital]"],
+				"uniques":["[+25]% growth [in all cities]","[+25]% growth [in capital]"],
 				"row": 1,
 				"column": 5
 			},
 			{
 				"name": "Optimization",
 				"effect": "Cities have +25% production when they are constructing Buildings.",
-				"uniques": ["+[25]% Production when constructing [Buildings]"],
+				"uniques": ["[+25]% Production when constructing [Buildings] buildings [in all cities]"],
 				"requires": ["Unification"],
 				"row": 2,
 				"column": 2
@@ -30,7 +30,7 @@
 			{
 				"name": "Adaptation",
 				"effect": "Production to science conversion rates increased by 33%. All cities give +1 science per 2 population they have.",
-				"uniques": ["[+2 Science] from every specialist", "[+1 Science] per [2] population [in all cities]"],
+				"uniques": ["[+2 Science] from every specialist [in all cities]", "[+1 Science] per [2] population [in all cities]"],
 				"requires": ["Propogation"],
 				"row": 2,
 				"column": 4
@@ -38,7 +38,7 @@
 			{
 				"name": "Actualization",
 				"effect": "+5 Culture in the capital and +10% Culture in all cities. Free social policy.",
-				"uniques": ["[+5 Culture] [in capital]", "+[10]% [Culture] [in all cities]", "Free Social Policy"],
+				"uniques": ["[+5 Culture] [in capital]", "[+10]% [Culture] [in all cities]", "Free Social Policy"],
 				"requires": ["Optimization","Adaptation"],
 				"row": 3,
 				"column": 3
@@ -54,12 +54,12 @@
 		"name": "Growth",
 		"era": "Primal era",
 		"effect": "+15% growth in all cities. +1 food per 2 population in all cities",
-		"uniques": ["+[15]% growth [in all cities]", "[+1 Food] per [2] population [in all cities]"],
+		"uniques": ["[+15]% growth [in all cities]", "[+1 Food] per [2] population [in all cities]"],
 		"policies": [
 			{
 				"name": "Collective Living",
 				"effect": "50% less unhappiness from population, +1 happiness for every 4 citizens in a city",
-				"uniques": ["Unhappiness from population decreased by [50]%", "[+1 Happiness] per [4] population [in all cities]"],
+				"uniques": ["[50]% Unhappiness from [Population] [in all cities]", "[+1 Happiness] per [4] population [in all cities]"],
 				"row": 1,
 				"column": 1
 			},
@@ -73,7 +73,7 @@
 			{
 				"name": "Enforcement Instincts",
 				"effect": "Units in cities cost no Maintenance, garrisoned cities have +50% attacking strength and +3 Happiness.",
-				"uniques": ["Units in cities cost no Maintenance", "+[50]% attacking strength for cities with garrisoned units", "[+3 Happiness] [in all cities with a garrison]"],
+				"uniques": ["Units in cities cost no Maintenance", "[+50]% Strength for cities <with a garrison> <when attacking>", "[+3 Happiness] [in all cities with a garrison]"],
 				"requires": ["Collective Living"],
 				"row": 2,
 				"column": 2
@@ -81,7 +81,7 @@
 			{
 				"name": "Reflexive Designs",
 				"effect": "+25% production towards any buildings that already exist in the Capital and +5 production in capital",
-				"uniques": ["+25% Production towards any buildings that already exist in the Capital", "[+5 Production] [in capital]"],
+				"uniques": ["[+25]% Production towards any buildings that already exist in the Capital", "[+5 Production] [in capital]"],
 				"requires": ["Synaptic Expansion"],
 				"row": 2,
 				"column": 4
@@ -89,7 +89,7 @@
 			{
 				"name": "Delegated Autonomy",
 				"effect": "+2 Culture and +2 Happiness from every specialist. Specialists consume half as much food. Starts a golden age.",
-				"uniques": ["[+2 Culture, +2 Happiness] from every specialist", "-[50]% food consumption by specialists", "Empire enters golden age"],
+				"uniques": ["[+2 Culture, +2 Happiness] from every specialist [in all cities]", "-[50]% food consumption by specialists", "Empire enters golden age"],
 				"requires": ["Enforcement Instincts","Reflexive Designs"],
 				"row": 3,
 				"column": 3
@@ -97,7 +97,7 @@
 			{
 				"name": "Growth Complete",
 				"effect": "+15% growth and +2 food in all cities. Free Great Unit.",
-				"uniques": ["+[15]% growth [in all cities]","[+2 Food] [in all cities]", "Free Great Person"]
+				"uniques": ["[+15]% growth [in all cities]","[+2 Food] [in all cities]", "Free Great Person"]
 			}
 		]
 	},
@@ -105,12 +105,12 @@
 		"name": "Adaptability",
 		"era": "Primal era",
 		"effect": "50% reduced cost when purchasing (with gold) and aquiring (with culture) tiles.",
-		"uniques": ["-[50]% Culture cost of acquiring tiles [in all cities]", "-50% cost when purchasing tiles"],
+		"uniques": ["[-50]% Culture cost of natural border growth [in all cities]", "-50% cost when purchasing tiles"],
 		"policies": [
 			{
 				"name": "Expansion Instincts",
 				"effect": "Training of Spawning Drones increased +50% in capital, receive a new Spawning Drone near the capital",
-				"uniques": ["+[50]% Production when constructing [Spawning Drone] units [in capital]", "Free [Spawning Drone] appears"],
+				"uniques": ["[+50]% Production when constructing [Spawning Drone] units [in capital]", "Free [Spawning Drone] appears"],
 				"row": 1,
 				"column": 1
 			},
@@ -124,7 +124,7 @@
 			{
 				"name": "Expanded Ephapse",
 				"effect": "Each city founded increases culture cost of policies 50% less than normal. Golden Age length increased by 25%.",
-				"uniques": ["Each city founded increases culture cost of policies [50]% less than normal", "Golden Age length increased by [25]%"],
+				"uniques": ["Each city founded increases culture cost of policies [50]% less than normal", "[25]% Golden Age length"],
 				"requires": ["Expansion Instincts"],
 				"row": 2,
 				"column": 2
@@ -132,7 +132,7 @@
 			{
 				"name": "Environmental Mastery",
 				"effect": "+1 production from every strategic resource. Tile yields from Natural Wonders doubled.",
-				"uniques": ["[+1 Production] from every [Strategic Resource]", "Tile yields from Natural Wonders doubled"],
+				"uniques": ["[+1 Production] from every [Strategic Resource]", "[+100]% Yield from every [Natural Wonder]"],
 				"requires": ["Habitat Manipulation"],
 				"row": 2,
 				"column": 4
@@ -140,7 +140,7 @@
 			{
 				"name": "Subspace Consciousness",
 				"effect": "+5 production and culture in every city connected to capital, Tile yield from Great Improvements doubled. Starts a golden age.",
-				"uniques": ["[+5 Production, +5 Culture] [in all cities connected to capital]", "+[100]% yield from every [Great Improvement]", "Empire enters golden age"],
+				"uniques": ["[+5 Production, +5 Culture] [in all cities connected to capital]", "[+100]% Yield from every [Great Improvement]", "Empire enters golden age"],
 				"requires": ["Expanded Ephapse","Environmental Mastery"],
 				"row": 3,
 				"column": 3
@@ -148,7 +148,7 @@
 			{
 				"name": "Adaptability Complete",
 				"effect": "+2 Production in all cities. Golden Age length increased by 15%. Free worker drones and spawning drones appear near capital immediately (3 of each).",
-				"uniques": ["[3] free [Worker Drone] units appear","[3] free [Spawning Drone] units appear", "[+2 Production] [in all cities]", "+[15]% Production when constructing [Wonders]"]
+				"uniques": ["[3] free [Worker Drone] units appear","[3] free [Spawning Drone] units appear", "[+2 Production] [in all cities]", "[+15]% Production when constructing [Wonders] buildings [in all cities]"]
 			}
 		]
 	},
@@ -156,26 +156,26 @@
 		"name": "Predation",
 		"era": "Primal era",
 		"effect": "+25% bonus vs Barbarians; gain Culture when you kill a barbarian unit. Notified of new Barbarian encampments.",
-		"uniques": ["+[25]% Strength vs [Barbarians]", "Earn [100]% of [Barbarian] opponent's [Cost] as [Culture] for kills", "Notified of new Barbarian encampments"],
+		"uniques": ["[+25]% Strength <vs [Barbarians] units>", "[+25]% Strength <vs cities>", "Earn [100]% of [Barbarian] opponent's [Cost] as [Culture] for kills", "Notified of new Barbarian encampments"],
 		"policies": [
 			{
 				"name": "Innate Aggression",
 				"effect": "-33% unit upkeep and purchase (with gold) costs. Wounded units deal double damage.",
-				"uniques":["-[33]% unit upkeep costs","Gold cost of purchasing [All] units -[33]%", "[Wounded] units deal +[100]% damage"],
+				"uniques":["[-33]% maintenance costs <for [All] units>","Gold cost of purchasing [All] units -[33]%", "[+100]% Strength <for [Wounded] units>"],
 				"row": 1,
 				"column": 1
 			},
 			{
 				"name": "Swarming Instincts",
 				"effect": "+30% combat strength for melee units with adjacent military allies. +50% production when training melee units.",
-				"uniques":["[+30]% Strength for [Melee] units which have another [Military] unit in an adjacent tile","+[50]% Production when constructing [Melee] units"],
+				"uniques":["[30]% Strength <for [Melee] units> <when adjacent to a [Melee] unit>","+[50]% Production when constructing [Melee] units"],
 				"row": 1,
 				"column": 5
 			},
 			{
 				"name": "Warbred",
 				"effect": "Military units gain double experience from combat. New military units start with [15] Experience.",
-				"uniques":["[Military] units gain [100]% more Experience from combat", "New military units start with [15] Experience"],
+				"uniques":["[100]% XP gained from combat <for [Military] units>", "New military units start with [15] Experience"],
 				"requires": ["Innate Aggression"],
 				"row": 2,
 				"column": 2
@@ -199,7 +199,7 @@
 			{
 				"name": "Predation Complete",
 				"effect": "+2 Happiness in all cities. +15% production towards military units. +250% attack bonus to all Military Units for 5 turns",
-				"uniques": ["+[250]% attack strength to all [Military] units for [5] turns","+[20]% Defensive Strength for cities","+[15]% Production when constructing [Military] units"]
+				"uniques": ["[+250]% Strength <when attacking> <for [Military] units> <for [5] turns>","[+20]% Strength for cities <when defending>","+[15]% Production when constructing [Military] units"]
 			}
 		]
 	},
@@ -207,26 +207,26 @@
 		"name": "Introspection",
 		"era": "Archaic era",
 		"effect": "Culture cost of future policies reduced by 10%. Building time and purchase cost of culture buildings reduced by 25%. Building time of Wonders reduced by 25%.",
-		"uniques": ["+[25]% Production when constructing [Culture] buildings", "Cost of purchasing [Culture] buildings reduced by [25]%","+[25]% Production when constructing [Wonders]", "Culture cost of adopting new Policies reduced by [10]%"],
+		"uniques": ["[+25]% Production when constructing [Culture] buildings [in all cities]", "Cost of purchasing [Culture] buildings reduced by [25]%","[+25]% Production when constructing [Wonders] buildings [in all cities]", "[10]% Culture cost of adopting new Policies"],
 		"policies": [
 			{
 				"name": "Hive Sentience",
 				"effect": "Culture cost of future policies reduced by 25%. Free social policy.",
-				"uniques": ["Culture cost of adopting new Policies reduced by [25]%", "Free Social Policy"],
+				"uniques": ["[25]% Culture cost of adopting new Policies", "Free Social Policy"],
 				"row": 1,
 				"column": 1
 			},
 			{
 				"name": "Compliance Insticts",
 				"effect": "50% of excess happiness added to culture towards policies. Specialists produce half as much unhappiness. +3 Happiness in all cities.",
-				"uniques": ["50% of excess happiness added to culture towards policies", "Specialists only produce [50]% of normal unhappiness", "[+3 Happiness] [in all cities]"],
+				"uniques": ["[50]% of excess happiness converted to [Culture]", "Specialists only produce [50]% of normal unhappiness", "[+3 Happiness] [in all cities]"],
 				"row": 1,
 				"column": 5
 			},
 			{
 				"name": "Psionic Identity",
 				"effect": "Double culture in all cities with a world wonder. +5 Culture from every wonder.",
-				"uniques": ["+[100]% [Culture] [in all cities with a world wonder]", "[+5 Culture] from every Wonder"],
+				"uniques": ["[+100]% [Culture] [in all cities with a world wonder]", "[+5 Culture] from every [Wonder]"],
 				"requires": ["Hive Sentience"],
 				"row": 2,
 				"column": 2
@@ -242,7 +242,7 @@
 			{
 				"name": "Ascension Complex",
 				"effect": "+33% gold, culture, and science in all cities with a world wonder. +1 Movement and +10% Strength for units during golden ages. Starts a golden age.",
-				"uniques": ["+[33]% [Gold] [in all cities with a world wonder]", "+[33]% [Culture] [in all cities with a world wonder]", "+[33]% [Science] [in all cities with a world wonder]",  "+1 Movement for all units during Golden Age", "+10% Strength for all units during Golden Age", "Empire enters golden age"],
+				"uniques": ["[+33]% [Gold] [in all cities with a world wonder]", "[+33]% [Culture] [in all cities with a world wonder]", "[+33]% [Science] [in all cities with a world wonder]",  "[+1] Movement <for [All] units> <during a Golden Age>", "[+10]% Strength <for [All] units> <during a Golden Age>", "Empire enters golden age"],
 				"requires": ["Synaptic Web", "Psionic Identity"],
 				"row": 3,
 				"column": 3
@@ -250,7 +250,7 @@
 			{
 				"name": "Introspection Complete",
 				"effect": "+2 Culture in all cities. Gain a free policy. Culture cost of future policies reduced by 15%.",
-				"uniques": ["Free Social Policy","[+2 Culture] [in all cities]", "Culture cost of adopting new Policies reduced by [15]%"]
+				"uniques": ["Free Social Policy","[+2 Culture] [in all cities]", "[15]% Culture cost of adopting new Policies"]
 			}
 		]
 	},
@@ -258,7 +258,7 @@
 		"name": "Evolution",
 		"era": "Archaic era",
 		"effect": "Gain +25% science production while the empire is happy. Gain +10% science production in all cities, and an additional +15% science production in capital.",
-		"uniques": ["[25]% [Science] while the empire is happy", "+[15]% [Science] [in capital]", "+[10]% [Science] [in all cities]"],
+		"uniques": ["[25]% [Science] [in all cities] <while the empire is happy>", "[+15]% [Science] [in capital]", "[+10]% [Science] [in all cities]"],
 		//"uniques": ["Production to science conversion in cities increased by 33%"],
 		"policies": [
 			{
@@ -287,7 +287,7 @@
 			{
 				"name": "Autonomous Creativity",
 				"effect": "Gain +75% science production while empire is happy, but lose 25% science production at all times.",
-				"uniques": ["[75]% [Science] while the empire is happy", "+[-25]% [Science] [in all cities]"],
+				"uniques": ["[75]% [Science] [in all cities] <while the empire is happy>", "[-25]% [Science] [in all cities]"],
 				"requires": ["Progressive Designs"],
 				"row": 2,
 				"column": 4
@@ -303,14 +303,14 @@
 			{
 				"name": "Evolution Complete",
 				"effect": "Gain 2 free Technologies. +15% science in all cities. Also gain an additional +2 science in all cities.",
-				"uniques": ["[2] Free Technologies", "+[15]% [Science] [in all cities]", "[+2 Science] [in all cities]"]
+				"uniques": ["[2] Free Technologies", "[+15]% [Science] [in all cities]", "[+2 Science] [in all cities]"]
 			}
 		]
 	},
 	{
 		"name": "Prosperity",
 		"effect": "Gain +25% gold production while the empire is happy. +2 Gold from all gold buildings. +1 Happiness from each type of luxury resource.",
-		"uniques": ["[25]% [Gold] while the empire is happy", "[+2 Gold] from all [Gold] buildings", "+[1] happiness from each type of luxury resource"],
+		"uniques": ["[25]% [Gold] [in all cities] <while the empire is happy>", "[+2 Gold] from all [Gold] buildings", "[+1] Happiness from each type of luxury resource"],
 		"era": "Archaic era",
 		"policies": [
 			{
@@ -330,7 +330,7 @@
 			{
 				"name": "Trade Drones",
 				"effect": "Great Merchants are earned 25% faster, +3 Gold and +2 Science from each trade route. Earn double gold from trade missions (such as those performed by Great Scions).",
-				"uniques": ["[Great Scion] is earned [50]% faster", "[+3 Gold, +2 Science] from each Trade Route", "Double gold from Great Merchant trade missions"],
+				"uniques": ["[Great Scion] is earned [50]% faster", "[+3 Gold, +2 Science] from each Trade Route", "[+100]% Gold from Great Merchant trade missions"],
 				"requires": ["Resource Pacts"],
 				"row": 2,
 				"column": 2
@@ -338,7 +338,7 @@
 			{
 				"name": "Communal Labor",
 				"effect": "Cost of purchasing culture buildings reduced by 50%",
-				"uniques": ["Cost of purchasing [Culture] buildings reduced by [50]%", "[25]% [Production] while the empire is happy"],
+				"uniques": ["Cost of purchasing [Culture] buildings reduced by [50]%", "[25]% [Production] [in all cities] <while the empire is happy>"],
 				"requires": ["Shared Possessions"],
 				"row": 2,
 				"column": 5
@@ -346,7 +346,7 @@
 			{
 				"name": "Hive Beneficence",
 				"effect": "Up to 10 owned units cost no maintenance. Half maintenance cost for buildings (in all cities).",
-				"uniques": ["[10] units cost no maintenance", "-[50]% maintenance cost for buildings [in all cities]"],
+				"uniques": ["[10] units cost no maintenance", "[-50]% maintenance cost for buildings [in all cities]"],
 				"requires": ["Communal Labor","Trade Drones"],
 				"row": 3,
 				"column": 3
@@ -354,7 +354,7 @@
 			{
 				"name": "Prosperity Complete",
 				"effect": "Creates a Great Vault in each of your first five cities (does not trigger for later built cities if you have less than five on completion). Gain +15% gold production while the empire is happy. +10% Gold in all cities.  Also gain an additional +2 gold in all cities.",
-				"uniques": ["Immediately creates a [Great Vault] in each of your first [5] cities for free", "[15]% [Gold] while the empire is happy", "+[10]% [Gold] [in all cities]", "[+2 Gold] [in all cities]"]
+				"uniques": ["Provides a [Great Vault] in your first [5] cities for free", "[15]% [Gold] [in all cities] <while the empire is happy>", "[+10]% [Gold] [in all cities]", "[+2 Gold] [in all cities]"]
 			}
 		]
 	},
@@ -362,7 +362,7 @@
 		"name": "Symbiosis",
 		// This tree belongs to a different era, but that era has yet to be implemented.
 		"era": "Archaic era",
-		"uniques": ["City-State Influence degrades [25]% slower", "[+1 Gold, +1 Science, +1 Culture, +1 Happiness, +1 Faith] from each Trade Route", "Happiness from Luxury Resources gifted by City-States increased by [100]%"],
+		"uniques": ["[25]% City-State Influence degradation", "[+1 Gold, +1 Science, +1 Culture, +1 Happiness, +1 Faith] from each Trade Route", "[100]% Happiness from luxury resources gifted by City-States"],
 		"policies": [
 			{
 				"name": "Altruism",
@@ -373,7 +373,7 @@
 			},
 			{
 				"name": "Bonded Minds",
-				"uniques":["Resting point for Influence with City-States is increased by [50]", "City-State Influence degrades [10]% slower", "[+2 Happiness] from each Trade Route", "City-State Influence recovers at twice the normal rate"],
+				"uniques":["Resting point for Influence with City-States is increased by [50]", "[10]% City-State Influence degradation", "[+2 Happiness] from each Trade Route", "City-State Influence recovers at twice the normal rate"],
 				"row": 1,
 				"column": 5
 			},
@@ -386,7 +386,7 @@
 			},
 			{
 				"name": "Mutualism",
-				"uniques": ["Quantity of Resources gifted by City-States increased by [100]%", "Allied City-States will occasionally gift Great People", "[+2 Culture] from each Trade Route"],
+				"uniques": ["[100]% resources gifted by City-States", "Allied City-States will occasionally gift Great People", "[+2 Culture] from each Trade Route"],
 				"requires": ["Bonded Minds"],
 				"row": 2,
 				"column": 4
@@ -402,7 +402,7 @@
 			{
 				"name": "Symbiosis Complete",
 				"effect": "+2 Gold, Science, Culture, and Happiness from each Trade Route. Two free Great Scion units appear. City-State Influence degrades 15% slower.",
-				"uniques": ["[2] free [Great Scion] units appear","[+2 Gold, +2 Science, +2 Culture, +2 Happiness] from each Trade Route", "City-State Influence degrades [15]% slower"]
+				"uniques": ["[2] free [Great Scion] units appear","[+2 Gold, +2 Science, +2 Culture, +2 Happiness] from each Trade Route", "[15]% City-State Influence degradation"]
 			}
 		]
 	},
@@ -410,33 +410,33 @@
 		"name": "Utopia",
 		"era": "Terminal era",
 		"effect": "+2 of every stat (Happiness, Science, Food, Culture, Gold, Production, etc.) in all cities.",
-		"uniques": ["[+2 Happiness, +2 Science, +2 Gold, +2 Culture, +2 Production, +2 Food] [in all cities]", "Incompatible with [Survival]"],
+		"uniques": ["[+2 Happiness, +2 Science, +2 Gold, +2 Culture, +2 Production, +2 Food] [in all cities]", "Only available <before adopting [Survival]>"],
 		"policies": [
 			{
 				"name": "Mastery of Growth",
 				"effect": "+15% growth and +2 food in all cities. Free Great Unit.",
-				"uniques": ["+[15]% growth [in all cities]","[+2 Food] [in all cities]"],
+				"uniques": ["[+15]% growth [in all cities]","[+2 Food] [in all cities]"],
 				"row": 1,
 				"column": 2
 			},
 			{
 				"name": "Mastery of Adaptability",
 				"effect": "+2 Production in all cities. Golden Age length increased by 15%. Free worker drones and spawning drones appear near capital immediately (3 of each).",
-				"uniques": ["[+2 Production] [in all cities]", "+[15]% Production when constructing [Wonders]"],
+				"uniques": ["[+2 Production] [in all cities]", "[+15]% Production when constructing [Wonders] buildings [in all cities]"],
 				"row": 1,
 				"column": 3
 			},
 			{
 				"name": "Mastery of Predation",
 				"effect": "+2 Happiness in all cities. +15% production towards military units. +250% attack bonus to all Military Units for 5 turns",
-				"uniques": ["+[20]% Defensive Strength for cities","+[15]% Production when constructing [Military] units"],
+				"uniques": ["[+20]% Strength for cities <when defending>","+[15]% Production when constructing [Military] units"],
 				"row": 1,
 				"column": 4
 			},
 			{
 				"name": "Mastery of Evolution",
 				"effect": "Gain 2 free Technologies. +15% science in all cities. Also gain an additional +2 science in all cities.",
-				"uniques": ["+[15]% [Science] [in all cities]", "[+2 Science] [in all cities]"],
+				"uniques": ["[+15]% [Science] [in all cities]", "[+2 Science] [in all cities]"],
 				"requires": ["Mastery of Predation", "Mastery of Adaptability", "Mastery of Growth"],
 				"row": 2,
 				"column": 1
@@ -444,7 +444,7 @@
 			{
 				"name": "Mastery of Introspection",
 				"effect": "+2 Culture in all cities. Gain a free policy. Culture cost of future policies reduced by 15%.",
-				"uniques": ["[+2 Culture] [in all cities]", "Culture cost of adopting new Policies reduced by [15]%"],
+				"uniques": ["[+2 Culture] [in all cities]", "[15]% Culture cost of adopting new Policies"],
 				"requires": ["Mastery of Predation", "Mastery of Adaptability", "Mastery of Growth"],
 				"row": 2,
 				"column": 3
@@ -452,7 +452,7 @@
 			{
 				"name": "Mastery of Prosperity",
 				"effect": "Creates a Great Vault in each of your first five cities (does not trigger for later built cities if you have less than five on completion). Gain +15% gold production while the empire is happy. +10% Gold in all cities.  Also gain an additional +2 gold in all cities.",
-				"uniques": ["[15]% [Gold] while the empire is happy", "+[10]% [Gold] [in all cities]", "[+2 Gold] [in all cities]"],
+				"uniques": ["[15]% [Gold] [in all cities] <while the empire is happy>", "[+10]% [Gold] [in all cities]", "[+2 Gold] [in all cities]"],
 				"requires": ["Mastery of Predation", "Mastery of Adaptability", "Mastery of Growth"],
 				"row": 2,
 				"column": 5
@@ -460,7 +460,7 @@
 			{
 				"name": "Mastery of Symbiosis",
 				"effect": "+2 Gold, Science, Culture, and Happiness from each Trade Route. Two free Great Scion units appear. City-State Influence degrades 15% slower.",
-				"uniques": ["[+2 Gold, +2 Science, +2 Culture, +2 Happiness] from each Trade Route", "City-State Influence degrades [15]% slower"],
+				"uniques": ["[+2 Gold, +2 Science, +2 Culture, +2 Happiness] from each Trade Route", "[15]% City-State Influence degradation"],
 				"requires": ["Mastery of Evolution", "Mastery of Introspection", "Mastery of Prosperity"],
 				"row": 3,
 				"column": 3

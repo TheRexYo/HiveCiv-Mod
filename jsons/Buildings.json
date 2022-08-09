@@ -1,246 +1,260 @@
 [
-// Basal / Primal Era
-	{
-		"name": "Synaptic Apex",
-		"isNationalWonder": true,
-		"production": 3,
-		"science": 3,
-		"gold": 3,
-		"culture": 3,
-		"food": 3,
-		"cost": 1,
-		"uniques": ["Indicates the capital city"]
-	},
-	{
-		"name": "Psionic Node",
-		"culture": 2,
-		"cost": 40,
-		"hurryCostModifier": 40,
-		"maintenance": 1
-	},
-	{
-		"name": "Psionic Nexus",
-		"maintenance": 1,
-		"uniques": ["[+1 Culture] Per [2] Population [in this city]"],
-		"requiredTech": "Introspection"
-	},
-	{
-		"name": "Storage Nest", 
-		"food": 2,
-		"uniques": ["[25]% of food is carried over after population increases"],
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"requiredTech": "Storage Organisms"
-	},
-	{
-		"name": "Biomass Recycler", 
-		"food": 1,
-		"uniques": ["[+1 Food] Per [2] Population [in this city]"],
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"requiredTech": "Storage Organisms"
-	},
-	{
-		"name": "Biomass Pool", 
-		"food": 2,
-		"percentStatBonus": {"food": 25},
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": ["[+1 Food] from [Slave-Beasts] tiles [in this city]", "[+1 Food] from [Prey-Beasts] tiles [in this city]", "[+1 Food] from [Hunt-Beasts] tiles [in this city]"],
-		"requiredTech": "Stockpiling Instincts"
-	},
-	{
-		"name": "Chronostatic Chamber", 
-		"happiness": 1,
-		"production": 1,
-		"requiredNearbyImprovedResources": ["Marble", "Stone"],
-		//"resourceBonusStats": {"happiness": 3},
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": ["[+3 Happiness] from [Marble] tiles [in this city]", "[+3 Happiness] from [Stone] tiles [in this city]", "Must not be on [Plains]"],
-		"requiredTech": "Chronostasis"
-	},
-	{
-		"name": "Psionic Monolith", 
-		"culture": 3,
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": ["+[10]% great person generation in all cities"],
-		"requiredTech": "Chronostasis"
-	},
-	{
-		"name": "The Mindstone",
-		"culture": 20,
-		"isWonder": true,
-		"greatPersonPoints": {"Great Overseer": 1},
-		"requiredTech": "Chronostasis",
-		"quote": "'The moment it came into being, the stone shined vibrantly, and the hive mind was bombarded with ideas.'"
-	},
-	{
-		"name": "Synaptic Nexus",
-		"hurryCostModifier": 25,
-		"maintenance": 1,
-		"uniques": ["[+1 Science] Per [2] Population [in this city]"],
-		"requiredTech": "Synaptic Structures"
-	},
-	{
-		"name": "The Nexus",
-		"culture": 5,
-		"greatPersonPoints": {"Great Catalyst": 1},
-		"isWonder": true,
-		//"providesFreeBuilding":  "Synaptic Nexus",
-		"requiredTech": "Synaptic Structures",
-		"uniques": ["Provides a free [Synaptic Nexus] [in this city]", "Free Technology","[+1 Science] Per [1] Population [in this city]"],
-		"quote": "'Within every drone is a mind of its own, just waiting to be tapped into our collective.'"
-	},
-	{
-		"name": "Bio-Stock", 
-		"requiredNearbyImprovedResources": ["Ivory","Wildlife"],
-		"happiness": 2,
-		"hurryCostModifier": 25,
-		"requiredTech": "Counteradaptation"
-	},
-	{
-		"name": "The Hivemaw",
-		"culture": 5,
-		"isWonder": true,
-		"cost": 185,
-		"greatPersonPoints": {"Great Overseer": 1},
-		"uniques": ["+[10]% [Food] [in all cities]", "+[50]% Production when constructing [Ranged] units [in all cities]"],
-		//"uniques": ["+[10]% growth in all cities", "+[50]% Production when constructing [ranged units]"],
-		"requiredTech": "Bio-Weapons",
-		"quote": "'The hunger of the hive is manifested into physical form, spewing forth acids from which biomass is absorbed and new spitters are made.'"
-	},
-	{
-		"name": "Bio-Barrier",
-		"cityStrength": 0,
-		"cityHealth": 100,
-		"hurryCostModifier": 25,
-		"requiredTech": "Bio-Structures"
-	},
-	{
-		"name": "The Nest",
-		"culture": 5,
-		"greatPersonPoints": {"Great Overseer": 1},
-		"isWonder": true,
-		"uniques": ["+[25]% Production when constructing [Worker Drone] units [in all cities]", "[4] free [Worker Drone] units appear"],
-		"requiredTech": "Bio-Structures",
-		"quote": "'The structure acted as a hyper-efficient birthing device for menial drones, producing new workers at unparalleled rates.'"
-	},
-	{
-		"name": "Gestation Pod",
-		"xpForNewUnits": 15,
-		"hurryCostModifier": 25,
-		"maintenance": 1,
-		"requiredTech": "Mineral Adaptations"
-	},
-	/*
-	{
-		"name": "Nexus of the Sea",
-		"culture": 5,
-		"gold": 5,
-		"greatPersonPoints": {"Great Scion": 1},
-		"isWonder": true,
-		"uniques": ["Must be next to [Coast]", "[+5 Gold] from [Water] tiles [in this city]"],
-		"requiredTech": "Aquatic Adaptations",
-		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
-	},
-	*/
-	{
-		"name": "The Eye",
-		"culture": 5,
-		"isWonder": true,
-		"uniques": ["+15% Combat Strength for all units when attacking Cities", "+[50]% Production when constructing [Melee] units [in all cities]"],
-		"requiredTech": "Mineral Adaptations",
-		"quote": "'The beasts gazed into the orb, which reflected their instincts back upon them twofold, and suddenly they had become predators of nightmarish determination.'"
-	},
-	{
-		"name": "The Vault",
-		"culture": 5,
-		"greatPersonPoints": {"Great Scion": 1},
-		"isWonder": true,
-		"uniques": ["Provides a sum of gold each time you spend a Great Person","[+5 Gold] from [Marble] tiles [in this city]", "[+5 Gold] from [Stone] tiles [in this city]"],
-		"requiredTech": "Bio-Structures",
-		"quote": "'Within its fleshing walls lay untold millions of valuables, stored safely for future use by the hive.'"
-	},
-	{
-		"name": "Flowage Zone",
-		"maintenance": 1,
-		"food": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be on [River]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	{
-		"name": "Arboreal Zone",
-		"maintenance": 1,
-		"production": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Forest]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	{
-		"name": "Canopy Zone",
-		"maintenance": 1,
-		"production": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Jungle]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	{
-		"name": "Fermentation Zone",
-		"maintenance": 1,
-		"food": 5,
-		"production": 3,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Marsh]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	{
-		"name": "Warming Zone",
-		"maintenance": 1,
-		"food": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Snow]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	{
-		"name": "Reservoir Zone",
-		"maintenance": 1,
-		"food": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Desert]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	{
-		"name": "Mining Zone",
-		"maintenance": 1,
-		"gold": 5,
-		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Hill]"],
-		"requiredTech": "Adaptive Structures"
-	},
-	
-// Archaic Era
-	{
-		"name": "Psionic Pylon",
-		"maintenance": 1,
-		"percentStatBonus": {"culture": 25},
-		"requiredTech": "Psionic Accumulation"
-	},
-	{
-		"name": "Bio-Cannon",
-		"cityStrength": 20,
-		"cityHealth": 0,
-		"hurryCostModifier": 25,
-		"requiredTech": "Aggressive Structures"
-	},
-// Special Buildings
-	{
-		"name": "Great Vault",
-		"maintenance": 0,
-		"percentStatBonus": {"gold": 25},
-		"uniques": ["Doubles Gold given to enemy if city is captured","Unbuildable"],
-		"requiredTech": "Hive Mind"
-	}
-]
+	// Basal / Primal Era
+		{
+			"name": "Synaptic Apex",
+			"isNationalWonder": true,
+			"production": 3,
+			"science": 3,
+			"gold": 3,
+			"culture": 3,
+			"food": 3,
+			"cost": 1,
+			"uniques": ["Indicates the capital city"]
+		},
+		{
+			"name": "Psionic Node",
+			"culture": 2,
+			"cost": 40,
+			"hurryCostModifier": 40,
+			"maintenance": 1
+		},
+		{
+			"name": "Psionic Nexus",
+			"maintenance": 1,
+			"uniques": ["[+1 Culture] Per [2] Population [in this city]"],
+			"requiredTech": "Introspection"
+		},
+		{
+			"name": "Storage Nest", 
+			"food": 2,
+			"uniques": ["[25]% Food is carried over after population increases [in this city]"],
+			"maintenance": 1,
+			"hurryCostModifier": 25,
+			"requiredTech": "Storage Organisms"
+		},
+		{
+			"name": "Biomass Recycler", 
+			"food": 1,
+			"uniques": ["[+1 Food] Per [2] Population [in this city]"],
+			"maintenance": 1,
+			"hurryCostModifier": 25,
+			"requiredTech": "Storage Organisms"
+		},
+		{
+			"name": "Biomass Pool", 
+			"food": 2,
+			"percentStatBonus": {"food": 25},
+			"maintenance": 1,
+			"hurryCostModifier": 25,
+			"uniques": ["[+3 Food] from [Biomass] tiles [in this city]", "[+2 Food] from [Prey] tiles [in this city]", "[+1 Food] from [Megafauna] tiles [in this city]"],
+			"requiredTech": "Stockpiling Instincts"
+		},
+		{
+			"name": "Chronostatic Chamber", 
+			"happiness": 1,
+			"production": 1,
+			"requiredNearbyImprovedResources": ["Marble", "Stone"],
+			//"resourceBonusStats": {"happiness": 3},
+			"maintenance": 1,
+			"hurryCostModifier": 25,
+			"uniques": ["[+3 Happiness] from [Marble] tiles [in this city]", "[+3 Happiness] from [Stone] tiles [in this city]", "Must not be on [Plains]"],
+			"requiredTech": "Chronostasis"
+		},
+		{
+			"name": "Psionic Monolith", 
+			"culture": 3,
+			"maintenance": 1,
+			"hurryCostModifier": 25,
+			"uniques": ["+[10]% great person generation in all cities"],
+			"requiredTech": "Chronostasis"
+		},
+		{
+			"name": "The Mindstone",
+			"culture": 20,
+			"isWonder": true,
+			"greatPersonPoints": {"Great Overseer": 1},
+			"requiredTech": "Chronostasis",
+			"quote": "'The moment it came into being, the stone shined vibrantly, and the hive mind was bombarded with ideas.'"
+		},
+		{
+			"name": "Synaptic Nexus",
+			"hurryCostModifier": 25,
+			"maintenance": 1,
+			"uniques": ["[+1 Science] Per [2] Population [in this city]"],
+			"requiredTech": "Synaptic Structures"
+		},
+		{
+			"name": "The Nexus",
+			"culture": 5,
+			"greatPersonPoints": {"Great Catalyst": 1},
+			"isWonder": true,
+			//"providesFreeBuilding":  "Synaptic Nexus",
+			"requiredTech": "Synaptic Structures",
+			"uniques": ["Gain a free [Synaptic Nexus] [in this city]", "Free Technology","[+1 Science] Per [1] Population [in this city]"],
+			"quote": "'Within every drone is a mind of its own, just waiting to be tapped into our collective.'"
+		},
+		{
+			"name": "Bio-Stock", 
+			"requiredNearbyImprovedResources": ["Ivory","Wildlife"],
+			"happiness": 2,
+			"hurryCostModifier": 25,
+			"requiredTech": "Counteradaptation"
+		},
+		{
+			"name": "The Hivemaw",
+			"culture": 5,
+			"isWonder": true,
+			"cost": 185,
+			"greatPersonPoints": {"Great Overseer": 1},
+			"uniques": ["[+10]% [Food] [in all cities]", "[+50]% Production when constructing [Ranged] units [in all cities]"],
+			//"uniques": ["+[10]% growth in all cities", "+[50]% Production when constructing [ranged units]"],
+			"requiredTech": "Bio-Weapons",
+			"quote": "'The hunger of the hive is manifested into physical form, spewing forth acids from which biomass is absorbed and new spitters are made.'"
+		},
+		{
+			"name": "Bio-Barrier",
+			"cityStrength": 0,
+			"cityHealth": 100,
+			"hurryCostModifier": 25,
+			"requiredTech": "Bio-Structures"
+		},
+		{
+			"name": "The Nest",
+			"culture": 5,
+			"greatPersonPoints": {"Great Overseer": 1},
+			"isWonder": true,
+			"uniques": ["[+25]% Production when constructing [Worker Drone] units [in all cities]", "[4] free [Worker Drone] units appear"],
+			"requiredTech": "Bio-Structures",
+			"quote": "'The structure acted as a hyper-efficient birthing device for menial drones, producing new workers at unparalleled rates.'"
+		},
+		{
+			"name": "Gestation Pod",
+			"xpForNewUnits": 15,
+			"hurryCostModifier": 25,
+			"maintenance": 1,
+			"requiredTech": "Mineral Adaptations"
+		},
+		/*
+		{
+			"name": "Nexus of the Sea",
+			"culture": 5,
+			"gold": 5,
+			"greatPersonPoints": {"Great Scion": 1},
+			"isWonder": true,
+			"uniques": ["Must be next to [Coast]", "[+5 Gold] from [Water] tiles [in this city]"],
+			"requiredTech": "Aquatic Adaptations",
+			"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+		},
+		*/
+		{
+			"name": "The Eye",
+			"culture": 5,
+			"isWonder": true,
+			"uniques": ["[+15]% Strength <for [All] units> <vs cities> <when attacking>", "[+50]% Production when constructing [Melee] units [in all cities]"],
+			"requiredTech": "Mineral Adaptations",
+			"quote": "'The beasts gazed into the orb, which reflected their instincts back upon them twofold, and suddenly they had become predators of nightmarish determination.'"
+		},
+		{
+			"name": "The Vault",
+			"culture": 5,
+			"greatPersonPoints": {"Great Scion": 1},
+			"isWonder": true,
+			"uniques": ["Provides a sum of gold each time you spend a Great Person","[+5 Gold] from [Marble] tiles [in this city]", "[+5 Gold] from [Stone] tiles [in this city]"],
+			"requiredTech": "Bio-Structures",
+			"quote": "'Within its fleshing walls lay untold millions of valuables, stored safely for future use by the hive.'"
+		},
+		{
+			"name": "Flowage Zone",
+			"maintenance": 1,
+			"food": 5,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be on [River]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		{
+			"name": "Arboreal Zone",
+			"maintenance": 1,
+			"production": 5,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be next to [Forest]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		{
+			"name": "Canopy Zone",
+			"maintenance": 1,
+			"production": 5,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be next to [Jungle]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		{
+			"name": "Fermentation Zone",
+			"maintenance": 1,
+			"food": 5,
+			"production": 3,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be next to [Marsh]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		{
+			"name": "Warming Zone",
+			"maintenance": 1,
+			"food": 5,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be next to [Snow]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		{
+			"name": "Reservoir Zone",
+			"maintenance": 1,
+			"food": 5,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be next to [Desert]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		{
+			"name": "Mining Zone",
+			"maintenance": 1,
+			"gold": 5,
+			"hurryCostModifier": 25,
+			"uniques": ["Must be next to [Hill]"],
+			"requiredTech": "Adaptive Structures"
+		},
+		
+	// Archaic Era
+		{
+			"name": "Psionic Pylon",
+			"maintenance": 1,
+			"percentStatBonus": {"culture": 25},
+			"requiredTech": "Psionic Accumulation"
+		},
+		{
+			"name": "Bio-Cannon",
+			"cityStrength": 20,
+			"cityHealth": 0,
+			"hurryCostModifier": 25,
+			"requiredTech": "Aggressive Structures"
+		},
+	// Special Buildings
+		{
+			"name": "Great Vault",
+			"maintenance": 0,
+			"percentStatBonus": {"gold": 25},
+			"uniques": ["Doubles Gold given to enemy if city is captured","Unbuildable"],
+			"requiredTech": "Hive Mind"
+		},
+		{
+			"name": "Utopia Project",
+			"maintenance": 0,
+			"cost": 1000,
+			"uniques": ["Triggers a global alert upon build start", "Hidden until [5] social policy branches have been completed", "Hidden when [Cultural] Victory is disabled"],
+			"requiredTech": "Hive Mind"
+		},
+		{
+			"name": "Ascendant Nexus",
+			"maintenance": 0,
+			"cost": 10000,
+			"uniques": ["Triggers a global alert upon build start", "Can only be built [in capital]", "Hidden when [Ascension] Victory is disabled"],
+			"requiredTech": "Hive Mind"
+		}
+	]

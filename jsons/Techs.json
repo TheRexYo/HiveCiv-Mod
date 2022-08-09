@@ -26,7 +26,7 @@
 				"row": 2,
 				"quote": "'With minds united, they looked to the stars.'",
 				"prerequisites": ["Hive Mind"],
-				"uniques": ["Unhappiness from population decreased by [5]%"]
+				"uniques": ["[5]% Unhappiness from [Population] [in all cities]"]
 			},
 			{
 				"name": "Genetic Manipulation",
@@ -40,7 +40,7 @@
 				"row": 8,
 				"quote": "'With minds united, they looked to the stars.'",
 				"prerequisites": ["Hive Mind"],
-				"uniques": ["[-5]% maintenance costs for [All] units"]
+				"uniques": ["[-5]% maintenance costs <for [All] units>"]
 			}
 		]	
 	},
@@ -216,7 +216,7 @@
 				"name": "Optimization Instincts",
 				"row": 8,
 				"prerequisites": ["Aggressive Structures"],
-				"uniques": ["+[10]% Production when constructing [Buildings]"],
+				"uniques": ["[+10]% Production when constructing [Buildings] buildings [in all cities]"],
 				"quote": "'When the opportunity for growth comes, we must use it, no matter what.'"
 			},
 			{
@@ -238,7 +238,7 @@
 				"name": "Divided Introspection",
 				"row": 2,
 				"prerequisites": ["Reflective Processes","Synaptic Specialization"],
-				"uniques": ["Culture cost of adopting new Policies reduced by [5]%"],
+				"uniques": ["[5]% Culture cost of adopting new Policies"],
 				"quote": "'By delegating our thought processes to different divisions, we can reduce the number of resources we need to grow our mind.'"
 			},
 			{
@@ -262,7 +262,7 @@
 		]	
 	},
 	{
-		"columnNumber": 6,
+		"columnNumber": 7,
 		"era": "Terminal era",
 		"techCost": 1000, 
 		"buildingCost": 500,
@@ -270,16 +270,16 @@
 		"techs": [
 			{
 				"name": "Hive Advancement",
-				"row": 4,
+				"row": 3,
 				"prerequisites": ["Divided Introspection","Naval Bioforms","Oceanic Constructs","Environmental Alteration"],
 				"uniques": ["Who knows what the future holds?", "Can be continually researched"],
 				"quote": "'Adapt... Grow... Prosper...'"
 			},
 			{
 				"name": "Ascendance",
-				"row": 6,
+				"row": 5,
 				"prerequisites": ["Divided Introspection","Naval Bioforms","Oceanic Constructs","Environmental Alteration"],
-				"uniques": ["Hidden when [Scientific] Victory is disabled","Triggers victory"],
+				"uniques": ["Hidden when [Ascension] Victory is disabled","Triggers victory"],
 				"quote": "'We were one. We are all.'"
 			}
 		]	

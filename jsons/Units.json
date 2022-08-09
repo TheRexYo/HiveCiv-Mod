@@ -1,5 +1,6 @@
 [
-	/* Ancient Era */
+	// Generic Units //
+	/* Basal Era */
 	{
 		"name": "Worker Drone",
 		"unitType": "Service",
@@ -15,24 +16,6 @@
 		"cost": 105,
 		"uniques": ["Founds a new city","Requires at least [2] population","Excess Food converted to Production when under construction"],
 		"hurryCostModifier": 20
-	},
-	{
-		"name": "Synapse Drone",
-		"unitType": "Service",
-		"uniques": ["Can start an [2]-turn golden age","Cannot be purchased"],
-		"cost": 300,
-		"hurryCostModifier": 20,
-		"requiredTech": "Introspection",
-		"movement": 1
-	},
-	{
-		"name": "Storage Drone",
-		"unitType": "Service",
-		"uniques": ["Can speed up construction of a wonder","Cannot be purchased"],
-		"cost": 750,
-		"hurryCostModifier": 20,
-		"requiredTech": "Stockpiling Instincts",
-		"movement": 1
 	},
 	{
 		"name": "Scouting Drone",
@@ -52,7 +35,30 @@
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Bio-Weapons",
 		"upgradesTo": "Slasher",
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+		]
+	},
+
+	/* Primal Era */
+	{
+		"name": "Synapse Drone",
+		"unitType": "Service",
+		"uniques": ["Can start an [2]-turn golden age","Cannot be purchased"],
+		"cost": 300,
+		"hurryCostModifier": 20,
+		"requiredTech": "Introspection",
+		"movement": 1
+	},
+	{
+		"name": "Storage Drone",
+		"unitType": "Service",
+		"uniques": ["Can speed up construction of a wonder","Cannot be purchased"],
+		"cost": 750,
+		"hurryCostModifier": 20,
+		"requiredTech": "Storage Organisms",
+		"movement": 1
 	},
 	{
 		"name": "Guard Drone",
@@ -62,7 +68,7 @@
 		"cost": 40,
 		"obsoleteTech": "Mineral Adaptations",
 		"upgradesTo": "Armor Drone",
-		"uniques": ["[+100]% Strength when defending"],
+		"uniques": ["[+100]% Strength <when defending>"],
 		"hurryCostModifier": 20,
 		"attackSound": "nonmetalhit"
 	},
@@ -92,13 +98,13 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Aquatic Drone",
+		"name": "Worker Drone (Aquatic)",
 		"unitType": "Service (Water)",
-		"movement": 4,
-		"cost": 30,
+		"movement": 2,
+		"hurryCostModifier": 20,
 		"requiredTech": "Aquatic Adaptations",
-		"uniques": ["Cannot enter ocean tiles", "May create improvements on water resources", "Can build improvements on tiles"],
-		"hurryCostModifier": 20
+		"uniques": ["Can build [Water] improvements on tiles"],
+		"cost": 70
 	},
 	{
 		"name": "Carrier Vessel",
@@ -122,7 +128,7 @@
 		"strength": 18,
 		"cost": 75,
 		"requiredTech": "Gene Harvesting",
-		"requiredResource": "Wildlife",
+		"requiredResource": "Hyper-Predators",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
 		"uniques": ["No defensive terrain bonus", "[+33]% Strength <vs [Infantry] units>"],
@@ -149,7 +155,7 @@
 		"rangedStrength": 14,
 		"cost": 75,
 		"requiredTech": "Gene Harvesting",
-		"requiredResource": "Wildlife",
+		"requiredResource": "Hyper-Predators",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
 		"uniques": ["No defensive terrain bonus", "[+33]% Strength <vs [Infantry] units>"],
@@ -167,7 +173,7 @@
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","[+200]% Strength vs [City]","[-33]% Strength <vs [Projectile (Ranged)] units>"],
+		"uniques": ["No defensive terrain bonus","[+200]% Strength <vs cities>","[-33]% Strength <vs [Projectile (Ranged)] units>"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -248,7 +254,7 @@
 		"requiredTech": "Psionic Manipulation",
 		//"obsoleteTech": "Machinery",
 		//"upgradesTo": "Crossbowman",
-		"uniques": ["Ignores terrain cost", "[+100]% Strength <vs [Guard] units>", "6 tiles in every direction always visible", "Ranged attacks may be performed over obstacles"],
+		"uniques": ["Ignores terrain cost", "[+100]% Strength <vs [Guard] units>", "[+4] Sight", "Can see over obstacles", "Ranged attacks may be performed over obstacles"],
 		"attackSound": "arrow"
 	},
 	{
@@ -269,7 +275,7 @@
 		"requiredTech": "Abiotic Assimilation",
 		//"obsoleteTech": "Civil Service",
 		//"upgradesTo": "Pikeman",
-		"uniques": ["[+50]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength when defending"],
+		"uniques": ["[+50]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength <when defending>"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -314,7 +320,7 @@
 		"attackSound": "arrow"
 	},
 	
-	// Unbuildables
+	// Unbuildable Units //
 	{
 		"name": "Great Psion",
 		"unitType": "Service",
@@ -349,11 +355,11 @@
 	{
 		"name": "Great Warrior",
 		"unitType": "Service",
-		"uniques": ["Can start an [8]-turn golden age", "Bonus for units in 2 tile radius 15%", "Can construct [Defensive Nexus]",
+		"uniques": ["Can start an [8]-turn golden age", "[+15]% Strength bonus for [Military] units within [2] tiles", "Can construct [Defensive Nexus]",
 			"Great Person - [War]", "Unbuildable"],
 		"movement": 2
 	},
-	// Nation Uniques
+	// Nation Unique Units //
 	{
 		"name": "Rak'tar Swarm Drone",
 		"uniqueTo": "Rak'tar",
@@ -398,7 +404,7 @@
 		"replaces": "Scouting Drone"
 	},
 	
-	//City-State Uniques
+	//City-State Unique Units//
 	{
 		"name": "Sekari Shellwalker",
 		"uniqueTo": "Sekari",
@@ -412,7 +418,7 @@
 		//"requiredResource": "",
 		"upgradesTo": "Armor Drone",
 		"obsoleteTech": "Mineral Adaptations",
-		"uniques": ["[+50]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength when defending"],
+		"uniques": ["[+50]% Strength <vs [Projectile (Ranged)] units>", "[+100]% Strength <when defending>"],
 		"promotions": ["Reflective Carapace"],
 		"attackSound": "horse"
 	},
@@ -426,7 +432,7 @@
 		"cost": 75,
 		"hurryCostModifier": 20,
 		"requiredTech": "Gene Harvesting",
-		"requiredResource": "Wildlife",
+		"requiredResource": "Hyper-Predators",
 		//"upgradesTo": "",
 		//"obsoleteTech": "",
 		"uniques": ["Invisible to others"],
@@ -467,7 +473,7 @@
 		"upgradesTo": "Spitter Symbiont",
 		"attackSound": "arrow"
 	},
-	//Wildlife
+	// Wildlife Units //
 	/*
 	{
 		"name": "Great Devourer",
@@ -495,7 +501,7 @@
 		"attackSound": "nonmetalhit"
 	},
 	*/
-	//Barbarian Uniques
+	// Barbarian Unique Units //
 	{
 		"name": "Rogue Drone",
 		"unitType": "Infantry",

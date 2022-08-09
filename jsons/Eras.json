@@ -1,99 +1,105 @@
 [
     // Source: the fandom, so take these with a grain of salt
     // I also did some testing in the official version, but by far not all
-    
     {
         "name": "Basal era",
-        "researchAgreementCost": 75,
+        "researchAgreementCost": 150,
+        "startingSettlerUnit": "Spawning Drone",
         "startingSettlerCount": 1, // These values should not include the values given in Difficulties.json
+        "startingWorkerUnit": "Worker Drone",
         "startingWorkerCount": 0,
-        "startingMilitaryUnitCount": 1,
         "startingMilitaryUnit": "Soldier Drone",
+        "startingMilitaryUnitCount": 1,
         "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
+        "embarkDefense": 3,
         "startPercent": 0,
         "friendBonus": {
-            "Cultured": ["Provides [3] [Culture] per turn"],
-            "Maritime": ["Provides [2] [Food] [in capital]"],
-            "Mercantile": ["Provides [2] Happiness"],
-            "Religious": ["Provides [3] [Faith] per turn"],
-            "Militaristic": ["Provides military units every ≈[25] turns"]
-        },
-        "allyBonus": {
-            "Cultured": ["Provides [6] [Culture] per turn"],
-            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
-            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
-            "Religious": ["Provides [6] [Faith] per turn"],
+            "Cultured": ["Provides [+3 Culture] per turn"],
+            "Maritime": ["Provides [+2 Food] [in capital] per turn"],
+            "Mercantile": ["Provides [+2] Happiness"],
+            "Religious": ["Provides [+3 Faith] per turn"],
             "Militaristic": ["Provides military units every ≈[20] turns"]
         },
+        "allyBonus": {
+            "Cultured": ["Provides [+6 Culture] per turn"],
+            "Maritime": ["Provides [+2 Food] [in capital] per turn", "Provides [+1 Food] [in all cities] per turn"],
+            "Mercantile": ["Provides [+2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [+6 Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[17] turns"]
+        },
         "iconRGB": [0, 0, 0]
-    },
+    },    
     {
         "name": "Primal era",
         "researchAgreementCost": 150,
-        "startingSettlerCount": 1,
-        "startingWorkerCount": 0,
+        "startingSettlerUnit": "Spawning Drone",
+        "startingSettlerCount": 2, // These values should not include the values given in Difficulties.json
+        "startingWorkerUnit": "Worker Drone",
+        "startingWorkerCount": 1,
+        "startingMilitaryUnit": "Soldier Drone",
         "startingMilitaryUnitCount": 1,
-        "startingMilitaryUnit": "Slasher",
-        "startingGold": 5,
-        "startingCulture": 25,
-        "settlerPopulation": 2,
+        "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
+        "embarkDefense": 3,
         "startPercent": 0,
         "friendBonus": {
-            "Cultured": ["Provides [3] [Culture] per turn"],
-            "Maritime": ["Provides [2] [Food] [in capital]"],
-            "Mercantile": ["Provides [2] Happiness"],
-            "Religious": ["Provides [3] [Faith] per turn"],
-            "Militaristic": ["Provides military units every ≈[25] turns"]
+            "Cultured": ["Provides [+3 Culture] per turn"],
+            "Maritime": ["Provides [+2 Food] [in capital] per turn"],
+            "Mercantile": ["Provides [+2] Happiness"],
+            "Religious": ["Provides [+3 Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[20] turns"]
         },
         "allyBonus": {
-            "Cultured": ["Provides [6] [Culture] per turn"],
-            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
-            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
-            "Religious": ["Provides [6] [Faith] per turn"],
-            "Militaristic": ["Provides military units every ≈[15] turns"]
+            "Cultured": ["Provides [+6 Culture] per turn"],
+            "Maritime": ["Provides [+2 Food] [in capital] per turn", "Provides [+1 Food] [in all cities] per turn"],
+            "Mercantile": ["Provides [+2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [+6 Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[17] turns"]
         },
-        "iconRGB": [255, 0, 0]
+        "iconRGB": [255, 87, 35]
     },
     {
         "name": "Archaic era",
-        "researchAgreementCost": 225,
-        "startingSettlerCount": 2,
-        "startingWorkerCount": 1,
-        "startingMilitaryUnitCount": 3,
-        "startingMilitaryUnit": "Shredder",
-        "startingGold": 25,
-        "startingCulture": 75,
-        "settlerPopulation": 3,
-        "settlerBuildings": ["Psionic Nexus","Psionic Node"],
-        "startingObsoleteWonders": ["The Mindstone", "The Nexus", "The Hivemaw", "The Nest", "The Eye", "The Vault"],
+        "researchAgreementCost": 150,
+        "startingSettlerUnit": "Spawning Drone",
+        "startingSettlerCount": 3, // These values should not include the values given in Difficulties.json
+        "startingWorkerUnit": "Worker Drone",
+        "startingWorkerCount": 2,
+        "startingMilitaryUnit": "Slasher",
+        "startingMilitaryUnitCount": 2,
+        "startingGold": 10,
+        "startingCulture": 100,
+        "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
-        "startPercent": 0,
+        "embarkDefense": 4,
+        "startPercent": 10,
         "friendBonus": {
-            "Cultured": ["Provides [3] [Culture] per turn"],
-            "Maritime": ["Provides [2] [Food] [in capital]"],
-            "Mercantile": ["Provides [2] Happiness"],
-            "Religious": ["Provides [3] [Faith] per turn"],
-            "Militaristic": ["Provides military units every ≈[25] turns"]
+            "Cultured": ["Provides [+3 Culture] per turn"],
+            "Maritime": ["Provides [+2 Food] [in capital] per turn"],
+            "Mercantile": ["Provides [+2] Happiness"],
+            "Religious": ["Provides [+3 Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[20] turns"]
         },
         "allyBonus": {
-            "Cultured": ["Provides [6] [Culture] per turn"],
-            "Maritime": ["Provides [2] [Food] [in capital]", "Provides [1] [Food] [in all cities]"],
-            "Mercantile": ["Provides [2] Happiness", "Provides a unique luxury"],
-            "Religious": ["Provides [6] [Faith] per turn"],
-            "Militaristic": ["Provides military units every ≈[10] turns"]
+            "Cultured": ["Provides [+6 Culture] per turn"],
+            "Maritime": ["Provides [+2 Food] [in capital] per turn", "Provides [+1 Food] [in all cities] per turn"],
+            "Mercantile": ["Provides [+2] Happiness", "Provides a unique luxury"],
+            "Religious": ["Provides [+6 Faith] per turn"],
+            "Militaristic": ["Provides military units every ≈[17] turns"]
         },
-        "iconRGB": [0, 0, 255]
+        "iconRGB": [233, 31, 99]
     },
 	// The final era. This will be modified as time goes on and the mod gets more eras.
     {
         "name": "Terminal era",
         "researchAgreementCost": 250,
-        "startingSettlerCount": 2,
-        "startingWorkerCount": 1,
-        "startingMilitaryUnitCount": 3,
+        "startingSettlerUnit": "Spawning Drone",
+        "startingSettlerCount": 4, // These values should not include the values given in Difficulties.json
+        "startingWorkerUnit": "Worker Drone",
+        "startingWorkerCount": 3,
         "startingMilitaryUnit": "Metallic Drone",
+        "startingMilitaryUnitCount": 3,
         "startingGold": 25,
         "startingCulture": 200,
         "settlerPopulation": 1,
