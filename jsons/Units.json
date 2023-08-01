@@ -7,7 +7,10 @@
 		"movement": 2,
 		"hurryCostModifier": 20,
 		"uniques": ["Can build [Land] improvements on tiles"],
-		"cost": 70
+		"cost": 70,
+        "civilopediaText": [
+			{"text": "Often the most common form of drone, Worker Drones are bred specifically for menial tasks. Their lack of defenses allows their biomass costs to be as efficient as possible."}
+		]
 	},
 	{
 		"name": "Spawning Drone",
@@ -15,16 +18,22 @@
 		"movement": 2,
 		"cost": 105,
 		"uniques": ["Founds a new city","Requires at least [2] population","Excess Food converted to Production when under construction"],
-		"hurryCostModifier": 20
+		"hurryCostModifier": 20,
+        "civilopediaText": [
+			{"text": "When the time comes to found a new nest, most hive minds will hatch Spawning Drones. These drones exist solely to breed, and are responsible for carrying the DNA prototype for their species to a new nest."}
+		]
 	},
 	{
 		"name": "Scouting Drone",
 		"unitType": "Recon",
-		"movement": 2,
+		"movement": 3,
 		"strength": 5,
-		"cost": 25,
+		"cost": 35,
 		"uniques": ["Ignores terrain cost"],
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "Able to traverse the land far quicker than most drones, Scouting Drones are an ideal exploration tool for most newly-founded hives."}
+		]
 	},
 	{
 		"name": "Soldier Drone",
@@ -37,10 +46,22 @@
 		"upgradesTo": "Slasher",
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
-			{"text": "This is your basic, club-swinging fighter."}
+			{"text": "The most primitive type of warrior drone."}
 		]
 	},
-
+	{
+		"name": "Guard Drone",
+		"unitType": "Guard",
+		"movement": 1,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Mineral Adaptations",
+		"upgradesTo": "Armor Drone",
+		"uniques": ["[+100]% Strength <when defending>"],
+		"hurryCostModifier": 20,
+		"attackSound": "nonmetalhit"
+	},
+	
 	/* Primal Era */
 	{
 		"name": "Synapse Drone",
@@ -49,7 +70,10 @@
 		"cost": 300,
 		"hurryCostModifier": 20,
 		"requiredTech": "Introspection",
-		"movement": 1
+		"movement": 1,
+        "civilopediaText": [
+			{"text": "A specialized form of drone designed to amplify and extend the influence of a hive mind, thus increasing productivity."}
+		]
 	},
 	{
 		"name": "Storage Drone",
@@ -59,18 +83,6 @@
 		"hurryCostModifier": 20,
 		"requiredTech": "Storage Organisms",
 		"movement": 1
-	},
-	{
-		"name": "Guard Drone",
-		"unitType": "Guard",
-		"movement": 2,
-		"strength": 5,
-		"cost": 40,
-		"obsoleteTech": "Mineral Adaptations",
-		"upgradesTo": "Armor Drone",
-		"uniques": ["[+100]% Strength <when defending>"],
-		"hurryCostModifier": 20,
-		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Slasher",
@@ -88,7 +100,7 @@
 		"name": "Spitter",
 		"unitType": "Projectile (Ranged)",
 		"movement": 2,
-		"strength": 5,
+		"strength": 6,
 		"rangedStrength": 12,
 		"cost": 40,
 		"hurryCostModifier": 20,
@@ -138,10 +150,10 @@
 	{
 		"name": "Gene Cyst",
 		"unitType": "Bombardment",
-		"movement": 1,
+		"movement": 0,
 		"strength": 30,
 		"rangedStrength": 30,
-		"range": 3,
+		"range": 5,
 		"cost": 30,
 		"requiredTech": "Gene Harvesting",
 		//"requiredResource": "Wildlife",
@@ -168,12 +180,13 @@
 		"movement": 2,
 		"strength": 25,
 		"rangedStrength": 30,
+		"range": 3,
 		"cost": 175,
 		"requiredTech": "Titanic Weaponry",
 		//"requiredResource": "Wildlife",
 		//"upgradesTo": "Knight",
 		//"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","[+200]% Strength <vs cities>","[-33]% Strength <vs [Projectile (Ranged)] units>"],
+		"uniques": ["No defensive terrain bonus","[+200]% Strength <vs cities>","[-60]% Strength <vs [Projectile (Ranged)] units> <when defending>"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
@@ -194,8 +207,8 @@
 		"name": "Armor Drone",
 		"unitType": "Guard",
 		"movement": 1,
-		"strength": 12,
-		"cost": 60,
+		"strength": 14,
+		"cost": 50,
 		"requiredTech": "Mineral Adaptations",
 		"obsoleteTech": "Abiotic Assimilation",
 		"upgradesTo": "Metallic Drone",
@@ -212,8 +225,8 @@
 		"cost": 50,
 		"hurryCostModifier": 20,
 		"requiredTech": "Symbiotic Weaponry",
-		//"obsoleteTech": "Machinery",
-		//"upgradesTo": "Crossbowman",
+		"obsoleteTech": "Abiotic Assimilation",
+		"upgradesTo": "Miasma Spitter",
 		"attackSound": "arrow"
 	},
 	{
@@ -224,8 +237,8 @@
 		"cost": 50,
 		"hurryCostModifier": 20,
 		"requiredTech": "Symbiotic Weaponry",
-		//"obsoleteTech": "Machinery",
-		//"upgradesTo": "Crossbowman",
+		"obsoleteTech": "Abiotic Assimilation",
+		"upgradesTo": "Slicing Drone",
 		"attackSound": "nonmetalhit"
 	},
 	/* Archaic Era */
@@ -270,7 +283,7 @@
 		"name": "Metallic Drone",
 		"unitType": "Guard",
 		"movement": 1,
-		"strength": 20,
+		"strength": 22,
 		"cost": 75,
 		"requiredTech": "Abiotic Assimilation",
 		//"obsoleteTech": "Civil Service",
@@ -291,6 +304,18 @@
 		//"obsoleteTech": "Machinery",
 		//"upgradesTo": "Crossbowman",
 		"attackSound": "arrow"
+	},
+	{
+		"name": "Slicing Drone",
+		"unitType": "Infantry",
+		"movement": 2,
+		"strength": 24,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"requiredTech": "Abiotic Assimilation",
+		//"obsoleteTech": "Machinery",
+		//"upgradesTo": "Crossbowman",
+		"attackSound": "metalhit"
 	},
 	{
 		"name": "Soldier Vessel",
@@ -391,7 +416,7 @@
 		"uniques": ["Can start an [50]-turn golden age", "Can construct [Mind Nexus]", "Can construct [Pheromone Nexus]", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 2,
 		"uniqueTo": "Int'uu",
-		"replaces": "Great Psyker"
+		"replaces": "Great Psion"
 	},
 	{
 		"name": "Tsan'tai Seeker Drone",
@@ -461,13 +486,13 @@
 		"replaces": "Spitter",
 		"unitType": "Projectile (Ranged)",
 		"movement": 2,
-		"strength": 1,
+		"strength": 2,
 		"range": 1,
-		"rangedStrength": 12,
+		"rangedStrength": 15,
 		"cost": 40,
 		"hurryCostModifier": 20,
 		"requiredTech": "Bio-Weapons",
-		"uniques": ["[+100]% Strength <when attacking>"],
+		"uniques": ["[+300]% Strength <vs [Guard] units>"],
 		"promotions": ["Supersonic Vibrations"],
 		"obsoleteTech": "Symbiotic Weaponry",
 		"upgradesTo": "Spitter Symbiont",

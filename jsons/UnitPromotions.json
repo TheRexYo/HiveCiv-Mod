@@ -21,18 +21,18 @@
 	// Infantry
 	{
 		"name": "Steady I",
-		"uniques": ["[+15]% Strength <vs [Beast] units>", "[+15]% Strength <vs cities>"],
+		"uniques": ["[+15]% Strength <vs [Beast] units>"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Steady II",
-		"uniques": ["[+30]% Strength <vs [Beast] units>", "[+30]% Strength <vs cities>"],
+		"uniques": ["[+30]% Strength <vs [Beast] units>"],
 		"prerequisites": ["Steady I"],
 		"unitTypes": ["Infantry"]
 	},
 	{
 		"name": "Steady III",
-		"uniques": ["[+45]% Strength <vs [Beast] units>", "[+45]% Strength <vs cities>"],
+		"uniques": ["[+45]% Strength <vs [Beast] units>"],
 		"prerequisites": ["Steady II"],
 		"unitTypes": ["Infantry"]
 	},
@@ -57,35 +57,35 @@
 	// Swarm
 	{
 		"name": "Overrun I",
-		"uniques": ["[+15]% Strength <vs [Guard] units>", "[+15]% Strength <vs cities>"],
+		"uniques": ["[+15]% Strength <vs [Guard] units>"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Overrun II",
-		"uniques": ["[+30]% Strength <vs [Guard] units>", "[+30]% Strength <vs cities>"],
+		"uniques": ["[+30]% Strength <vs [Guard] units>"],
 		"prerequisites": ["Overrun I"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Overrun III",
-		"uniques": ["[+45]% Strength <vs [Guard] units>", "[+45]% Strength <vs cities>"],
+		"uniques": ["[+45]% Strength <vs [Guard] units>"],
 		"prerequisites": ["Overrun II"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Rush I",
-		"uniques": ["[+15]% Strength <vs [Projectile (Ranged)] units>", "[+15]% Strength <vs cities>"],
+		"uniques": ["[+15]% Strength <vs [Projectile (Ranged)] units>"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Rush II",
-		"uniques": ["[+30]% Strength <vs [Projectile (Ranged)] units>", "[+30]% Strength <vs cities>"],
+		"uniques": ["[+30]% Strength <vs [Projectile (Ranged)] units>"],
 		"prerequisites": ["Rush I"],
 		"unitTypes": ["Swarm"]
 	},
 	{
 		"name": "Rush III",
-		"uniques": ["[+45]% Strength <vs [Projectile (Ranged)] units>", "[+45]% Strength <vs cities>"],
+		"uniques": ["[+45]% Strength <vs [Projectile (Ranged)] units>"],
 		"prerequisites": ["Rush II"],
 		"unitTypes": ["Swarm"]
 	},
@@ -93,7 +93,7 @@
 	// --[[ Event Promotions ]]--
 	// Granted by Genesis Pool
 	{
-		"name": "Rejuvenation",
+		"name": "Regeneration",
 		"uniques": ["All healing effects doubled"]
 	},
 	
@@ -111,12 +111,12 @@
 	// Sekari Shellwalker (unit and upgrades)
 	{
 		"name": "Reflective Carapace",
-		"uniques": ["[200]% Strength <when defending> <vs [Ranged] units>"]
+		"uniques": ["[+200]% Strength <when defending> <vs [Ranged] units>"]
 	},
 	// Katorian Tunneler (unit and upgrades)
 	{
 		"name": "Bio-Static Spines",
-		"uniques": ["[-33]% Strength for enemy [Military] units in adjacent [All] tiles"]
+		"uniques": ["[-33]% Strength for enemy [Military] units in adjacent [Land] tiles"]
 	},
 	// Venixian Mind-Eater (unit and upgrades)
 	{
@@ -126,7 +126,7 @@
 	// Zyxian Shrieker (unit and upgrades)
 	{
 		"name": "Supersonic Vibrations",
-		"uniques": ["[+500]% Strength <vs [City] units>", "[+500]% Strength <vs cities>"]
+		"uniques": ["[+500]% Strength <vs cities>"]
 	},
 	
 	// --[[ Other Promotions ]]--
